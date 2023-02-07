@@ -1,0 +1,73 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - passivetermfinan
+  summary: B533
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: B533
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/passivetermfinan/b581.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              codigoCuentaCliente: 01020494110000382922
+              importe: 3.00
+              codigoOperacion: 6278
+              numeroCheque: 0
+              fechaValor: 
+              carta: 0
+              autorizar: " "
+              guardarAnotado: " " 
+              divisaCargo: USD
+              numeroRetencion: " "
+              fechaHoraOperOff: 2022-10-14SS
+              fechaGiro: " "
+              literal: " "
+              numeroLibreta: 0
+              serial: 9627800427427
+              numeroPlanilla: 0
+              indicadorTitular: " " 
+              user: OPCE204
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

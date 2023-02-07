@@ -1,0 +1,17 @@
+type: object
+properties:
+  numeroCheque:
+    description: Numero del Cheque
+    type: string
+    minLength: 1
+    example: "2501000072702"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

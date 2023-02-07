@@ -1,0 +1,97 @@
+type: object
+properties:
+  codigoCuentaCliente:
+    description: Codigo de la cuenta del Cliente
+    type: string
+    minLength: 1
+    example: "01020494110000382922"
+  importe:
+    description: Importe
+    type: number
+    minLength: 1
+    example: 3.00
+  codigoOperacion:
+    description: Divisa
+    type: number
+    minLength: 1
+    example: 6278
+  numeroCheque:
+    description: Numero de Cheque
+    type: number
+    minLength: 1
+    example: 0
+  fechaValor:
+    description: Fecha Valor
+    type: string
+    minLength: 1
+    example: " "
+  carta:
+    description: Carta
+    type: number
+    minLength: 1
+    example: 0
+  autorizar:
+    description: Autorizar
+    type: string
+    minLength: 1
+    example: " "
+  guardarAnotado:
+    description: Guarfar Anotado
+    type: string
+    minLength: 1
+    example: " "
+  divisaCargo:
+    description: Divisa Cargo
+    type: string
+    minLength: 1
+    example: "USD"
+  numeroRetencion:
+    description: Numero de Retencion
+    type: number
+    minLength: 1
+    example: " "
+  fechaHoraOperOff:
+    description: Fecha Operativa
+    type: string
+    minLength: 1
+    example: "2022-10-14SS"
+  fechaGiro:
+    description: Fecha Giro
+    type: string
+    minLength: 1
+    example: " "
+  literal:
+    description: Literal
+    type: string
+    minLength: 1
+    example: " "
+  numeroLibreta:
+    description: Numero de Libreta
+    type: string
+    minLength: 1
+    example: "000000000"
+  serial:
+    description: Serial
+    type: string
+    minLength: 1
+    example: "9627800427427"
+  numeroPlanilla:
+    description: Numero de Plantilla
+    type: number
+    minLength: 1
+    example: 0
+  indicadorTitular:
+    description: Indicador del Titular
+    type: string
+    minLength: 1
+    example: " "
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

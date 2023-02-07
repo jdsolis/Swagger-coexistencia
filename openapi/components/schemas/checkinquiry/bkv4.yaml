@@ -1,0 +1,67 @@
+type: object
+properties:
+  opcion:
+    description: Opcion
+    type: string
+    minLength: 1
+    example: "U"
+  cantidadRegistros:
+    description: Cantidad de Registros
+    type: number
+    minLength: 1
+    example: "00"
+  codigoEntidad:
+    description: Codigo de la Entidad
+    type: string
+    minLength: 1
+    example: "0102"
+  entidadCuenta:
+    description: Cuenta de la Entidad
+    type: string
+    minLength: 1
+    example: "0102"
+  centroCuenta:
+    description: Centro de Cuenta
+    type: string
+    minLength: 1
+    example: "0430"
+  numeroCuenta:
+    description: Numero de Cuenta
+    type: string
+    minLength: 1
+    example: "580000199403"
+  divisa:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: "VES"
+  numeroCheque:
+    description: Numero de Cheque
+    type: string
+    minLength: 1
+    example: "84004919"
+  fechaInicial:
+    description: Fecha Inicial
+    type: string
+    minLength: 1
+    example: " "
+  fechaFinal:
+    description: Fecha Final
+    type: string
+    minLength: 1
+    example: " "
+  masDatos:
+    description: Mas Datos
+    type: string
+    minLength: 1
+    example: "N"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

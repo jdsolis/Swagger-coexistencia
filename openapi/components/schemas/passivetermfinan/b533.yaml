@@ -1,0 +1,105 @@
+type: object
+properties:
+  codigoCuentaCliente:
+    description: Codigo de la cuenta del Cliente
+    type: string
+    minLength: 1
+    example: "01020501870109341307"
+  importe:
+    description: Importe
+    type: number
+    minLength: 1
+    example: 20.01
+  codigoOperacion:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: " "
+  numeroCheque:
+    description: Numero de Cheque
+    type: string
+    minLength: 1
+    example: " "
+  fechaValor:
+    description: Fecha Valor
+    type: string
+    minLength: 1
+    example: " "
+  carta:
+    description: Carta
+    type: string
+    minLength: 1
+    example: " "
+  autorizar:
+    description: Autorizar
+    type: string
+    minLength: 1
+    example: " "
+  guardarAnotado:
+    description: Guarfar Anotado
+    type: string
+    minLength: 1
+    example: " "
+  divisaCargo:
+    description: Divisa Cargo
+    type: string
+    minLength: 1
+    example: "VES"
+  numeroRetencion:
+    description: Numero de Retencion
+    type: number
+    minLength: 1
+    example: 0
+  fechaHoraOperOff:
+    description: Fecha Operativa
+    type: string
+    minLength: 1
+    example: " "
+  fechaGiro:
+    description: Fecha Giro
+    type: string
+    minLength: 1
+    example: " "
+  literal:
+    description: Literal
+    type: string
+    minLength: 1
+    example: " "
+  numeroLibreta:
+    description: Numero de Libreta
+    type: string
+    minLength: 1
+    example: "000000000"
+  serial:
+    description: Serial
+    type: string
+    minLength: 1
+    example: "06728"
+  numeroPlanilla:
+    description: Numero de Plantilla
+    type: string
+    minLength: 1
+    example: "78402384"
+  indicadorTitular:
+    description: Indicador del Titular
+    type: string
+    minLength: 1
+    example: "N"
+  Dna:
+    description: DNA
+    type: string
+    minLength: 1
+    example: " "
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE501"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0221"
+  
+  
+  

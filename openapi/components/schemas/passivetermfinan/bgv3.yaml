@@ -1,0 +1,18 @@
+type: object
+properties:
+  numeroPlanilla:
+    description: Numero de Plantilla
+    type: number
+    minLength: 1
+    example: 18425399
+  indicadorTarjeta:
+    description: Indicador de Targeta
+    type: string
+    minLength: 1
+    example: "N"
+  divisaAbono:
+    description: Divisa de Abono
+    type: string
+    minLength: 1
+    example: "VES"
+  

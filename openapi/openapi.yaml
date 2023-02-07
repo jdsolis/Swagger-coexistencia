@@ -30,6 +30,8 @@ tags:
     description: DESCRIPCION GENERAL DEL ACCES POINT.
   - name: passivetermfinan
     description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: checkinquiry
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -64,6 +66,20 @@ paths:
     $ref: paths/passivetermfinan/BG61.yaml
   /{{IPKONG}}/passivetermfinan/IntBQ10:
     $ref: paths/passivetermfinan/BQ10.yaml
+  /{{IPKONG}}/passivetermfinan/IntB533:
+    $ref: paths/passivetermfinan/B533.yaml
+  /{{IPKONG}}/passivetermfinan/IntBGV3:
+    $ref: paths/passivetermfinan/BGV3.yaml
+  /{{IPKONG}}/passivetermfinan/IntB581:
+    $ref: paths/passivetermfinan/B581.yaml
+  /{{IPKONG}}/checkinquiry/IntBKV4:
+    $ref: paths/checkinquiry/BKV4.yaml
+  /{{IPKONG}}/checkinquiry/IntBQ05:
+    $ref: paths/checkinquiry/BQ05.yaml
+  /{{IPKONG}}/checkinquiry/IntBKV1:
+    $ref: paths/checkinquiry/BKV1.yaml
+  /{{IPKONG}}/checkinquiry/IntBKV1:
+    $ref: paths/checkinquiry/BKXA.yaml
 components:
   securitySchemes:
     main_auth:

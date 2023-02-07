@@ -6,10 +6,10 @@ parameters:
       type: boolean
 post:
   tags:
-    - querymovements
-  summary: B402
+    - accountingtermfinan
+  summary: HABA
   description: DESCRIPCION DEL ENDPOINT
-  operationId: B402
+  operationId: accountingtermfinan
   security:
     - api_key: []
     - basic_auth: []
@@ -41,15 +41,24 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/b402.yaml
+          $ref: ../../components/schemas/accountingtermfinan/hba.yaml
         examples:
           mapName:
             summary: Componente
             description: Ejemplo del body Request
             value:
-              cuentaCliente: 01020353800000390859,
-              divisa: VES,
-              cobrocomision: N
+              oficina: 9199,
+              empresa: 0102,
+              codServicio: 00007,
+              monto: 000000000001000,
+              nroDocumento: 0000000000000,
+              nroReferencia: 0000236899855,
+              ofiOrigen: 9199,
+              ofiDestino: 9199,
+              descripcion: PAPEL DE OFICINA,
+              numeroRegistros: 1,
+              ciclo: 2,
+              indicaCorreccion: 
           mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
             value:
               stringProperty: checkmark

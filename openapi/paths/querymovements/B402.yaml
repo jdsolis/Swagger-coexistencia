@@ -6,10 +6,10 @@ parameters:
       type: boolean
 post:
   tags:
-    - activitycategoryspecial
-  summary: WP46
+    - querymovements
+  summary: B402
   description: DESCRIPCION DEL ENDPOINT
-  operationId: WP46
+  operationId: B402
   security:
     - api_key: []
     - basic_auth: []
@@ -41,18 +41,15 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/wp46.yaml
+          $ref: ../../components/schemas/querymovements/b402.yaml
         examples:
           mapName:
             summary: Componente
             description: Ejemplo del body Request
             value:
-              opcion: M,
-              numeroCliente: 18162615,
-              actividadEspecifica: INVERSIONISTAS Y AGENCIAS DE BIENES RAICES,
-              categoriaEspecial: 0008,
-              user: OPCE204,
-              terminal: 0353
+              cuentaCliente: 01020353800000390859,
+              divisa: VES,
+              cobrocomision: N
           mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
             value:
               stringProperty: checkmark

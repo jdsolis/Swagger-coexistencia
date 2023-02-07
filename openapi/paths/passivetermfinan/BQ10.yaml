@@ -41,7 +41,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/b480.yaml
+          $ref: ../../components/schemas/passivetermfinan/bq10.yaml
         examples:
           mapName:
             summary: Componente

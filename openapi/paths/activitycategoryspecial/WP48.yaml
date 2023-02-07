@@ -41,7 +41,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/wp48.yaml
+          $ref: ../../components/schemas/activitycategoryspecial/wp48.yaml
         examples:
           mapName:
             summary: Componente

@@ -6,10 +6,10 @@ parameters:
       type: boolean
 post:
   tags:
-    - accountinquiry
-  summary: B480
+    - querymovements
+  summary: B401
   description: DESCRIPCION DEL ENDPOINT
-  operationId: B480
+  operationId: B401
   security:
     - api_key: []
     - basic_auth: []
@@ -41,18 +41,19 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/b480.yaml
+          $ref: ../../components/schemas/querymovements/b401.yaml
         examples:
           mapName:
             summary: Componente
             description: Ejemplo del body Request
             value:
-              producto: 41,
-              subproducto: 0001,
-              estado: C,
-              numeroMaterial: V 00029671789,
-              user: OPCE812,
-              terminal: 0190
+              cuentaCliente: 01020353800000390859,
+              divisa: VES,
+              fechaInicio: 1,
+              fechaFin: 1,
+              movimientoInicial: 1,
+              movimientoFinal: 1,
+              tipoRegistro: 1
           mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
             value:
               stringProperty: checkmark

@@ -6,10 +6,10 @@ parameters:
       type: boolean
 post:
   tags:
-    - accountingtermfinan
-  summary: HABA
+    - activitycategoryspecial
+  summary: WP46
   description: DESCRIPCION DEL ENDPOINT
-  operationId: accountingtermfinan
+  operationId: WP46
   security:
     - api_key: []
     - basic_auth: []
@@ -41,24 +41,18 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/hba.yaml
+          $ref: ../../components/schemas/activitycategoryspecial/wp46.yaml
         examples:
           mapName:
             summary: Componente
             description: Ejemplo del body Request
             value:
-              oficina: 9199,
-              empresa: 0102,
-              codServicio: 00007,
-              monto: 000000000001000,
-              nroDocumento: 0000000000000,
-              nroReferencia: 0000236899855,
-              ofiOrigen: 9199,
-              ofiDestino: 9199,
-              descripcion: PAPEL DE OFICINA,
-              numeroRegistros: 1,
-              ciclo: 2,
-              indicaCorreccion: 
+              opcion: M,
+              numeroCliente: 18162615,
+              actividadEspecifica: INVERSIONISTAS Y AGENCIAS DE BIENES RAICES,
+              categoriaEspecial: 0008,
+              user: OPCE204,
+              terminal: 0353
           mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
             value:
               stringProperty: checkmark

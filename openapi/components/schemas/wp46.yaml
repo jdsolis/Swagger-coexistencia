@@ -1,0 +1,33 @@
+type: object
+properties:
+  opcion:
+    description: OPCIÓN
+    type: string
+    minLength: 1
+    example: "M"
+  numeroCliente:
+    description: Numero del Cliente
+    type: string
+    minLength: 1
+    example: "18162615"
+  actividadEspecifica:
+    description: Tipo de actividad
+    type: string
+    minLength: 1
+    example: "INVERSIONISTAS Y AGENCIAS DE BIENES RAICES"
+  categoriaEspecial:
+    description: Categoria
+    type: string
+    minLength: 1
+    example: "0008"
+  user:
+    description: Identficación del Usuario
+    type: string
+    minLength: 1
+    example: "OPCE812"
+  terminal:
+    description: Numero de Terminal
+    type: string
+    minLength: 1
+    example: "0353"
+  

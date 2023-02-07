@@ -1,0 +1,18 @@
+type: object
+properties:
+  numeroCliente:
+    description: Numero del Cliente
+    type: string
+    minLength: 1
+    example: "15964963"
+  numeroClUseriente:
+    description: Identificacion del Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  Terminal:
+    description: Terminal
+    type: string
+    minLength: 1
+    example: "0353"
+   

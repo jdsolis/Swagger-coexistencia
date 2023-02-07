@@ -1,0 +1,53 @@
+type: object
+properties:
+  oficina:
+    description: Numero de la Oficina
+    type: string
+    minLength: 1
+    example: "01020353800000390859"
+  empresa:
+    description: Numero de la empresa
+    type: string
+    minLength: 1
+    example: "0102"
+  codServicio:
+    description: Codigo de Servicio
+    type: string
+    minLength: 1
+    example: "00007"
+  monto:
+    description: Monto
+    type: string
+    example: "000000000001000"
+  nroDocumento:
+    description: Numero de Documento
+    type: string
+    example: "0000000000000"
+  nroReferencia:
+    description: Numero de Referencia
+    type: string
+    example: "0000236899855"
+  ofiOrigen:
+    description: Oficina de Origen
+    type: string
+    example: "9199"
+  ofiDestino:
+    description: Oficina de Destino
+    type: string
+    example: "9199"
+  descripcion:
+    description: Descripcion
+    type: string
+    example: "PAPEL DE OFICINA"
+  numeroRegistros:
+    description: Numero de Registros
+    type: string
+    example: "1"
+  ciclo:
+    description: Ciclo
+    type: string
+    example: "2"
+  indicaCorreccion:
+    description: Correccion
+    type: string
+    example: " "

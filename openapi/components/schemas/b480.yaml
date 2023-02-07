@@ -1,0 +1,33 @@
+type: object
+properties:
+  producto:
+    description: Numero del producto
+    type: string
+    minLength: 1
+    example: "41"
+  subproducto:
+    description: Numero del subproducto
+    type: string
+    minLength: 1
+    example: "0001"
+  estado:
+    description: Estado
+    type: string
+    minLength: 1
+    example: "C"
+  numeroMaterial:
+    description: Numero del Material
+    type: string
+    minLength: 1
+    example: "V 00029671789"
+  user:
+    description: Identficación del Usuario
+    type: string
+    minLength: 1
+    example: "OPCE812"
+  terminal:
+    description: Numero de Terminal
+    type: string
+    minLength: 1
+    example: "0190"
+  

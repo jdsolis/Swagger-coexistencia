@@ -1,0 +1,357 @@
+type: object
+properties:
+  codigoCtaCliente: 
+    description: Codigo del Cliente
+    type: string
+    minLength: 1
+    example: "01020353800000390859"
+  importe:
+    description: Importe
+    type: number
+    minLength: 1
+    example: 8.00
+  importePlanilla:
+    description: Importe de la Plantilla
+    type: number
+    minLength: 1
+    example: 8.00
+  importeCheqBV:
+    description: Importe Cheque
+    type: number
+    minLength: 1
+    example: 0.00
+  importeCheqOB:
+    description: Importe X
+    type: string
+    minLength: 1
+    example: 0.00
+  numeroPlanilla:
+    description: Numero de Plantilla
+    type: number
+    minLength: 1
+    example: 19000011
+  ajusteEfectivo:
+    description: Ajuste
+    type: string
+    minLength: 1
+    example: 0
+  ajusteChequesBdv:
+    description: Ajuste Cheque BDV
+    type: number
+    minLength: 1
+    example: 0
+  ajusteOtrosBanco:
+    description: Ajuste Otros bancos
+    type: number
+    minLength: 1
+    example: 0
+  codigoOperacion:
+    description: Numero de Registros
+    type: string
+    minLength: 1
+    example: " "
+  fechaValor:
+    description: Fecha de Valor
+    type: string
+    minLength: 1
+    example: " "
+  carta:
+    description: Carta
+    type: number
+    minLength: 1
+    example: 0
+  autorizar:
+    description: Autorizar
+    type: string
+    minLength: 1
+    example: " "
+  guardarAnotado:
+    description: Anotado
+    type: string
+    minLength: 1
+    example: " "
+  fechaHoraOperOff:
+    description: Fecha Operativa
+    type: string
+    minLength: 1
+    example: "2022-10-18"
+  divisaAbono:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: "VES"
+  diasDeRetencion:
+    description: Dias de Retención
+    type: string
+    minLength: 1
+    example: " "
+  porcentajeRetencion:
+    description: Porcentaje de Retención
+    type: string
+    minLength: 1
+    example: "000000"
+  afectaLiquidacion:
+    description: Afecta Liquidacion
+    type: string
+    minLength: 1
+    example: " "
+  serialCmc7:
+    description: Serial
+    type: string
+    minLength: 1
+    example: "0000000000000"
+  observaciones:
+    description: Observaciones
+    type: string
+    minLength: 1
+    example: " "
+  numeroDeLibreta:
+    description: Numero de Libreta
+    type: string
+    minLength: 1
+    example: "000000000"
+  tipoDctoLph:
+    description: Tipo Documento
+    type: string
+    minLength: 1
+    example: " "
+  numeroDctoLph:
+    description: Numero de Documento
+    type: string
+    minLength: 1
+    example: "00000000000"
+  divisionLph:
+    description: Division
+    type: string
+    minLength: 1
+    example: "00"
+  indicReversoDepos:
+    description: Reverso Deposito
+    type: string
+    minLength: 1
+    example: "S"
+  cartaPorteDeposito:
+    description: Carta Deposito
+    type: number
+    minLength: 1
+    example: 0
+  masDatosEnDetalle:
+    description: Mas datos de detalle
+    type: string
+    minLength: 1
+    example: "N"
+  primeraLlamada:
+    description: Primera Llamada
+    type: string
+    minLength: 1
+    example: "S"
+  ctaDelCheque1:
+    description: Cuenta del cheque
+    type: string
+    minLength: 1
+    example: " "
+  numeroDeCheque1:
+    description: Numero del cheque
+    type: string
+    minLength: 1
+    example: " "
+  importeCheque1:
+    description: Importe del Cheque
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque1:
+    description: DNA del Cheque
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque01:
+    description: Tipo de Chequeo
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque2:
+    description: Cuenta de Chque 2
+    type: string
+    minLength: 1
+    example: " "
+  numCheque2:
+    description: Numero de Cheque 2
+    type: string
+    minLength: 1
+    example: " "
+  impCheque2:
+    description: Importe de Cheque 2
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque2:
+    description: DNA del Cheque 2
+    type: string
+    minLength: 1
+    example: " "
+  tipCheque02:
+    description: Tipo de Chequeo 2
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque3:
+    description: Cuenta de Chque 3
+    type: string
+    minLength: 1
+    example: " "
+  numCheque3:
+    description: Numero de Cheque 3
+    type: string
+    minLength: 1
+    example: " "
+  impCheque3:
+    description: Importe de Cheque 3
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque3:
+    description: DNA del Cheque 3
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque03:
+    description: Tipo de Chequeo 3
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque4:
+    description: Cuenta de Chque 4
+    type: string
+    minLength: 1
+    example: " "
+  numCheque4:
+    description: Numero de Cheque 4
+    type: string
+    minLength: 1
+    example: " "
+  impCheque4:
+    description: Importe de Cheque 4
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque4:
+    description: DNA del Cheque 4
+    type: string
+    minLength: 1
+    example: " "
+  tipCheque04:
+    description: Tipo de Chequeo 4
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque5:
+    description: Cuenta de Chque 5
+    type: string
+    minLength: 1
+    example: " "
+  numCheque5:
+    description: Numero de Cheque 5
+    type: string
+    minLength: 1
+    example: " "
+  impCheque5:
+    description: Importe de Cheque 5
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque5:
+    description: DNA del Cheque 5
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque05:
+    description: Tipo de Chequeo 5
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque6:
+    description: Cuenta de Chque 6
+    type: string
+    minLength: 1
+    example: " "
+  numCheque6:
+    description: Numero de Cheque 6
+    type: string
+    minLength: 1
+    example: " "
+  impCheque6:
+    description: Importe de Cheque 6
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque6:
+    description: DNA del Cheque 6
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque06:
+    description: Tipo de Chequeo 6
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque7:
+    description: Cuenta de Chque 7
+    type: string
+    minLength: 1
+    example: " "
+  numCheque7:
+    description: Numero de Cheque 7
+    type: string
+    minLength: 1
+    example: " "
+  impCheque7:
+    description: Importe de Cheque 7
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque7:
+    description: DNA del Cheque 7
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque07:
+    description: Tipo de Chequeo 7
+    type: string
+    minLength: 1
+    example: " "
+  ctaCheque8:
+    description: Cuenta de Chque 8
+    type: string
+    minLength: 1
+    example: " "
+  numCheque8:
+    description: Numero de Cheque 8
+    type: string
+    minLength: 1
+    example: " "
+  impCheque8:
+    description: Importe de Cheque 8
+    type: number
+    minLength: 1
+    example: 0
+  dnaCheque8:
+    description: DNA del Cheque 8
+    type: string
+    minLength: 1
+    example: " "
+  tipoCheque08:
+    description: Tipo del cheque 8
+    type: string
+    minLength: 1
+    example: " "
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: Terminal
+    type: string
+    minLength: 1
+    example: "0353"

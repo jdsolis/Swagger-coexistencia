@@ -1,0 +1,33 @@
+type: object
+properties:
+  cuentaCliente:
+    description: Numero de la cuenta del cliente
+    type: string
+    minLength: 1
+    example: "01020353800000390859"
+  divisa:
+    description: Codigo de la Divisa
+    type: string
+    minLength: 1
+    example: "VES"
+  fechaInicio:
+    description: Fecha de inicio
+    type: string
+    minLength: 1
+    example: "2022-12-01"
+  fechaFin:
+    description: Fecha Fin
+    type: string
+    example: "2022-12-01"
+  movimientoInicial:
+    description: Moviemiento Inicial
+    type: string
+    example: "00000005874"
+  movimientoFinal:
+    description: Movimiento Final
+    type: string
+    example: "00000005874"
+  tipoRegistro:
+    description: Tipo de Registro
+    type: string
+    example: "N"

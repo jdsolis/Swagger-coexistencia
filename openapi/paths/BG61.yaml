@@ -1,0 +1,125 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - passivetermfinan
+  summary: BG61
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: BG61
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/bg61.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              codigoCtaCliente: 01020353800000390859
+              importe: 8.00
+              importePlanilla: 8.00
+              importeCheqBV: 0.00
+              importeCheqOB: 0.00
+              numeroPlanilla: 19000011
+              ajusteEfectivo: 0
+              ajusteChequesBdv: 0
+              ajusteOtrosBanco: 0
+              codigoOperacion: " " 
+              fechaValor: " " 
+              carta: 0
+              autorizar: " " 
+              guardarAnotado: " " 
+              fechaHoraOperOff: "2022-10-18"
+              divisaAbono: VES
+              diasDeRetencion: " " 
+              porcentajeRetencion: 000000
+              afectaLiquidacion: " " 
+              serialCmc7: 0000000000000
+              observaciones: " " 
+              numeroDeLibreta: 000000000
+              tipoDctoLph: " " 
+              numeroDctoLph: 00000000000
+              divisionLph: 00
+              indicReversoDepos: S
+              cartaPorteDeposito: 0
+              masDatosEnDetalle: N
+              primeraLlamada: S
+              ctaDelCheque1: " "
+              numeroDeCheque1: " "
+              importeCheque1: 0
+              dnaCheque1: " "
+              tipoCheque01: " "
+              ctaCheque2: " "
+              numCheque2: " "
+              impCheque2: 0
+              dnaCheque2: " "
+              tipCheque02: " "
+              ctaCheque3: " "
+              numCheque3: " "
+              impCheque3: " "
+              dnaCheque3: " "
+              tipoCheque03: " "
+              ctaCheque4: " "
+              numCheque4: " "
+              impCheque4: 0
+              dnaCheque4: " "
+              tipCheque04: " "
+              ctaCheque5: " "
+              numCheque5: " "
+              impCheque5: 0
+              dnaCheque5: " "
+              tipoCheque05: " "
+              ctaCheque6: " "
+              numCheque6: " "
+              impCheque6: 0
+              dnaCheque6: " "
+              tipoCheque06: " "
+              ctaCheque7: " "
+              numCheque7: " "
+              impCheque7: 0
+              dnaCheque7: " "
+              tipoCheque07: " "
+              ctaCheque8: " "
+              numCheque8: " "
+              impCheque8: 0
+              dnaCheque8: " "
+              tipoCheque08: " "
+              user: OPCE204
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

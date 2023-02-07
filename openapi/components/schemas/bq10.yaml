@@ -1,0 +1,33 @@
+type: object
+properties:
+  numeroChequeGerenc:
+    description: Numero de Chqueque de Gerencia
+    type: string
+    minLength: 1
+    example: "2501000072702"
+  importeCheque:
+    description: Importe de cheque
+    type: number
+    minLength: 1
+    example: 20.01
+  divisa:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: "VES"
+  cuentaAbono:
+    description: Abono a cuenta
+    type: string
+    minLength: 1
+    example: "01020501890000022021"
+  user:
+    description: Identficación del Usuario
+    type: string
+    minLength: 1
+    example: "OPCE812"
+  terminal:
+    description: Numero de Terminal
+    type: string
+    minLength: 1
+    example: "0190"
+  

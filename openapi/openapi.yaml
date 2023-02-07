@@ -19,7 +19,17 @@ tags:
   - name: User
     description: Operations about users.
   - name: Tag
-    description: This is a tag description.
+    description: This is a tag description. 
+  - name: accountingtermfinan
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: accountinquiry
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: activitycategoryspecial
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: querymovements
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: passivetermfinan
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -36,6 +46,24 @@ paths:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
     $ref: paths/path-item-with-examples.yaml
+  /{{IPKONG}}/accountingtermfinan/IntHABA:
+    $ref: paths/accountingtermfinan.yaml
+  /{{IPKONG}}/accountingtermfinan/IntHABB:
+    $ref: paths/acchbba.yaml
+  /{{IPKONG}}/accountinquiry/IntB480:
+    $ref: paths/b480.yaml
+  /{{IPKONG}}/activitycategoryspecial/IntWP46:
+    $ref: paths/WP46.yaml
+  /{{IPKONG}}/activitycategoryspecial/IntWP48:
+    $ref: paths/WP48.yaml
+  /{{IPKONG}}/querymovements/IntB402:
+    $ref: paths/B402.yaml
+  /{{IPKONG}}/querymovements/IntB401:
+    $ref: paths/B401.yaml
+  /{{IPKONG}}/passivetermfinan/IntBG61:
+    $ref: paths/BG61.yaml
+  /{{IPKONG}}/passivetermfinan/IntBQ10:
+    $ref: paths/BQ10.yaml
 components:
   securitySchemes:
     main_auth:

@@ -1,0 +1,131 @@
+type: object
+properties:
+  numeroSolicitud: 
+    descripcion: Numero de Solicitud
+    type: string
+    minLength: 1
+    example: "002560479"
+  producto:
+    description: producto
+    type: string
+    minLength: 1
+    example: "02"
+  subproducto:
+    description: Sub Producto
+    minLength: 1
+    example: "2020"
+  divisa1:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: "EUR"
+  divisa2:
+    description: Divisa 2
+    type: string
+    minLength: 1
+    example: " "
+  entidadCentroConta:
+    description: entidadCentroConta
+    type: string
+    minLength: 1
+    example: "01020130"
+  fechaVencimiento:
+    description: Fecha de Vencimiento
+    type: string
+    minLength: 1
+    example: " "
+  tipoVencimiento:
+    description: Tipo de vencimiento
+    type: string
+    minLength: 1
+    example: " "
+  numVencimiento:
+    description: Numero de vencimiento
+    type: string
+    minLength: 1
+    example: ""
+  limiteCuenta:
+    description: Limite de Cuenta
+    type: string
+    minLength: 1
+    example: ""
+  indPreasigndada:
+    description: indPreasigndada
+    type: string
+    minLength: 1
+    example: ""
+  codigoCuenta:
+    description: Codigo de Cuenta
+    type: string
+    minLength: 1
+    example: ""
+  numeroConvenio:
+    description: Numero de Convenio
+    type: string
+    minLength: 1
+    example: ""
+  chequeInicio:
+    description: cheque Inicio
+    type: string
+    minLength: 1
+    example: ""
+  chequeFin:
+    description: cheque Fin
+    type: string
+    minLength: 1
+    example: ""
+  nuevaLibreta:
+    description: Nueva Libreta
+    type: string
+    minLength: 1
+    example: ""
+  indicadorTarjeta:
+    description: indicador Tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  tarjeta:
+    description: tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  canalVenta:
+    description: canal de Venta
+    type: string
+    minLength: 1
+    example: ""
+  oficialVenta:
+    description: oficial Venta
+    type: string
+    minLength: 1
+    example: ""
+  oficialOpera:
+    description: oficial Opera
+    type: string
+    minLength: 1
+    example: ""
+  oficialComer:
+    description: oficial Comer
+    type: string
+    minLength: 1
+    example: ""
+  dna:
+    description: DNA
+    type: string
+    minLength: 1
+    example: ""
+  codOnt:
+    description: cod Ont
+    type: string
+    minLength: 1
+    example: ""
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE205"
+  terminal:
+    description: DNA
+    type: string
+    minLength: 1
+    example: "0353"

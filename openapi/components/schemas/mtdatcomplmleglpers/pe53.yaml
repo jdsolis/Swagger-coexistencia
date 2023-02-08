@@ -1,0 +1,191 @@
+type: object
+properties:
+  indicador: 
+    descripcion: indicador
+    type: string
+    minLength: 1
+    example: "M"
+  numeroCliente:
+    description: Numero de Cliente
+    type: string
+    minLength: 1
+    example: "21420527"
+  secuenciaRegistro:
+    description: secuencia de Registro
+    minLength: 1
+    example: "000"
+  secuenReferPersona:
+    description: secuen Refer Persona
+    type: string
+    minLength: 1
+    example: "01"
+  tipoDocumento:
+    description: tipo de Documento
+    type: string
+    minLength: 1
+    example: "V"
+  numeroDocumento:
+    description: Numero de Docuemnto
+    type: string
+    minLength: 1
+    example: "00000500123"
+  tipoRelacion:
+    description: Tipo Relacion
+    type: string
+    minLength: 1
+    example: "02"
+  primerApellidoContra:
+    description: primer Apellido Contra
+    type: string
+    minLength: 1
+    example: "CARLOS"
+  tipoDocumento1:
+    description: tipo de Documento1
+    type: string
+    minLength: 1
+    example: ""
+  segundApellidoContra:
+    description: segund Apellido Contra
+    type: string
+    minLength: 1
+    example: "LOZANO"
+  nombreContrato:
+    description: nombre Contrato
+    type: string
+    minLength: 1
+    example: "CARLOS"
+  indicadorCliente:
+    description: cod Actividad Economica1
+    type: string
+    minLength: 1
+    example: "N"
+  prefijoTelefono:
+    description: prefijo Telefono
+    type: string
+    minLength: 1
+    example: "0212"
+  telefonoContrato:
+    description: telefono Contrato
+    type: string
+    minLength: 1
+    example: "7285018"
+  prefijoTelCelu:
+    description: prefijo TelCelu
+    type: string
+    minLength: 1
+    example: "0412"
+  tlfCelularReferenc:
+    description: Telefono Celular Referencia
+    type: string
+    minLength: 1
+    example: "5018456"
+  tipoDocumento2:
+    description: tipo Documento 2
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento2:
+    description: numero Documento2
+    type: string
+    minLength: 1
+    example: ""
+  tipoRelacion2:
+    description: tipo Relacion 2
+    type: string
+    minLength: 1
+    example: ""
+  primerApellidoCont2:
+    description: primer Apellido Cont2
+    type: string
+    minLength: 1
+    example: ""
+  segundApellidoCont2:
+    description: segund Apellido Cont2
+    type: string
+    minLength: 1
+    example: ""
+  nombreContrato2:
+    description: nombre Contrato2
+    type: string
+    minLength: 1
+    example: ""
+  indicadorCliente2:
+    description: indicador Cliente2
+    type: string
+    minLength: 1
+    example: ""
+  prefijoTelefono2:
+    description: prefijo Telefono 2
+    type: string
+    minLength: 1
+    example: ""
+  telefonoContrato2:
+    description: telefono Contrato 2
+    type: string
+    minLength: 1
+    example: ""
+  prefijoTelCelu2:
+    description: prefijo TelCelu 2 
+    type: string
+    minLength: 1
+    example: ""
+  tlfCelularRefere2:
+    description: telefono Celular Refere2
+    type: string
+    minLength: 1
+    example: ""
+  tipoDocumento3:
+    description: tipo Documento 3
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento3:
+    description: numero Documento 3
+    type: string
+    minLength: 1
+    example: ""
+  primerApellidoCont3:
+    description: primer Apellido Cont3
+    type: string
+    minLength: 1
+    example: ""
+  segundApellidoCont3:
+    description: segund Apellido Cont3
+    type: string
+    minLength: 1
+    example: ""
+  nombreContrato3:
+    description: nombre Contrato 3
+    type: string
+    minLength: 1
+    example: ""
+  indicadorCliente3:
+    description: indicador Cliente 3
+    type: string
+    minLength: 1
+    example: ""
+  prefijoTelefono3:
+    description: prefijo Telefono 3
+    type: string
+    minLength: 1
+    example: ""
+  telefonoContrato3:
+    description: telefono Contrato 3
+    type: string
+    minLength: 1
+    example: ""
+  prefijoTelCelu3:
+    description: prefijo Telefono Celular 3
+    type: string
+    minLength: 1
+    example: ""
+  tlfCelularRefere3:
+    description: telefono Celular Refere3
+    type: string
+    minLength: 1
+    example: ""
+  timeStampModif:
+    description: timeStampModif
+    type: string
+    minLength: 1
+    example: ""

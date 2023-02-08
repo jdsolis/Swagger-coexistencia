@@ -1,0 +1,78 @@
+type: object
+properties:
+  opcion: 
+    descripcion: Opcion
+    type: string
+    minLength: 1
+    example: "A"
+  numSolicitud:
+    description: Numero de Solicitud
+    type: string
+    minLength: 1
+    example: " "
+  tipoDocumento:
+    description: Tipo de Documento
+    type: string
+    minLength: 1
+    example: "3"
+  numDocumento:
+    description: Numero de Docuemto
+    type: string
+    minLength: 1
+    example: "00000025543"
+  numCliente:
+    description: Numero del Cliente
+    type: string
+    minLength: 1
+    example: "10165622"
+  productoSolicitado:
+    description: Producto Solicitado
+    type: string
+    minLength: 1
+    example: "02"
+  subprodSolicitado:
+    description: Subproducto Solicitado
+    type: string
+    minLength: 1
+    example: "2035"
+  indPertenecerPqt:
+    description: indPertenecerPqt
+    type: string
+    minLength: 1
+    example: ""
+  pqtProductoSoli:
+    description: pqtProductoSoli
+    type: string
+    minLength: 1
+    example: " "
+  spqtPrductoSoli:
+    description: spqtPrductoSoli
+    type: string
+    minLength: 1
+    example: " "
+  estadoSolicitud:
+    description: Estado solicitud
+    type: string
+    minLength: 1
+    example: " "
+  numContrato:
+    description: Numero de Contrato
+    type: string
+    minLength: 1
+    example: " "
+  divisa:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: " "
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE205"
+  terminal:
+    description: Terminal
+    type: string
+    minLength: 1
+    example: "0353"
+  

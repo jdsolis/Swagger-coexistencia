@@ -1,0 +1,18 @@
+type: object
+properties:
+  descripcionRegla: 
+    descripcion: Descripcion de la Regla
+    type: string
+    minLength: 1
+    example: "DRGLRP"
+  oficinaOrigen:
+    description: Oficina de Origen
+    type: string
+    minLength: 1
+    example: "0501"
+  codigoDivisa:
+    description: Codigo de Divisa
+    type: string
+    minLength: 1
+    example: "USD"
+  

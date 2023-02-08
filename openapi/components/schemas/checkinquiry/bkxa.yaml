@@ -1,0 +1,53 @@
+type: object
+properties:
+  transaccion:
+    description: Transaccion
+    type: string
+    minLength: 1
+    example: "0102"
+  entidad:
+    description: Entidad
+    type: string
+    minLength: 1
+    example: "00"
+  cuenta:
+    description: Numero de Cuenta
+    type: string
+    minLength: 1
+    example: "01020010500002200044"
+  divisa:
+    description: Divisa
+    type: string
+    minLength: 1
+    example: "VES"
+  tipoDocumento:
+    description: Tipo de Documento
+    type: string
+    minLength: 1
+    example: "J"
+  nroDocumento:
+    description: Numero de Documento
+    type: number
+    minLength: 1
+    example: "00000035914"
+  nroCheque:
+    description: Numero de Cheque
+    type: number
+    minLength: 1
+    example: 128614
+  nroRetiro:
+    description: Numero de Retiro
+    type: number
+    minLength: 1
+    example: 0
+  cantRegistros:
+    description: Cantidad de Registros
+    type: number
+    minLength: 1
+    example: 1
+  indDeMasDatos:
+    description: Ind Mas Datos
+    type: string
+    minLength: 1
+    example: "S"
+  

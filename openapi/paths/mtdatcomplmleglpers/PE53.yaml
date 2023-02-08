@@ -1,0 +1,91 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - mtdatcomplmleglpers
+  summary: PE53
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE53
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/mtdatcomplmleglpers/pe53.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              indicador: M
+              numeroCliente: 21420527
+              secuenReferPersona: 01
+              tipoDocumento: V
+              numeroDocumento: 00000500123
+              tipoRelacion: 02
+              primerApellidoContra: CARLOS
+              segundApellidoContra: LOZANO
+              nombreContrato: CARLOS
+              indicadorCliente: N
+              prefijoTelefono: 0212
+              telefonoContrato: 7285018
+              prefijoTelCelu: 0412
+              tlfCelularReferenc: 5018456
+              tipoDocumento2: " "
+              numeroDocumento2: " "
+              tipoRelacion2: " "
+              primerApellidoCont2: " " 
+              segundApellidoCont2: " "
+              nombreContrato2: " "
+              indicadorCliente2: " "
+              prefijoTelefono2: " "
+              telefonoContrato2: " "
+              prefijoTelCelu2: " "
+              tlfCelularRefere2: " "
+              tipoDocumento3: " "
+              numeroDocumento3: ""
+              tipoRelacion3: ""
+              primerApellidoCont3: "" 
+              segundApellidoCont3: ""
+              nombreContrato3: ""
+              indicadorCliente3: "" 
+              prefijoTelefono3: ""
+              telefonoContrato3: ""
+              prefijoTelCelu3: ""
+              tlfCelularRefere3: "" 
+              timeStampModif: ""
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

@@ -1,0 +1,17 @@
+type: object
+properties:
+  codigoRegla:
+    description: Codigo Regla
+    type: string
+    minLength: 1
+    example: "RGVN"
+  oficinaOrigen:
+    description: Oficina de Origen
+    type: string
+    minLength: 1
+    example: "9199"
+  userName:
+    description: Nombre de Usuario
+    type: string
+    minLength: 1
+    example: "PGFL001"

@@ -1,0 +1,111 @@
+type: object
+properties:
+  opcion: 
+    descripcion: oPCION
+    type: string
+    minLength: 1
+    example: "A"
+  nroClientePersonaJuridica:
+    description: Numero de Cliente Juridico
+    type: string
+    minLength: 1
+    example: "27417241"
+  secuenciaRegistro:
+    description: secuencia de Registro
+    minLength: 1
+    example: "000"
+  tipoRegistro:
+    description: tipo Registro
+    type: string
+    minLength: 1
+    example: "4"
+  tipoDocumento:
+    description: tipo de Documento
+    type: string
+    minLength: 1
+    example: "3"
+  numeroDocumento:
+    description: Numero de Docuemnto
+    type: string
+    minLength: 1
+    example: "00000003505"
+  nombreEmpresaRelacionadas:
+    description: nombre de Empresas Relacionadas
+    type: string
+    minLength: 1
+    example: "POLAR"
+  codActividadEconomica:
+    description: codigo Actividad Economica
+    type: string
+    minLength: 1
+    example: "C1313000"
+  tipoDocumento1:
+    description: tipo de Documento1
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento1:
+    description: numero de Documento1
+    type: string
+    minLength: 1
+    example: ""
+  nombreEmpresaRelacionadas1:
+    description: nombre de Empresa Relacionadas1
+    type: string
+    minLength: 1
+    example: ""
+  codActividadEconomica1:
+    description: cod Actividad Economica1
+    type: string
+    minLength: 1
+    example: ""
+  tipoDocumento2:
+    description: tipo de Documento2
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento2:
+    description: numero de Documento2
+    type: string
+    minLength: 1
+    example: ""
+  nombreEmpresaRelacionadas2:
+    description: nombre de Empresa Relacionadas2
+    type: string
+    minLength: 1
+    example: ""
+  codActividadEconomica2:
+    description: cod Actividad Economica2
+    type: string
+    minLength: 1
+    example: ""
+  usuarioAlta:
+    description: usuario Alta
+    type: string
+    minLength: 1
+    example: "OPCE207"
+  fechaAlta:
+    description: fecha Alta
+    type: string
+    minLength: 1
+    example: "2022-05-20"
+  usuarioModificacion:
+    description: usuario Modificacion
+    type: string
+    minLength: 1
+    example: ""
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "ZU83"
+  centroSucursal:
+    description: centro Sucursal
+    type: string
+    minLength: 1
+    example: "0353"
+  timeStamp:
+    description: timeStamp
+    type: string
+    minLength: 1
+    example: ""

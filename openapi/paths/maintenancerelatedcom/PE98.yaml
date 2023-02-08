@@ -1,0 +1,76 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - maintenancerelatedcom
+  summary: PE98
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE98
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/maintenancerelatedcom/pe98.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              opcion: A
+              nroClientePersonaJuridica: 27417241
+              secuenciaRegistro: 000
+              tipoRegistro: 4
+              tipoDocumento: J
+              numeroDocumento: 00000003505
+              nombreEmpresaRelacionadas: POLAR
+              codActividadEconomica: C1313000
+              tipoDocumento1: " "
+              numeroDocumento1: " "
+              nombreEmpresaRelacionadas1: " " 
+              codActividadEconomica1: " "
+              tipoDocumento2: " "
+              numeroDocumento2: " "
+              nombreEmpresaRelacionadas2: " " 
+              codActividadEconomica2: " "
+              usuarioAlta: OPCE207
+              fechaAlta: 2022-05-20
+              usuarioModificacion: " "
+              terminal: ZU83
+              centroSucursal: 0353
+              timeStamp: " "
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

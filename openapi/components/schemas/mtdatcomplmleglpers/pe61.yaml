@@ -1,0 +1,151 @@
+type: object
+properties:
+  numeroDePersona: 
+    descripcion: numero De Persona
+    type: string
+    minLength: 1
+    example: ""
+  tipoDeDocumento:
+    description: tipo Ducumento
+    type: string
+    minLength: 1
+    example: "V"
+  numeroDocumento:
+    description: numero Documento
+    minLength: 1
+    example: "14300006"
+  observTextoLibre:
+    description: observ Texto Libre
+    type: string
+    minLength: 1
+    example: ""
+  secuenciaDeReferen:
+    description: secuencia De Referen
+    type: string
+    minLength: 1
+    example: ""
+  nombreFantasia:
+    description: nombre Fantasia
+    type: string
+    minLength: 1
+    example: ""
+  primerApellido:
+    description: primer Apellido
+    type: string
+    minLength: 1
+    example: ""
+  segundoApellido:
+    description: segundo Apellido
+    type: string
+    minLength: 1
+    example: ""
+  nombreraznSocial:
+    description: nombre Razon Social
+    type: string
+    minLength: 1
+    example: ""
+  fechaDeNacimiento:
+    description: fecha De Nacimiento
+    type: string
+    minLength: 1
+    example: ""
+  tipoDePersona:
+    description: tipo De Persona
+    type: string
+    minLength: 1
+    example: ""
+  estadoPersona:
+    description: estado Persona
+    type: string
+    minLength: 1
+    example: ""
+  condicion:
+    description: condicion
+    type: string
+    minLength: 1
+    example: ""
+  nivelAcceso:
+    description: nivel Acceso
+    type: string
+    minLength: 1
+    example: ""
+  tipoDeVia:
+    description: tipo De Via
+    type: string
+    minLength: 1
+    example: ""
+  calle:
+    description: calle
+    type: string
+    minLength: 1
+    example: ""
+  blnrocasillaaptdo:
+    description: blnrocasillaaptdo
+    type: string
+    minLength: 1
+    example: ""
+  indicadorUso1:
+    description: indicadorUso1
+    type: string
+    minLength: 1
+    example: ""
+  indicadorUso2:
+    description: indicadorUso2
+    type: string
+    minLength: 1
+    example: ""
+  indicadorUso3:
+    description: indicadorUso3
+    type: string
+    minLength: 1
+    example: ""
+  indicadorUso4:
+    description: indicadorUso4
+    type: string
+    minLength: 1
+    example: ""
+  indicadorUso5:
+    description: indicadorUso5
+    type: string
+    minLength: 1
+    example: ""
+  observaciones1:
+    description: observaciones1
+    type: string
+    minLength: 1
+    example: ""
+  oebservaciones2:
+    description: oebservaciones2
+    type: string
+    minLength: 1
+    example: ""
+  marcaNormaliz:
+    description: marca Normaliz
+    type: string
+    minLength: 1
+    example: ""
+  localidadciudad:
+    description: localidad ciudad
+    type: string
+    minLength: 1
+    example: ""
+  comunaDomPpal:
+    description: comuna Dom Ppal
+    type: string
+    minLength: 1
+    example: ""
+  codigoPostal:
+    description: codigo Postal
+    type: string
+    minLength: 1
+    example: ""
+  codigoProvincia:
+    description: codigo Provincia
+    type: string
+    minLength: 1
+    example: ""
+  codigoPais:
+    description: codigo Pais
+    type: number
+    minLength: 1
+    example: 0

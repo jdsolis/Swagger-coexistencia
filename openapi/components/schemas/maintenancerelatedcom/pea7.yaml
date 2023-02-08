@@ -1,0 +1,17 @@
+type: object
+properties:
+  numeroDeCliente: 
+    descripcion: numero De Cliente
+    type: string
+    minLength: 1
+    example: "15964963"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    minLength: 1
+    example: "0353"
+  

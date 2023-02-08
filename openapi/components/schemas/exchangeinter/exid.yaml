@@ -1,0 +1,43 @@
+type: object
+properties:
+  indicadorOperacion: 
+    descripcion: IND Operacion
+    type: string
+    minLength: 1
+    example: "C"
+  numeroPersona:
+    description: Numero de Persona
+    type: string
+    minLength: 1
+    example: "26398453"
+  fechaDesde:
+    description: Fecha Desde
+    type: string
+    minLength: 1
+    example: "2022-10-19"
+  fechaHasta:
+    description: Fecha Hasta
+    type: string
+    minLength: 1
+    example: "2022-10-19"
+  estatusOperacion:
+    description: Estado de la Operacion
+    type: string
+    minLength: 1
+    example: "T"
+  oficinaDestino:
+    description: Cuenta Destino
+    type: string
+    minLength: 1
+    example: "0000"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: Terminal
+    type: string
+    minLength: 1
+    example: "0501"
+  

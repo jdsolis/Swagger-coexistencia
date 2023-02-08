@@ -1,0 +1,92 @@
+type: object
+properties:
+  indOperacion: 
+    descripcion: IND Operacion
+    type: string
+    minLength: 1
+    example: "D"
+  numeroJornada:
+    description: Numero de Jornada
+    type: string
+    minLength: 1
+    example: "006-2022"
+  indicadorComision:
+    description: Indicador de Comision
+    type: string
+    minLength: 1
+    example: "120"
+  oficinaOrigen:
+    description: Ofinica de Origen
+    type: string
+    minLength: 1
+    example: "9199"
+  oficinaDestino:
+    description: Oficina Destino
+    type: string
+    minLength: 1
+    example: "9199"
+  nacionalidad:
+    description: Nacionalidad
+    type: string
+    minLength: 1
+    example: "V"
+  nroCedulaRif:
+    description: Numero de Cedula
+    type: number
+    minLength: 1
+    example: 8763264
+  cuentaOrigenBs:
+    description: Cuenta de Origen
+    type: string
+    minLength: 1
+    example: "01020103960100045979"
+  montoDivisa:
+    description: Monto Divisa
+    type: number
+    minLength: 1
+    example: 13
+  cuentaDestinoDiv:
+    description: Cuenta Destino
+    type: string
+    minLength: 1
+    example: "01020501820007107427"
+  fechaValor:
+    description: Feca Valor
+    type: string
+    minLength: 1
+    example: "2022-02-09"
+  tipoServicio:
+    description: Tipo Servicio
+    type: string
+    minLength: 1
+    example: "08"
+  idOperacion:
+    description: Ind Operacion
+    type: string
+    minLength: 1
+    example: "000000000000"
+  diasEntrega:
+    description: Disas de Entrega
+    type: number
+    minLength: 1
+    example: 0
+  indDisponible:
+    description: Ind Disponible
+    type: string
+    minLength: 1
+    example: " "
+  codigoActividadEconomica:
+    description: Codigo de Actividad Economica
+    type: string
+    minLength: 1
+    example: "11"
+  destinoFondo:
+    description: Destino de Fondo
+    type: string
+    minLength: 1
+    example: "05"
+  mediosPago:
+    description: Medios de Pago
+    type: string
+    minLength: 1
+    example: "02"

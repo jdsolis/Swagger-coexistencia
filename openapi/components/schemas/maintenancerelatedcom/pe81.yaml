@@ -1,0 +1,31 @@
+type: object
+properties:
+  numeroDeCliente: 
+    descripcion: numero De Cliente
+    type: string
+    minLength: 1
+    example: "15964963"
+  tipoDeDocumento:
+    description: tipo De Documento
+    type: string
+    minLength: 1
+    example: "V"
+  numeroDeDocumento:
+    description: numero De Documento
+    minLength: 1
+    example: "00013067057"
+  secuenIdentfDocum:
+    description: secuen Identf Docum
+    type: string
+    minLength: 1
+    example: "0"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE205"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

@@ -32,6 +32,18 @@ tags:
     description: DESCRIPCION GENERAL DEL ACCES POINT.
   - name: checkinquiry
     description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: exchangeinter
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: digitalaccountopening
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: maintenancerelatedcom
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: mtdatcomplmleglpers
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: legalclientdomicile
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: basiccustomerdata
+    description: DESCRIPCION GENERAL DEL ACCES POINT.       
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -78,8 +90,56 @@ paths:
     $ref: paths/checkinquiry/BQ05.yaml
   /{{IPKONG}}/checkinquiry/IntBKV1:
     $ref: paths/checkinquiry/BKV1.yaml
-  /{{IPKONG}}/checkinquiry/IntBKV1:
+  /{{IPKONG}}/checkinquiry/IntBKXA:
     $ref: paths/checkinquiry/BKXA.yaml
+  /{{IPKONG}}/exchangeinter/IntEXRG:
+    $ref: paths/exchangeinter/EXRG.yaml
+  /{{IPKONG}}/exchangeinter/IntEXIC:
+    $ref: paths/exchangeinter/EXIC.yaml
+  /{{IPKONG}}/exchangeinter/IntEXRI:
+    $ref: paths/exchangeinter/EXRI.yaml
+  /{{IPKONG}}/exchangeinter/IntEXCV:
+    $ref: paths/exchangeinter/EXCV.yaml
+  /{{IPKONG}}/exchangeinter/IntEXID:
+    $ref: paths/exchangeinter/EXID.yaml
+  /{{IPKONG}}/digitalaccountopening/IntB030:
+    $ref: paths/digitalaccountopening/B030.yaml
+  /{{IPKONG}}/digitalaccountopening/IntB032:
+    $ref: paths/digitalaccountopening/B032.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntWP62:
+    $ref: paths/maintenancerelatedcom/WP62.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE98:
+    $ref: paths/maintenancerelatedcom/PE98.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE81:
+    $ref: paths/maintenancerelatedcom/PE81.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE94:
+    $ref: paths/maintenancerelatedcom/PE94.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA1:
+    $ref: paths/maintenancerelatedcom/PEA1.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA7:
+    $ref: paths/maintenancerelatedcom/PEA7.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA8:
+    $ref: paths/maintenancerelatedcom/PEA8.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE53:
+    $ref: paths/mtdatcomplmleglpers/PE53.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE54:
+    $ref: paths/mtdatcomplmleglpers/PE54.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE55:
+    $ref: paths/mtdatcomplmleglpers/PE55.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE58:
+    $ref: paths/mtdatcomplmleglpers/PE58.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE61:
+    $ref: paths/mtdatcomplmleglpers/PE61.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE67:
+    $ref: paths/mtdatcomplmleglpers/PE67.yaml
+  /{{IPKONG}}/legalclientdomicile/IntPE60:
+    $ref: paths/legalclientdomicile/PE60.yaml
+  /{{IPKONG}}/legalclientdomicile/IntPE62:
+    $ref: paths/legalclientdomicile/PE62.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE63:
+    $ref: paths/basiccustomerdata/PE63.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE63_N:
+    $ref: paths/basiccustomerdata/PE63_N.yaml
 components:
   securitySchemes:
     main_auth:

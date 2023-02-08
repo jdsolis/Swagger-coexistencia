@@ -1,0 +1,64 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - checkinquiry
+  summary: BKXA
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: BKXA
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/checkinquiry/bkxa.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              transaccion: C 
+              entidad: 0102 
+              cuenta: 01020010500002200044 
+              divisa: VES 
+              tipoDocumento: J 
+              nroDocumento: 00000035914 
+              nroCheque: 128614 
+              nroRetiro: 0 
+              cantRegistros: 1 
+              indDeMasDatos: S
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

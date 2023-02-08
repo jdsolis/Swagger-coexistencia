@@ -1,0 +1,61 @@
+type: object
+properties:
+  altaBajaModificaci: 
+    descripcion: alta Baja Modificaci
+    type: string
+    minLength: 1
+    example: "M"
+  numeroDePersona:
+    description: Numero de Persona
+    type: string
+    minLength: 1
+    example: "15964963"
+  numClienteRelacion:
+    description: numero Cliente Relacion
+    minLength: 1
+    example: "16352821"
+  codigoDeRelacion:
+    description: codigo De la Relacion
+    type: string
+    minLength: 1
+    example: "AP"
+  porcentajeParticipa:
+    description: porcentaje Participa
+    type: number
+    minLength: 1
+    example: 0
+  porcentajeUtilidad:
+    description: porcentaje de Utilidad
+    type: number
+    minLength: 1
+    example: 0
+  indRelacionPrincip:
+    description: ind Relacion Princip
+    type: string
+    minLength: 1
+    example: " "
+  parteDeLasObser1:
+    description: parte De Las Obser1
+    type: string
+    minLength: 1
+    example: "979797                        25/06/1976 PRUEBAS                                                                        "
+  parteDeLasObser2:
+    description: Tipo de documento 1
+    type: string
+    minLength: 1
+    example: " "
+  timestamp:
+    description: timestamp
+    type: string
+    minLength: 1
+    example: "2022-07-20-11.35.03.899251"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

@@ -1,0 +1,71 @@
+type: object
+properties:
+  indiAltaModifiBaj: 
+    descripcion: indi Alta Modifi Baj
+    type: string
+    minLength: 1
+    example: "M"
+  numeroCliente:
+    description: Numero de Cliente
+    type: string
+    minLength: 1
+    example: "27417456"
+  condicionDocume:
+    description: condicion Documento
+    minLength: 1
+    example: "P"
+  tipoDocumento:
+    description: tipo Documento
+    type: string
+    minLength: 1
+    example: "M"
+  numeroDocumento:
+    description: numero de Documento
+    type: string
+    minLength: 1
+    example: "V"
+  secuenciaDocumento:
+    description: secuencia Documento
+    type: string
+    minLength: 1
+    example: "01"
+  expedidoPor:
+    description: expedido Por
+    type: string
+    minLength: 1
+    example: ""
+  fechaExpedicion:
+    description: fecha Expedicion
+    type: string
+    minLength: 1
+    example: "2000-12-31"
+  lugarExpedicion:
+    description: lugar de Expedicion
+    type: string
+    minLength: 1
+    example: "1800669"
+  codigoPais:
+    description: codigo del Pais
+    type: string
+    minLength: 1
+    example: "432"
+  fechaVencimiemnto:
+    description: fecha de Vencimiemnto
+    type: string
+    minLength: 1
+    example: "2014-08-10"
+  timestamp:
+    description: timestamp
+    type: string
+    minLength: 1
+    example: "2022-07-28-16.35.46.720568"
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE204"
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0353"

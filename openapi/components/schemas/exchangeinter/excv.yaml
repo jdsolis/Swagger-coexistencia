@@ -1,0 +1,107 @@
+type: object
+properties:
+  indOperacion: 
+    descripcion: IND Operacion
+    type: string
+    minLength: 1
+    example: "C"
+  operacion:
+    description: Operacion
+    type: string
+    minLength: 1
+    example: "5210"
+  oficinaOrigen:
+    description: Ofinica de Origen
+    type: string
+    minLength: 1
+    example: "9199"
+  oficinaDestino:
+    description: Oficina Destino
+    type: string
+    minLength: 1
+    example: "9199"
+  cuentaOrigenBs:
+    description: Cuenta de Origen
+    type: string
+    minLength: 1
+    example: "01020103960100045979"
+  cuentaDestinoDivisa:
+    description: Cuenta Destino
+    type: string
+    minLength: 1
+    example: "01020221350000856898"
+  nacionalidad:
+    description: Nacionalidad
+    type: string
+    minLength: 1
+    example: "V"
+  cedulaRif:
+    description: Numero de Cedula
+    type: string
+    minLength: 1
+    example: "3982585"
+  nombreCliente:
+    description: Nombre del Cliente
+    type: string
+    minLength: 1
+    example: "LAZA JUANA BAUTISTA"
+  codigoDivisa:
+    description: Codigo de Divisa
+    type: string
+    minLength: 1
+    example: "USD"
+  montoDivisa:
+    description: Monto Divisa
+    type: number
+    minLength: 1
+    example: 120
+  codigoActividadEconomica:
+    description: Codigo de Actividad Economica
+    type: string
+    minLength: 1
+    example: "11"
+  destinoFondo:
+    description: Destino de fondo
+    type: string
+    minLength: 1
+    example: "05"
+  mediosPago:
+    description: Medios de Pago
+    type: string
+    minLength: 1
+    example: "02"
+  montoBolivares:
+    description: Monto en Bolivares
+    type: number
+    minLength: 1
+    example: 517.05
+  idOperacion:
+    description: ID Operacion
+    type: string
+    minLength: 1
+    example: " "
+  tipoServicio:
+    description: Tipo de Servicio
+    type: string
+    minLength: 1
+    example: "10"
+  multiplo:
+    description: Multiplo
+    type: string
+    minLength: 1
+    example: " "
+  tasaCompra:
+    description: Tasa de Compra
+    type: number
+    minLength: 1
+    example: 0
+  tasaVenta:
+    description: Tasa de Venta
+    type: number
+    minLength: 1
+    example: 4.3088
+  user:
+    description: Multiplo
+    type: string
+    minLength: 1
+    example: "PGFL001"

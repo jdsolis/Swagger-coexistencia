@@ -1,0 +1,102 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - basiccustomerdata
+  summary: PE63_NATURAL
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE63_NATURAL
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/basiccustomerdata/pe63_n.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              numeroPersona: ""
+              tipoDocumento: V
+              numeroDocumento: 00000067409
+              secuenciaDocumento: 01
+              nombreFantasia: ""
+              primerApellido: ANGULO
+              segundoApellido: DIAZ
+              nombrePersona: ELIECER
+              fechaIngreso: 2023-01-16
+              agrdb1: 0501SHF
+              fechaNacimiento: 2000-01-11
+              fechaInicioActivid: 2023-01-16
+              agregadoBasicos2:  432 
+              agrupacionOficiales: "" 
+              agrdb3: 432432210  A0100000
+              tiempoDeResidencia: 000
+              formaJuridica: 01
+              naturalezaJuridica: ""
+              unidadDeNegocio: 340
+              codigoSujeto: ""
+              marcaBancaPrivada: N
+              nivelDeAcceso: ""
+              estadoPersona: ""
+              condicionCliente: "" 
+              indicaYCodemp: N NNNNNNNNN NA
+              timesampBasicos: ""
+              expedidoPor: ""
+              fechaDeVencimiento: 9999-12-31
+              marcaPadron: ""
+              condDocumento: P
+              codigoPais: 432
+              fecExpedicionDoc: "" 
+              lugarExpedicionDoc: "" 
+              timestampDocumento: ""
+              domre1: PRIAVNOMBRE                                            CASACASR              0100810
+              domre2:  2101
+              rutaCartero: 010101012200001030
+              domre3: 01432 
+              fechaVerificacion: 2023-01-16
+              agregadoDomicilio4: NNN
+              obser1: DESCRIPCION
+              obser2:  prueba@hotmail.com 
+              timestampDomicilio: ""
+              secuenciaDomicilio: 000
+              agregadoTelefonico: 003CEL058 005840112100 
+              timestampTelefono: ""
+              user: OPCE204
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

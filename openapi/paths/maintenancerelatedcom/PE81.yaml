@@ -1,0 +1,60 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - maintenancerelatedcom
+  summary: PE81
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE81
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/maintenancerelatedcom/pe81.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              numeroDeCliente: 15964963
+              tipoDeDocumento: V 
+              numeroDeDocumento: 00013067057
+              secuenIdentfDocum: 0
+              user: OPCE205
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

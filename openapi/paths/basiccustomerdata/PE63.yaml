@@ -1,0 +1,101 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - basiccustomerdata
+  summary: PE63
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE63
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/basiccustomerdata/pe63.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              tipoDocumento: NAT
+              numeroDocumento: 3000395
+              secuenciaDocumento: 01
+              nombreFantasia: ""
+              primerApellido: ""
+              segundoApellido: ""
+              nombrePersona: EMPRESA DE PRUEBA
+              fechaIngreso: 2022-10-19
+              agrdb1: 0501  J
+              fechaNacimiento: 1990-06-25
+              fechaInicioActivid: 2022-10-19
+              agregadoBasicos2:       432  
+              agrupacionOficiales: "" 
+              agrdb3: 432432210  A0100000
+              tiempoDeResidencia: 00
+              formaJuridica: 00
+              naturalezaJuridica: 
+              unidadDeNegocio: 330
+              codigoSujeto: ""
+              marcaBancaPrivada: N
+              nivelDeAcceso: 1
+              estadoPersona: 010
+              condicionCliente: NCL
+              indicaYCodemp: N    NNNNNNNNN        NA
+              timesampBasicos: ""
+              expedidoPor: ""
+              fechaDeVencimiento: 9999-12-31
+              marcaPadron: ""
+              condDocumento: P
+              codigoPais: 432
+              fecExpedicionDoc: 2022-10-19
+              lugarExpedicionDoc: "" 
+              timestampDocumento: ""
+              domre1: PRIAVNOMBRE                                            CASACASR              0100810
+              domre2: 010101012200001030
+              rutaCartero: 000000000
+              domre3: 01432
+              fechaVerificacion: 2022-10-19
+              agregadoDomicilio4: NNN
+              obser1: DESCRIPCION
+              obser2:  PRUEBAS@YAHOO.COM 
+              timestampDomicilio: ""
+              secuenciaDomicilio: 001
+              agregadoTelefonico: 002NOR0212   00585012372 
+              timestampTelefono: ""
+              user: OPCE204
+              terminal: 0501
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

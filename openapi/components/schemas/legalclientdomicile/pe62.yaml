@@ -1,0 +1,182 @@
+type: object
+properties:
+  numeroPersona: 
+    descripcion: numero Persona
+    type: string
+    minLength: 1
+    example: "27417261"
+  tipoDocumento:
+    description: tipo Documento
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento:
+    description: numero Documento
+    type: string
+    minLength: 1
+    example: ""
+  secuenciaDocumen:
+    description: secuencia Documen
+    type: string
+    minLength: 1
+    example: "LAB"
+  secuenciaDomicilio:
+    description: secuencia Domicilio
+    type: number
+    minLength: 1
+    example: 0
+  nombreFantasia:
+    description: nombre Fantasia
+    type: string
+    minLength: 1
+    example: ""
+  primerApellido:
+    description: primer Apellido
+    type: string
+    minLength: 1
+    example: ""
+  segundoApellido:
+    description: segundo Apellido
+    type: string
+    minLength: 1
+    example: ""
+  nombrePersona:
+    description: nombre Persona
+    type: string
+    minLength: 1
+    example: ""
+  fechaNacimiento:
+    description: fecha Nacimiento
+    type: string
+    minLength: 1
+    example: ""
+  tipoPersona:
+    description: tipo Persona
+    type: string
+    minLength: 1
+    example: ""
+  estadoPersona:
+    description: estado Persona
+    type: string
+    minLength: 1
+    example: ""
+  condicionPersona:
+    description: condicion Persona
+    type: string
+    minLength: 1
+    example: ""
+  nivelAcceso:
+    description: nivel Acceso
+    type: string
+    minLength: 1
+    example: ""
+  indiceRelacion:
+    description: indice Relacion
+    type: string
+    minLength: 1
+    example: ""
+  indiceCondicion:
+    description: indice Condicion
+    type: string
+    minLength: 1
+    example: ""
+  indiceGrupo:
+    description: indice Grupo
+    type: string
+    minLength: 1
+    example: ""
+  indiceAviso:
+    description: indice Aviso
+    type: string
+    minLength: 1
+    example: ""
+  indUso1:
+    description: indUso1
+    type: string
+    minLength: 1
+    example: ""
+  indUso2:
+    description: indUso2
+    type: string
+    minLength: 1
+    example: ""
+  indUso3:
+    description: indUso3
+    type: string
+    minLength: 1
+    example: ""
+  indUso4:
+    description: indUso4
+    type: string
+    minLength: 1
+    example: ""
+  indUso5:
+    description: indUso5
+    type: string
+    minLength: 1
+    example: ""
+  tipoDeVia:
+    description: tipo De Via
+    type: string
+    minLength: 1
+    example: ""
+  nombreCalle:
+    description: nombre Calle
+    type: string
+    minLength: 1
+    example: "N"
+  complementoVble1:
+    description: complemento Vble1
+    type: string
+    minLength: 1
+    example: ""
+  complementoVble2:
+    description: complemento Vble2
+    type: string
+    minLength: 1
+    example: ""
+  numeroBloque:
+    description: numero Bloque
+    type: string
+    minLength: 1
+    example: ""
+  nombreLocalidad:
+    description: nombre Localidad
+    type: string
+    minLength: 1
+    example: ""
+  nombreComunidad:
+    description: nombre Comunidad
+    type: string
+    minLength: 1
+    example: ""
+  codigoPostal:
+    description: codigo Postal
+    type: string
+    minLength: 1
+    example: ""
+  rutaCartero:
+    description: ruta Cartero
+    type: string
+    minLength: 1
+    example: ""
+  codigoProvincia:
+    description: codigo Provincia
+    type: string
+    minLength: 1
+    example: ""
+  codigoPais:
+    description: codigo Pais
+    type: string
+    minLength: 1
+    example: ""
+  marcaNormalizacion:
+    description: marca Normalizacion
+    type: string
+    minLength: 1
+    example: ""
+  timestamp:
+    description: timestamp
+    type: string
+    minLength: 1
+    example: ""

@@ -1,0 +1,68 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - mtdatcomplmleglpers
+  summary: PE54
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE54
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/mtdatcomplmleglpers/pe54.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              indiAltaModifiBaj: M
+              numeroCliente: 27417456
+              condicionDocume: P
+              tipoDocumento: M
+              numeroDocumento: 00019048614
+              secuenciaDocumento: 01
+              expedidoPor: ""
+              fechaExpedicion: 2000-12-31
+              lugarExpedicion: 1800669
+              codigoPais: 432
+              fechaVencimiemnto: 2014-08-10
+              timestamp: 2022-07-28-16.35.46.720568
+              user: OPCE204
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

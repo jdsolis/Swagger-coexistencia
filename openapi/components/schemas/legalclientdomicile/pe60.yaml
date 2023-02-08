@@ -1,0 +1,182 @@
+type: object
+properties:
+  indicadorAccion: 
+    descripcion: indicador Accion
+    type: string
+    minLength: 1
+    example: "A"
+  numeroPersona:
+    description: numero Persona
+    type: string
+    minLength: 1
+    example: "277262"
+  secuenciaDomicilio:
+    description: secuencia Domicilio
+    type: number
+    minLength: 1
+    example: 0
+  tipoDomicilio:
+    description: tipo Domicilio
+    type: string
+    minLength: 1
+    example: "LAB"
+  tipoVia:
+    description: tipo Via
+    type: string
+    minLength: 1
+    example: "AU"
+  nombreCalle:
+    description: nombre Calle
+    type: string
+    minLength: 1
+    example: "PRUEBAS"
+  tipoConstruccion:
+    description: tipoConstruccion
+    type: string
+    minLength: 1
+    example: "APQT"
+  tipoNucleoUrbano:
+    description: tipo Nucleo Urbano
+    type: string
+    minLength: 1
+    example: "ALDE"
+  observaciones:
+    description: observaciones
+    type: string
+    minLength: 1
+    example: ""
+  observaciones2:
+    description: observaciones2
+    type: string
+    minLength: 1
+    example: ""
+  sucursalCasilla:
+    description: sucursal Casilla
+    type: string
+    minLength: 1
+    example: "CARLOS"
+  indicadorCliente:
+    description: cod Actividad Economica1
+    type: string
+    minLength: 1
+    example: "N"
+  aptCorreoCasilla:
+    description: apt Correo Casilla
+    type: string
+    minLength: 1
+    example: "0212"
+  localidadCiudad:
+    description: localidad Ciudad
+    type: string
+    minLength: 1
+    example: "2300001"
+  prefijoTelCelu:
+    description: prefijo TelCelu
+    type: string
+    minLength: 1
+    example: "0412"
+  descripcionLocalidad:
+    description: descripcion Localidad
+    type: string
+    minLength: 1
+    example: "0205020502"
+  comuna:
+    description: comuna
+    type: string
+    minLength: 1
+    example: ""
+  descripcionComuna:
+    description: descripcion Comuna
+    type: string
+    minLength: 1
+    example: ""
+  codigoPostal:
+    description: codigo Postal
+    type: string
+    minLength: 1
+    example: "00007101"
+  rutaCartero:
+    description: ruta Cartero
+    type: number
+    minLength: 1
+    example: 0
+  codigoProvincia:
+    description: codigo Provincia
+    type: string
+    minLength: 1
+    example: "23"
+  codigoPais:
+    description: codigo Pais
+    type: string
+    minLength: 1
+    example: "423"
+  tituDomicilio:
+    description: titu Domicilio
+    type: string
+    minLength: 1
+    example: ""
+  fechaVerificacion:
+    description: fecha Verificacion
+    type: string
+    minLength: 1
+    example: "2022-05-31"
+  marcaNormalizacion:
+    description: marca Normalizacion
+    type: string
+    minLength: 1
+    example: "N"
+  marcaDomErroneo:
+    description: marca Dom Erroneo
+    type: string
+    minLength: 1
+    example: "N"
+  marcaCorrespDevuel:
+    description: marca Corresp Devuel
+    type: string
+    minLength: 1
+    example: "N"
+  motivoDevolucion:
+    description: motivo Devolucion
+    type: string
+    minLength: 1
+    example: ""
+  usuarioAlta:
+    description: usuario Alta
+    type: string
+    minLength: 1
+    example: ""
+  fechaAltaRegistro:
+    description: fecha Alta Registro
+    type: string
+    minLength: 1
+    example: ""
+  usuarioUltimaModif:
+    description: usuario Ultima Modif
+    type: string
+    minLength: 1
+    example: ""
+  numeroTerminalUltModi:
+    description: numero Terminal Ultima Modificación
+    type: string
+    minLength: 1
+    example: ""
+  sucursalUltModReg:
+    description: sucursal UltModReg
+    type: string
+    minLength: 1
+    example: ""
+  fechaHoraUltMod:
+    description: fecha Hora UltMod
+    type: string
+    minLength: 1
+    example: ""
+  nombrePrograma:
+    description: nombre Programa
+    type: string
+    minLength: 1
+    example: ""
+  indicadorBajaMasiv:
+    description: indicador Baja Masiv
+    type: string
+    minLength: 1
+    example: ""

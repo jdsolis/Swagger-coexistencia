@@ -1,0 +1,80 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - digitalaccountopening
+  summary: B032
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: B032
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/digitalaccountopening/b032.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              numeroSolicitud: 002560479
+              producto: 02
+              subproducto: 2020
+              divisa1: EUR
+              divisa2: " "
+              entidadCentroConta: 01020130
+              fechaVencimiento: " " 
+              tipoVencimiento: " "
+              numVencimiento: " "
+              limiteCuenta: " "
+              indPreasigndada: " " 
+              codigoCuenta: " "
+              numeroConvenio: " "
+              chequeInicio: " "
+              chequeFin: " "
+              nuevaLibreta: " " 
+              indicadorTarjeta: " " 
+              tarjeta: " "
+              canalVenta: " "
+              oficialVenta: " "
+              oficialOpera: " "
+              oficialComer: " "
+              dna: " "
+              codOnt: " " 
+              user: OPCE205
+              terminal: 0353
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

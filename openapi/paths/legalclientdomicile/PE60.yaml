@@ -1,0 +1,88 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - legalclientdomicile
+  summary: PE60
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE60
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/legalclientdomicile/pe60.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              indicadorAccion: A 
+              numeroPersona: 277262 
+              secuenciaDomicilio: 0 
+              tipoDomicilio: LAB 
+              tipoVia: AU 
+              nombreCalle: PRUEBAS 
+              tipoConstruccion: APQT 
+              tipoNucleoUrbano: ALDE 
+              observaciones: PRUEBAS 
+              observaciones2: "" 
+              sucursalCasilla: "" 
+              aptCorreoCasilla: "" 
+              localidadCiudad: 2300001 
+              descripcionLocalidad: 0205020502 
+              comuna: "" 
+              descripcionComuna: "" 
+              codigoPostal: 00007101 
+              rutaCartero: 0 
+              codigoProvincia: 23 
+              codigoPais: 423 
+              tituDomicilio: "" 
+              fechaVerificacion: 2022-05-31 
+              marcaNormalizacion: N
+              marcaDomErroneo: N 
+              marcaCorrespDevuel: N 
+              motivoDevolucion: "" 
+              usuarioAlta: "" 
+              fechaAltaRegistro: "" 
+              usuarioUltimaModif: "" 
+              numeroTerminalUltModi: "" 
+              sucursalUltModReg: ""
+              fechaHoraUltMod: "" 
+              nombrePrograma: "" 
+              indicadorBajaMasiv: ""  
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

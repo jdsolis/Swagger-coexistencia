@@ -1,0 +1,347 @@
+type: object
+properties:
+  numeroCliente: 
+    descripcion: numero de Cliente
+    type: string
+    minLength: 1
+    example: "10138199"
+  tipoDucumento:
+    description: tipo Ducumento
+    type: string
+    minLength: 1
+    example: ""
+  numeroDocumento:
+    description: numero Documento
+    minLength: 1
+    example: ""
+  secuenIdentifdoc:
+    description: secuen Identifdoc
+    type: string
+    minLength: 1
+    example: ""
+  nombreFantasia:
+    description: nombre Fantasia
+    type: string
+    minLength: 1
+    example: ""
+  primerApellido:
+    description: primer Apellido
+    type: string
+    minLength: 1
+    example: ""
+  segundoApellido:
+    description: segundo Apellido
+    type: string
+    minLength: 1
+    example: ""
+  nombreRazonSocial:
+    description: nombre Razon Social
+    type: string
+    minLength: 1
+    example: ""
+  fechaNacimiConstit:
+    description: fecha Nacimi Constit
+    type: string
+    minLength: 1
+    example: ""
+  tipoEmpresa:
+    description: tipo Empresa
+    type: string
+    minLength: 1
+    example: ""
+  estadoPersona:
+    description: estado Persona
+    type: string
+    minLength: 1
+    example: ""
+  condicion:
+    description: condicion
+    type: string
+    minLength: 1
+    example: ""
+  nivelAcceso:
+    description: nivel de Acceso
+    type: string
+    minLength: 1
+    example: ""
+  indRelacEntrePers:
+    description: ind Relac Entre Pers
+    type: string
+    minLength: 1
+    example: ""
+  indTenerContrat:
+    description: ind Tener Contrat
+    type: string
+    minLength: 1
+    example: ""
+  indPerteneGrupo:
+    description: ind Pertene Grupo
+    type: string
+    minLength: 1
+    example: ""
+  indicadorDeAviso:
+    description: indicador De Aviso
+    type: string
+    minLength: 1
+    example: ""
+  indUso1:
+    description: indUso1
+    type: string
+    minLength: 1
+    example: ""
+  indUso2:
+    description: indUso2
+    type: string
+    minLength: 1
+    example: ""
+  indUso3:
+    description: indUso3
+    type: string
+    minLength: 1
+    example: ""
+  indUso4:
+    description: indUso4
+    type: string
+    minLength: 1
+    example: ""
+  indUso5:
+    description: indUso5
+    type: string
+    minLength: 1
+    example: ""
+  tipoVia:
+    description: tipoVia
+    type: string
+    minLength: 1
+    example: ""
+  calle:
+    description: calle
+    type: string
+    minLength: 1
+    example: ""
+  obserDomicilio1:
+    description: obser Domicilio1
+    type: string
+    minLength: 1
+    example: ""
+  obserDomicilio2:
+    description: obserDomicilio2
+    type: string
+    minLength: 1
+    example: ""
+  bloqNumCasillaApt:
+    description: bloq Num Casilla Apt
+    type: string
+    minLength: 1
+    example: ""
+  localidad:
+    description: localidad
+    type: string
+    minLength: 1
+    example: ""
+  comuna:
+    description: comuna
+    type: string
+    minLength: 1
+    example: ""
+  codigoPostal:
+    description: codigo Postal
+    type: string
+    minLength: 1
+    example: ""
+  rutaCartero:
+    description: ruta Cartero
+    type: number
+    minLength: 1
+    example: 0
+  dodigoProvincia:
+    description: dodigo Provincia
+    type: string
+    minLength: 1
+    example: ""
+  codigoPais:
+    description: codigo Pais
+    type: string
+    minLength: 1
+    example: ""
+  arcaNormalizacion:
+    description: arca Normalizacion
+    type: string
+    minLength: 1
+    example: ""
+  cotizaEnBolsa:
+    description: cotiza En Bolsa
+    type: string
+    minLength: 1
+    example: ""
+  tipEntidComerNoC:
+    description: tip Entid Comer No C
+    type: string
+    minLength: 1
+    example: ""
+  cantidadPersonas:
+    description: cantidad Personas
+    type: number
+    minLength: 1
+    example: 0
+  tipRelacClienBanc:
+    description: tip Relac Clien Banc
+    type: string
+    minLength: 1
+    example: ""
+  fechaDisolucion:
+    description: fecha Disolucion
+    type: string
+    minLength: 1
+    example: ""
+  fechaInicioSocieda:
+    description: fecha Inicio Socieda
+    type: string
+    minLength: 1
+    example: ""
+  artCorresponEmpre:
+    description: art Correspon Empre
+    type: string
+    minLength: 1
+    example: ""
+  plazoDuracuinSocie:
+    description: plazo Duracuin Socie
+    type: number
+    minLength: 1
+    example: 0
+  firmaSolicitud:
+    description: firma Solicitud
+    type: string
+    minLength: 1
+    example: ""
+  fechaCambioDirecci:
+    description: fecha Cambio Direcci
+    type: string
+    minLength: 1
+    example: ""
+  fechaVencimDirecto:
+    description: fecha Vencim Directo
+    type: string
+    minLength: 1
+    example: ""
+  fechaInscripcion:
+    description: fecha Inscripcion
+    type: string
+    minLength: 1
+    example: ""
+  nombreNotario:
+    description: nombre Notario
+    type: string
+    minLength: 1
+    example: ""
+  numeroRegistroInsc:
+    description: numero Registro Insc
+    type: string
+    minLength: 1
+    example: ""
+  tomoInscripRegistr:
+    description: tomo Inscrip Registr
+    type: string
+    minLength: 1
+    example: ""
+  folioInscripRegist:
+    description: folio Inscrip Regist
+    type: string
+    minLength: 1
+    example: ""
+  jurisdicInscrRegis:
+    description: jurisdic Inscr Regis
+    type: string
+    minLength: 1
+    example: ""
+  propiedadNacioMult:
+    description: propiedad Nacio Mult
+    type: string
+    minLength: 1
+    example: ""
+  ramoEmpresa:
+    description: ramo Empresa
+    type: string
+    minLength: 1
+    example: ""
+  ultModifRegCamCo:
+    description: ult Modif Reg Cam Co
+    type: string
+    minLength: 1
+    example: ""
+  facturacionAnual:
+    description: facturacion Anual
+    type: number
+    minLength: 1
+    example: 0
+  patrimonioNeto:
+    description: patrimonio Neto
+    type: number
+    minLength: 1
+    example: 0
+  codigoMoneda:
+    description: codigo Moneda
+    type: string
+    minLength: 1
+    example: ""
+  objetoSocial1:
+    description: objeto Social1
+    type: string
+    minLength: 1
+    example: ""
+  objetoSocial2:
+    description: objeto Social2
+    type: string
+    minLength: 1
+    example: ""
+  nombreRegistro:
+    description: nombre Registro
+    type: string
+    minLength: 1
+    example: ""
+  numeroRegistro:
+    description: numero Registro
+    type: string
+    minLength: 1
+    example: ""
+  numeroTomo:
+    description: numero Tomo
+    type: string
+    minLength: 1
+    example: ""
+  numeroFolio:
+    description: numero Folio
+    type: string
+    minLength: 1
+    example: ""
+  fechaRegistro:
+    description: fecha Registro
+    type: string
+    minLength: 1
+    example: ""
+  capitalActual:
+    description: capital Actual
+    type: string
+    minLength: 1
+    example: ""
+  nroGacOficEp:
+    description: nro Gac OficEp
+    type: string
+    minLength: 1
+    example: ""
+  fechaGacOficEp:
+    description: fecha Gac OficEp
+    type: string
+    minLength: 1
+    example: ""
+  nombreEnteAutorEp:
+    description: nombre Ente AutorEp
+    type: string
+    minLength: 1
+    example: ""
+  codOfcNacTesorEp:
+    description: cod Ofc Nac Tesor Ep
+    type: string
+    minLength: 1
+    example: ""
+

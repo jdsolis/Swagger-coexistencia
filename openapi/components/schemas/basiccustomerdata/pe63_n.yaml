@@ -1,0 +1,242 @@
+type: object
+properties:
+  numeroPersona: 
+    descripcion: numero Persona
+    type: string
+    minLength: 1
+    example: ""
+  tipoDocumento:
+    description: tipo Documento
+    type: string
+    minLength: 1
+    example: "V"
+  numeroDocumento:
+    description: numero Documento
+    type: string
+    minLength: 1
+    example: "00000067409"
+  secuenciaDocumento:
+    description: secuencia Documento
+    type: string
+    minLength: 1
+    example: "01"
+  nombreFantasia:
+    description: nombre Fantasia
+    type: string
+    minLength: 1
+    example: ""
+  primerApellido:
+    description: primer Apellido
+    type: string
+    minLength: 1
+    example: "ANGULO"
+  segundoApellido:
+    description: segundo Apellido
+    type: string
+    minLength: 1
+    example: "DIAZ"
+  nombrePersona:
+    description: nombre Persona
+    type: string
+    minLength: 1
+    example: "ELIECER"
+  fechaIngreso:
+    description: fecha Ingreso
+    type: string
+    minLength: 1
+    example: "2023-01-16"
+  agrdb1:
+    description: agrdb1
+    type: string
+    minLength: 1
+    example: "0501SHF"
+  fechaNacimiento:
+    description: fecha Nacimiento
+    type: string
+    minLength: 1
+    example: "2000-01-11"
+  fechaInicioActivid:
+    description: fecha Inicio Activid
+    type: string
+    minLength: 1
+    example: "2023-01-16"
+  agregadoBasicos2:
+    description: agregado Basicos2
+    type: string
+    minLength: 1
+    example: ""
+  agrupacionOficiales:
+    description: agrupacion Oficiales
+    type: string
+    minLength: 1
+    example: "432432210  A0100000"
+  agrdb3:
+    description: agrdb3
+    type: string
+    minLength: 1
+    example: "432432210  A0100000"
+  tiempoDeResidencia:
+    description: tiempo De Residencia
+    type: string
+    minLength: 1
+    example: "00"
+  formaJuridica:
+    description: forma Juridica
+    type: string
+    minLength: 1
+    example: ""
+  naturalezaJuridica:
+    description: naturaleza Juridica
+    type: string
+    minLength: 1
+    example: ""
+  unidadDeNegocio:
+    description: unidad De Negocio
+    type: string
+    minLength: 1
+    example: "340"
+  codigoSujeto:
+    description: codigo Sujeto
+    type: string
+    minLength: 1
+    example: ""
+  marcaBancaPrivada:
+    description: marca Banca Privada
+    type: string
+    minLength: 1
+    example: "N"
+  nivelDeAcceso:
+    description: nivel De Acceso
+    type: string
+    minLength: 1
+    example: ""
+  estadoPersona:
+    description: estado Persona
+    type: string
+    minLength: 1
+    example: ""
+  condicionCliente:
+    description: condicion Cliente
+    type: string
+    minLength: 1
+    example: ""
+  indicaYCodemp:
+    description: indica Y Codemp
+    type: string
+    minLength: 1
+    example: "N NNNNNNNNN NA"
+  timesampBasicos:
+    description: timesamp Basicos
+    type: string
+    minLength: 1
+    example: ""
+  expedidoPor:
+    description: expedido Por
+    type: string
+    minLength: 1
+    example: ""
+  fechaDeVencimiento:
+    description: fecha De Vencimiento
+    type: string
+    minLength: 1
+    example: "9999-12-31"
+  marcaPadron:
+    description: marca Padron
+    type: string
+    minLength: 1
+    example: ""
+  condDocumento:
+    description: cond Documento
+    type: string
+    minLength: 1
+    example: "P"
+  codigoPais:
+    description: codigo Pais
+    type: string
+    minLength: 1
+    example: "432"
+  fecExpedicionDoc:
+    description: fec Expedicion Doc
+    type: string
+    minLength: 1
+    example: ""
+  lugarExpedicionDoc:
+    description: lugar Expedicion Doc
+    type: string
+    minLength: 1
+    example: ""
+  timestampDocumento:
+    description: timestamp Documento
+    type: string
+    minLength: 1
+    example: "                                            CASACASR              0100810"
+  domre1:
+    description: domre1
+    type: string
+    minLength: 1
+    example: "PRIAVNOMBRE                                            CASACASR              0100810"
+  domre2:
+    description: domre2
+    type: string
+    minLength: 1
+    example: "2101"
+  rutaCartero:
+    description: ruta Cartero
+    type: string
+    minLength: 1
+    example: "010101012200001030"
+  domre3:
+    description: domre3
+    type: string
+    minLength: 1
+    example: "01432"
+  fechaVerificacion:
+    description: fecha Verificacion
+    type: string
+    minLength: 1
+    example: "2023-01-16"
+  agregadoDomicilio4:
+    description: agregado Domicilio4
+    type: string
+    minLength: 1
+    example: "NNN"
+  obser1:
+    description: obser1
+    type: string
+    minLength: 1
+    example: "DESCRIPCION"
+  obser2:
+    description: obser2
+    type: string
+    minLength: 1
+    example: " PRUEBAS@YAHOO.COM "
+  timestampDomicilio:
+    description: timestamp Domicilio
+    type: string
+    minLength: 1
+    example: ""
+  secuenciaDomicilio:
+    description: secuencia Domicilio
+    type: string
+    minLength: 1
+    example: "001"
+  agregadoTelefonico:
+    description: agregado Telefonico
+    type: string
+    minLength: 1
+    example: "002NOR0212   0058501"
+  timestampTelefono:
+    description: timestamp Telefono
+    type: string
+    minLength: 1
+    example: ""
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: ""
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: "0501"

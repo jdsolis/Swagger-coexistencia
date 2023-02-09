@@ -1,0 +1,72 @@
+type: object
+properties:
+  panDeLaTarjeta:
+    description: pan De La Tarjeta
+    type: string
+    minLength: 1
+    example: "5899415565180810"
+  indDeOrdenDeCta: 
+    descripcion: ind De Orden De Cta
+    type: string
+    minLength: 1
+    example: "C"
+  cuentaDeCargoNuev:
+    description: cuenta De Cargo Nuev
+    type: string
+    minLength: 1
+    example: "01020228130000368182"
+  cuentaDeCargoAntg:
+    description: cuenta De Cargo Antg
+    type: string
+    minLength: 1
+    example: ""
+  claveDeLaMoneda:
+    description: clave De La Moneda
+    type: number
+    minLength: 1
+    example: 928
+  indTipoDeCtacargo:
+    description: ind Tipo De Cta cargo
+    type: string
+    minLength: 1
+    example: ""
+  indDeCccAjena:
+    description: indDeCccAjena
+    type: string
+    minLength: 1
+    example: "00"
+  productoDeCcc:
+    description: producto De Ccc
+    type: string
+    minLength: 1
+    example: ""
+  subproductoDeCcc:
+    description: subproducto De Ccc
+    type: string
+    minLength: 1
+    example: "P"
+  indActivoPasivo:
+    description: ind Activo Pasivo
+    type: string
+    minLength: 1
+    example: " "
+  fechaDeAlta:
+    description: fecha De Alta
+    type: string
+    minLength: 1
+    example: ""
+  fechaDeBaja:
+    description: fecha De Baja
+    type: number
+    minLength: 1
+    example: 0
+  nomEmpEstampacion:
+    description: nom Emp Estampacion
+    type: string
+    minLength: 1
+    example: ""
+  controlDeConcurren:
+    description: control De Concurren
+    type: string
+    minLength: 1
+    example: "114550404738"

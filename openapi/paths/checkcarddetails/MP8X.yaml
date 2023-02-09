@@ -1,0 +1,75 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - checkcarddetails
+  summary: MP8X
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: MP8X
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/checkcarddetails/mp8x.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              codigoEntidad: 0102
+              numeroSecuencial: 0
+              centroAltaCtaTar: 0190
+              cuentaDeTarjeta: 440000167443
+              numeroDeTarjeta: ""
+              codigoDeComercio: ""
+              fecIniModificacion: "" 
+              fecFinModificacion: ""
+              fechaModificacion: ""
+              horaModificacion: ""
+              tipoAcceso: 0
+              nombreProceso: ""
+              descripcionProceso: "" 
+              tablaModificada: ""
+              nombreCampo: ""
+              valorActual: ""
+              valorAnterior: "" 
+              usuario: ""
+              terminal: ""
+              indicadorAlta: "" 
+              masDatos: ""
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

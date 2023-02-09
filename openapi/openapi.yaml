@@ -43,7 +43,11 @@ tags:
   - name: legalclientdomicile
     description: DESCRIPCION GENERAL DEL ACCES POINT.
   - name: basiccustomerdata
-    description: DESCRIPCION GENERAL DEL ACCES POINT.       
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: cardcontractcurrency
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: checkcarddetails
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -140,6 +144,20 @@ paths:
     $ref: paths/basiccustomerdata/PE63.yaml
   /{{IPKONG}}/basiccustomerdata/IntPE63_N:
     $ref: paths/basiccustomerdata/PE63_N.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE68:
+    $ref: paths/basiccustomerdata/PE68.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE72:
+    $ref: paths/basiccustomerdata/PE72.yaml
+  /{{IPKONG}}/cardcontractcurrency/IntMP4Z:
+    $ref: paths/cardcontractcurrency/MP4Z.yaml
+  /{{IPKONG}}/cardcontractcurrency/IntMPK3:
+    $ref: paths/cardcontractcurrency/MPK3.yaml
+  /{{IPKONG}}/checkcarddetails/IntMP8X:
+    $ref: paths/checkcarddetails/MP8X.yaml
+  /{{IPKONG}}/checkcarddetails/IntMPCD:
+    $ref: paths/checkcarddetails/MPCD.yaml
+  /{{IPKONG}}/checkcarddetails/IntMP5C:
+    $ref: paths/checkcarddetails/MP5C.yaml
 components:
   securitySchemes:
     main_auth:

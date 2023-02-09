@@ -1,0 +1,102 @@
+type: object
+properties:
+  codigoEntidad:
+    description: codigo Entidad
+    type: string
+    minLength: 1
+    example: "0102"
+  numeroSecuencial: 
+    descripcion: numero Secuencial
+    type: string
+    minLength: 1
+    example: 0
+  centroAltaCtaTar:
+    description: centro Alta CtaTar
+    type: string
+    minLength: 1
+    example: "0190"
+  cuentaDeTarjeta:
+    description: cuenta De Tarjeta
+    type: string
+    minLength: 1
+    example: "440000167443"
+  numeroDeTarjeta:
+    description: numero De Tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  fecIniModificacion:
+    description: fec Ini Modificacion
+    type: string
+    minLength: 1
+    example: ""
+  fecFinModificacion:
+    description: fec Fin Modificacion
+    type: string
+    minLength: 1
+    example: ""
+  fechaModificacion:
+    description: fecha Modificacion
+    type: string
+    minLength: 1
+    example: ""
+  horaModificacion:
+    description: hora Modificacion
+    type: string
+    minLength: 1
+    example: "26935535"
+  tipoAcceso:
+    description: tipo Acceso
+    type: string
+    minLength: 1
+    example: 0
+  nombreProceso:
+    description: nombre Proceso
+    type: number
+    minLength: 1
+    example: 0
+  descripcionProceso:
+    description: descripcion Proceso
+    type: number
+    minLength: 1
+    example: 0
+  tablaModificada:
+    description: tabla Modificada
+    type: string
+    minLength: 1
+    example: ""
+  nombreCampo:
+    description: nombre Campo
+    type: string
+    minLength: 1
+    example: ""
+  valorActual:
+    description: valor Actual
+    type: string
+    minLength: 1
+    example: ""
+  valorAnterior:
+    description: valor Anterior
+    type: string
+    minLength: 1
+    example: ""
+  usuario:
+    description: usuario
+    type: string
+    minLength: 1
+    example: ""
+  terminal:
+    description: terminal
+    type: string
+    minLength: 1
+    example: ""
+  indicadorAlta:
+    description: indicadorAlta
+    type: string
+    minLength: 1
+    example: ""
+  masDatos:
+    description: clave Moneda Princip
+    type: string
+    minLength: 1
+    example: ""

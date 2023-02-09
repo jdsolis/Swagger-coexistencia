@@ -1,0 +1,292 @@
+type: object
+properties:
+  numeroDocumento:
+    description: numero Documento
+    type: string
+    minLength: 1
+    example: "0002031"
+  tipoDocumento: 
+    descripcion: tipo Documento
+    type: string
+    minLength: 1
+    example: "G"
+  secuenciaDocumento:
+    description: secuencia Documento
+    type: string
+    minLength: 1
+    example: "01"
+  nombreFantasia:
+    description: nombre Fantasia
+    type: string
+    minLength: 1
+    example: "ALCALDIA 23 "
+  primerApellido:
+    description: primer Apellido
+    type: string
+    minLength: 1
+    example: "UA"
+  segundoApellido:
+    description: segundo Apellido
+    type: string
+    minLength: 1
+    example: ""
+  nombrePersona:
+    description: nombre Persona
+    type: string
+    minLength: 1
+    example: "ALCALDIA MCPIOS ANTOS MICHELEN "
+  fechaIngreso:
+    description: fecha Ingreso
+    type: string
+    minLength: 1
+    example: "2000-07-22"
+  sucursalAdministrador:
+    description: sucursal Administrador
+    type: string
+    minLength: 1
+    example: "01327"
+  estadoCivil:
+    description: estado Civil
+    type: string
+    minLength: 1
+    example: " "
+  sexoPersona:
+    description: sexo Persona
+    type: string
+    minLength: 1
+    example: " "
+  tipoPersona:
+    description: tipo Persona
+    type: string
+    minLength: 1
+    example: " "
+  fechaNacimiento:
+    description: fecha Nacimiento
+    type: string
+    minLength: 1
+    example: "2001-06-19"
+  fechaInicioActiv:
+    description: fecha Inicio Activid
+    type: string
+    minLength: 1
+    example: "2000-08-07"
+  canalVenta:
+    description: canal Venta
+    type: string
+    minLength: 1
+    example: "V00"
+  canalCaptacion:
+    description: canal Captacion
+    type: string
+    minLength: 1
+    example: "C00"
+  paisOrigen:
+    description: pais Origen
+    type: string
+    minLength: 1
+    example: "432"
+  codigoCampana:
+    description: codigo Campana
+    type: string
+    minLength: 1
+    example: " "
+  agrupacionOficiales:
+    description: agrupacion Oficiales
+    type: string
+    minLength: 1
+    example: "0068"
+  nacionalidad:
+    description: nacionalidad
+    type: string
+    minLength: 1
+    example: "NA"
+  paisResidencia:
+    description: pais Residencia
+    type: string
+    minLength: 1
+    example: "432"
+  sector:
+    description: sector
+    type: string
+    minLength: 1
+    example: "340"
+  tipoOcupacion:
+    description: tipo Ocupacion
+    type: string
+    minLength: 1
+    example: ""
+  codigoActividad:
+    description: codigo Actividad
+    type: string
+    minLength: 1
+    example: "Mda100"
+  tiempoResidencia:
+    description: tiempo Residencia
+    type: string
+    minLength: 1
+    example: "0"
+  formaJuridica:
+    description: forma Juridica
+    type: string
+    minLength: 1
+    example: "06"
+  naturalezaJuridica:
+    description: naturaleza Juridica
+    type: string
+    minLength: 1
+    example: " "
+  unidadNegocio:
+    description: timesampBasicos
+    type: string
+    minLength: 1
+    example: "3PT"
+  codigoSujeto:
+    description: codigo Sujeto
+    type: string
+    minLength: 1
+    example: "001"
+  marcaBancaPrivada:
+    description: marca Banca Privada
+    type: string
+    minLength: 1
+    example: "N"
+  nivelAcceso:
+    description: nivel Acceso
+    type: string
+    minLength: 1
+    example: "0"
+  estadoPersona:
+    description: estado Persona
+    type: string
+    minLength: 1
+    example: "010"
+  condicionPersona:
+    description: condicion Persona
+    type: string
+    minLength: 1
+    example: "CLI"
+  indicadores:
+    description: indicadores
+    type: string
+    minLength: 1
+    example: "N NSSNNNNNN"
+  codigoActividadRiu:
+    description: codigo Actividad Riu
+    type: string
+    minLength: 1
+    example: " "
+  subSegmento:
+    description: sub Segmento
+    type: string
+    minLength: 1
+    example: " "
+  idioma:
+    description: idioma
+    type: string
+    minLength: 1
+    example: "NA"
+  timestamp1:
+    description: timestamp1
+    type: string
+    minLength: 1
+    example: "2022-02-04-14.39.46.346057"
+  expedidoPor:
+    description: expedido Por
+    type: string
+    minLength: 1
+    example: " "
+  fechaVencimiento:
+    description: fechaVencimiento
+    type: string
+    minLength: 1
+    example: "2010-08-07"
+  marcaVerificacion:
+    description: marca Verificacion
+    type: string
+    minLength: 1
+    example: " "
+  condicionDocumento:
+    description: condicion Documento
+    type: string
+    minLength: 1
+    example: "P"
+  codigoPais:
+    description: codigo Pais
+    type: string
+    minLength: 1
+    example: "432"
+  fechaExpedicion:
+    description: fecha Expedicion
+    type: string
+    minLength: 1
+    example: "2000-08-07"
+  lugarExposicion:
+    description: lugar Exposicion
+    type: string
+    minLength: 1
+    example: " "
+  timestamp2:
+    description: timestamp2
+    type: string
+    minLength: 1
+    example: "2011-02-02-16.05.26.868803"
+  campoAgregado1:
+    description: campo Agregado1
+    type: string
+    minLength: 1
+    example: "PRIRUREDMI HDA CASR 2000910"
+  campoAgregado2:
+    description: campo Agregado2
+    type: string
+    minLength: 1
+    example: "2104210405 00002314"
+  rutaCartero:
+    description: ruta Cartero
+    type: number
+    minLength: 1
+    example: 0
+  campoAgregado3:
+    description: campo Agregado3
+    type: string
+    minLength: 1
+    example: "2043201"
+  fechaVerificacion:
+    description: fecha Verificacion
+    type: string
+    minLength: 1
+    example: "2013-12-19"
+  campoAgregado4:
+    description: campo Agregado4
+    type: string
+    minLength: 1
+    example: "SNN"
+  campoVariable1:
+    description: campo Variable1
+    type: string
+    minLength: 1
+    example: "EL TREBOL PENT HOUSE GUARATARO"
+  campoVariable2:
+    description: campo Variable2
+    type: string
+    minLength: 1
+    example: "ALCADIA@PRUEBA.COM"
+  timestamp3:
+    description: timestamp3
+    type: string
+    minLength: 1
+    example: "2022-01-31-15.54.45.029242"
+  secuenciaDomicilio:
+    description: secuencia Domicilio
+    type: number
+    minLength: 1
+    example: 1
+  agregadoTelefono:
+    description: agregado Telefono
+    type: string
+    minLength: 1
+    example: "001NOR0212 00580000000"
+  timestamp4:
+    description: timestamp4
+    type: string
+    minLength: 1
+    example: "2011-06-16-15.21.12.255931"

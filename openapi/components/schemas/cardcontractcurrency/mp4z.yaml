@@ -1,0 +1,347 @@
+type: object
+properties:
+  codigoDeEntidad:
+    description: codigo De Entidad
+    type: string
+    minLength: 1
+    example: "0102"
+  centroDeAltaCuent: 
+    descripcion: centro De Alta Cuent
+    type: string
+    minLength: 1
+    example: "0190"
+  codigoDeProducto:
+    description: codigo De Producto
+    type: string
+    minLength: 1
+    example: "44"
+  codigoSubproducto:
+    description: codigo Subproducto
+    type: string
+    minLength: 1
+    example: "4000"
+  codCondicionesAso:
+    description: cod Condiciones Aso
+    type: string
+    minLength: 1
+    example: "400"
+  codigoDeCampaña:
+    description: codigo De Campaña
+    type: string
+    minLength: 1
+    example: ""
+  codigoDeConvenio:
+    description: codigo De Convenio
+    type: string
+    minLength: 1
+    example: ""
+  codigoDePromocion:
+    description: codigo De Promocion
+    type: string
+    minLength: 1
+    example: ""
+  nroPersonaTitular:
+    description: nro Persona Titular
+    type: string
+    minLength: 1
+    example: "26935535"
+  nroPersonaAvalista:
+    description: nro Persona Avalista
+    type: string
+    minLength: 1
+    example: " "
+  indCtaEmpresa:
+    description: indCtaEmpresa
+    type: number
+    minLength: 1
+    example: 0
+  indEstNombreEmp:
+    description: ind Est Nombre Emp
+    type: number
+    minLength: 1
+    example: 0
+  nomEmpEstampacion:
+    description: nom Emp Estampacion
+    type: string
+    minLength: 1
+    example: ""
+  codRegimenFiscal:
+    description: cod Regimen Fiscal
+    type: number
+    minLength: 1
+    example: 0
+  formaDePago:
+    description: forma De Pago
+    type: number
+    minLength: 1
+    example: 0
+  indSitDeContrato:
+    description: ind Sit De Contrato
+    type: number
+    minLength: 1
+    example: 0
+  grupoDeLiquidacion:
+    description: grupo De Liquidacion
+    type: number
+    minLength: 1
+    example: 0
+  grupoDeCuota:
+    description: grupo De Cuota
+    type: number
+    minLength: 1
+    example: 28
+  oficialDeVenta:
+    description: oficial De Venta
+    type: string
+    minLength: 1
+    example: ""
+  claveMonedaPrincip:
+    description: clave Moneda Princip
+    type: string
+    minLength: 1
+    example: 0
+  limCreditoPrincipa:
+    description: limCreditoPrincipa
+    type: string
+    minLength: 1
+    example: 0
+  impFijoPagoApla1:
+    description: impFijoPagoApla1
+    type: string
+    minLength: 1
+    example: 0
+  limCreCompraCuot1:
+    description: limCreCompraCuot1
+    type: string
+    minLength: 1
+    example: 0
+  limGlobalccuotas:
+    description: lim Globalccuotas
+    type: string
+    minLength: 1
+    example: 0
+  impFijoPagoApla2:
+    description: impFijoPagoApla2
+    type: string
+    minLength: 1
+    example: 0
+  limCreCompraCuot2:
+    description: limCreCompraCuot2
+    type: string
+    minLength: 1
+    example: 0
+  limGlobalccuotas2:
+    description: limGlobalccuotas2
+    type: string
+    minLength: 1
+    example: 0
+  cuentaCargo1:
+    description: cuenta Cargo1
+    type: string
+    minLength: 1
+    example: ""
+  claveMonedaCtacar1:
+    description: clave Moneda Ctacar1
+    type: string
+    minLength: 1
+    example: "001"
+  indDomcarCdto:
+    description: ind Domcar Cdto
+    type: string
+    minLength: 1
+    example: "N"
+  codigoFormatoEsta:
+    description: codigo Formato Esta
+    type: string
+    minLength: 1
+    example: ""
+  ctaCargoTarjeta1:
+    description: cta Cargo Tarjeta1
+    type: string
+    minLength: 1
+    example: "01020228130000368182"
+  claveMonedaTarcta1:
+    description: clave Moneda Tarcta1
+    type: string
+    minLength: 1
+    example: 928
+  indActivoPasivo1:
+    description: ind Activo Pasivo1
+    type: string
+    minLength: 1
+    example: "P"
+  ctaCargoTarjeta2:
+    description: cta Cargo Tarjeta2
+    type: string
+    minLength: 1
+    example: ""
+  claveMonedaTarcta2:
+    description: clave Moneda Tarcta2
+    type: string
+    minLength: 1
+    example: 0
+  indActivoPasivo2:
+    description: ind Activo Pasivo2
+    type: string
+    minLength: 1
+    example: "NA"
+  numereoPersonaTjt:
+    description: numereo Persona Tjt
+    type: string
+    minLength: 1
+    example: "26935535"
+  calParticipacionTj:
+    description: cal Participacion Tj
+    type: string
+    minLength: 1
+    example: "TI"
+  indDeTipoTarjeta:
+    description: ind De Tipo Tarjeta
+    type: string
+    minLength: 1
+    example: 10
+  codDeMarcarTarjet:
+    description: cod De Marcar Tarjet
+    type: string
+    minLength: 1
+    example: 4
+  nomEstampacionTarj:
+    description: nom Estampacion Tarj
+    type: string
+    minLength: 1
+    example: "CARRILLO ABRAHAM"
+  idenEmpleadoTarjet:
+    description: iden Empleado Tarjet
+    type: string
+    minLength: 1
+    example: ""
+  panAsociadoTarjeta:
+    description: pan Asociado Tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  codigoDeBarrasTjt:
+    description: codigo De Barras Tjt
+    type: number
+    minLength: 1
+    example: 0
+  refDeFotoTarjeta:
+    description: ref De Foto Tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  datosDeEstampTjt:
+    description: datos De Estamp Tjt
+    type: string
+    minLength: 1
+    example: ""
+  envioDeEstampTjt:
+    description: envio De EstampTjt
+    type: string
+    minLength: 1
+    example: "N"
+  envioDePinTarjet:
+    description: envio De Pin Tarjet
+    type: string
+    minLength: 1
+    example: "N"
+  codCondEstampacTj:
+    description: cod Cond EstampacTj
+    type: string
+    minLength: 1
+    example: "401"
+  codigoPromocionTjt:
+    description: codigo Promocion Tjt
+    type: string
+    minLength: 1
+    example: ""
+  claveMoneda1Tarje:
+    description: clave Moneda1 Tarje
+    type: string
+    minLength: 1
+    example: 928
+  limDiarioCajero1T:
+    description: limDiarioCajero1T
+    type: string
+    minLength: 1
+    example: 0
+  maxNumOpeDia1T:
+    description: max Num Ope Dia1T
+    type: string
+    minLength: 1
+    example: 0
+  claveMoneda2Tarje:
+    description: clave Moneda 2Tarje
+    type: string
+    minLength: 1
+    example: 0
+  limDiarioCajero2T:
+    description: limDiarioCajero2T
+    type: number
+    minLength: 1
+    example: 0
+  maxNumOpeDia2T:
+    description: max Num OpeDia2T
+    type: string
+    minLength: 1
+    example: 0
+  cuentaDeLaTarjeta:
+    description: cuenta De La Tarjeta
+    type: string
+    minLength: 1
+    example: ""
+  desClaveMoneda:
+    description: des Clave Moneda
+    type: string
+    minLength: 1
+    example: ""
+  fechaDeAltaContra:
+    description: fecha De Alta Contra
+    type: string
+    minLength: 1
+    example: ""
+  panDeLaTarjeta:
+    description: pan De La Tarjeta
+    type: string
+    minLength: 1
+    example: "5899415277284322"
+  fechaDeAltaTarjet:
+    description: fechaDeAltaTarjet
+    type: string
+    minLength: 1
+    example: ""
+  fechaCaducidadTjt:
+    description: fechaCaducidadTjt
+    type: string
+    minLength: 1
+    example: ""
+  desReducMarcaTjt:
+    description: desReducMarcaTjt
+    type: string
+    minLength: 1
+    example: ""
+  desReducTipoTjt:
+    description: desReducTipoTjt
+    type: string
+    minLength: 1
+    example: ""
+  indSituacionDeTjt:
+    description: indSituacionDeTjt
+    type: string
+    minLength: 1
+    example: ""
+  tipoDeBonificacion:
+    description: tipoDeBonificacion
+    type: string
+    minLength: 1
+    example: ""
+  user:
+    description: Usuario
+    type: string
+    minLength: 1
+    example: "OPCE812"
+  terminal:
+    description: fechaDeAltaTarjet
+    type: string
+    minLength: 1
+    example: "0190"

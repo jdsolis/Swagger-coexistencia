@@ -1,0 +1,12 @@
+type: object
+properties:
+  tipoDocumento: 
+    descripcion: tipo Documento
+    type: string
+    minLength: 1
+    example: "V"
+  numeroDocumento:
+    description: numero Documento
+    type: string
+    minLength: 1
+    example: "00014300006"

@@ -1,0 +1,3502 @@
+{
+	"info": {
+		"_postman_id": "3dc07513-5069-4fcc-a289-2375ba56bc86",
+		"name": "TRX BDV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9532536"
+	},
+	"item": [
+		{
+			"name": "accountingtermfinan",
+			"item": [
+				{
+					"name": "HABA",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oficina\": \"9199\",\r\n    \"empresa\": \"0102\",\r\n    \"codServicio\": \"00007\",\r\n    \"monto\": \"000000000001000\",\r\n    \"nroDocumento\": \"0000000000000\",\r\n    \"nroReferencia\": \"0000236899855\",\r\n    \"ofiOrigen\": \"9199\",\r\n    \"ofiDestino\": \"9199\",\r\n    \"descripcion\": \"PAPEL DE OFICINA\",\r\n    \"numeroRegistros\": \"1\",\r\n    \"ciclo\": \"2\",\r\n    \"indicaCorreccion\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/accountingtermfinan/IntHABA",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"accountingtermfinan",
+								"IntHABA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HABB",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{IPKONG}}/accountingtermfinan/IntHABB",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"accountingtermfinan",
+								"IntHABB"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "accountinquiry",
+			"item": [
+				{
+					"name": "B41A",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{IPKONG}}/accountinquiry/IntB41A",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"accountinquiry",
+								"IntB41A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B480",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"producto\": \"41\",\r\n    \"subproducto\": \"0001\",\r\n    \"estado\": \"C\",\r\n    \"numeroMaterial\": \"V 00029671789\",\r\n    \"user\": \"OPCE812\",\r\n    \"terminal\": \"0190\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/accountinquiry/IntB480",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"accountinquiry",
+								"IntB480"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BKXB",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{IPKONG}}/accountinquiry/IntBKXB",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"accountinquiry",
+								"IntBKXB"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "activitycategoryspecial",
+			"item": [
+				{
+					"name": "WP46",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"M\",\r\n    \"numeroCliente\": \"18162615\",\r\n    \"actividadEspecifica\": \"INVERSIONISTAS Y AGENCIAS DE BIENES RAICES\",\r\n    \"categoriaEspecial\": \"0008\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/activitycategoryspecial/IntWP46",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"activitycategoryspecial",
+								"IntWP46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP48",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\",\r\n    \"User\": \"OPCE204\",\r\n    \"Terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/activitycategoryspecial/IntWP48",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"activitycategoryspecial",
+								"IntWP48"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "querymovements",
+			"item": [
+				{
+					"name": "B402",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaCliente\": \"01020353800000390859\",\r\n    \"divisa\": \"VES\",\r\n    \"cobrocomision\": \"N\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/querymovements/IntB402",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"querymovements",
+								"IntB402"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B401",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaCliente\": \"01020353800000390859\",\r\n    \"divisa\": \"VES\",\r\n    \"fechaInicio\": \"\",\r\n    \"fechaFin\": \"\",\r\n    \"movimientoInicial\": \"\",\r\n    \"movimientoFinal\": \"\",\r\n    \"tipoRegistro\": \"\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/querymovements/IntB401",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"querymovements",
+								"IntB401"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "passivetermfinan",
+			"item": [
+				{
+					"name": "BG61",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoCtaCliente\": \"01020353800000390859\",\r\n    \"importe\": 8.00,\r\n    \"importePlanilla\": 8.00,\r\n    \"importeCheqBV\": 0.00,\r\n    \"importeCheqOB\": 0.00,\r\n    \"numeroPlanilla\": 19000011,\r\n    \"ajusteEfectivo\": 0,\r\n    \"ajusteChequesBdv\": 0,\r\n    \"ajusteOtrosBanco\": 0,\r\n    \"codigoOperacion\": \" \",\r\n    \"fechaValor\": \" \",\r\n    \"carta\": 0,\r\n    \"autorizar\": \" \",\r\n    \"guardarAnotado\": \" \",\r\n    \"fechaHoraOperOff\": \"2022-10-18\",\r\n    \"divisaAbono\": \"VES\",\r\n    \"diasDeRetencion\": \" \",\r\n    \"porcentajeRetencion\": \"000000\",\r\n    \"afectaLiquidacion\": \" \",\r\n    \"serialCmc7\": \"0000000000000\",\r\n    \"observaciones\": \" \",\r\n    \"numeroDeLibreta\": \"000000000\",\r\n    \"tipoDctoLph\": \" \",\r\n    \"numeroDctoLph\": \"00000000000\",\r\n    \"divisionLph\": \"00\",\r\n    \"indicReversoDepos\": \"S\",\r\n    \"cartaPorteDeposito\": 0,\r\n    \"masDatosEnDetalle\": \"N\",\r\n    \"primeraLlamada\": \"S\",\r\n    \"ctaDelCheque1\": \"\",\r\n    \"numeroDeCheque1\": \"\",\r\n    \"importeCheque1\": 0,\r\n    \"dnaCheque1\": \"\",\r\n    \"tipoCheque01\": \"\",\r\n    \"ctaCheque2\": \"\",\r\n    \"numCheque2\": \"\",\r\n    \"impCheque2\": 0,\r\n    \"dnaCheque2\": \"\",\r\n    \"tipCheque02\": \"\",\r\n    \"ctaCheque3\": \"\",\r\n    \"numCheque3\": \"\",\r\n    \"impCheque3\": \"\",\r\n    \"dnaCheque3\": \"\",\r\n    \"tipoCheque03\": \"\",\r\n    \"ctaCheque4\": \"\",\r\n    \"numCheque4\": \"\",\r\n    \"impCheque4\": 0,\r\n    \"dnaCheque4\": \"\",\r\n    \"tipCheque04\": \"\",\r\n    \"ctaCheque5\": \"\",\r\n    \"numCheque5\": \"\",\r\n    \"impCheque5\": 0,\r\n    \"dnaCheque5\": \"\",\r\n    \"tipoCheque05\": \"\",\r\n    \"ctaCheque6\": \"\",\r\n    \"numCheque6\": \"\",\r\n    \"impCheque6\": 0,\r\n    \"dnaCheque6\": \"\",\r\n    \"tipoCheque06\": \"\",\r\n    \"ctaCheque7\": \"\",\r\n    \"numCheque7\": \"\",\r\n    \"impCheque7\": 0,\r\n    \"dnaCheque7\": \"\",\r\n    \"tipoCheque07\": \"\",\r\n    \"ctaCheque8\": \"\",\r\n    \"numCheque8\": \"\",\r\n    \"impCheque8\": 0,\r\n    \"dnaCheque8\": \"\",\r\n    \"tipoCheque08\": \"\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/passivetermfinan/IntBG61",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"passivetermfinan",
+								"IntBG61"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BQ10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroChequeGerenc\": \"2501000072702\",\r\n    \"importeCheque\": 20.01,\r\n    \"divisa\": \"VES\",\r\n    \"cuentaAbono\": \"01020501890000022021\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/passivetermfinan/IntBQ10",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"passivetermfinan",
+								"IntBQ10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B533",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoCuentaCliente\": \"01020501870109341307\",\r\n    \"importe\": 0.01,\r\n    \"codigoOperacion\": \"\",\r\n    \"numeroCheque\": \"\",\r\n    \"fechaValor\": \"\",\r\n    \"carta\": \"\",\r\n    \"autorizar\": \"\",\r\n    \"guardarAnotado\": \"\",\r\n    \"divisaCargo\": \"VES\",\r\n    \"numeroRetencion\": 0,\r\n    \"fechaHoraOperOff\": \"\",\r\n    \"fechaGiro\": \"\",\r\n    \"literal\": \"\",\r\n    \"numeroLibreta\": \"000000000\",\r\n    \"serial\": \"06728\",\r\n    \"numeroPlanilla\": \"78402384\",\r\n    \"indicadorTitular\": \"N\",\r\n    \"Dna\": \"\",\r\n    \"user\": \"OPCE501\",\r\n    \"terminal\": \"0221\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/passivetermfinan/IntB533",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"passivetermfinan",
+								"IntB533"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BGV3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPlanilla\": 18425399,\r\n    \"indicadorTarjeta\": \"N\",\r\n    \"divisaAbono\": \"VES\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/passivetermfinan/IntBGV3",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"passivetermfinan",
+								"IntBGV3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B581",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoCuentaCliente\": \"01020494110000382922\",\r\n    \"importe\": 3.00,\r\n    \"codigoOperacion\": 6278,\r\n    \"numeroCheque\": 0,\r\n    \"fechaValor\": \"\",\r\n    \"carta\": 0,\r\n    \"autorizar\": \"\",\r\n    \"guardarAnotado\": \"\",\r\n    \"divisaCargo\": \"USD\",\r\n    \"numeroRetencion\": \"\",\r\n    \"fechaHoraOperOff\": \"2022-10-14SS\",\r\n    \"fechaGiro\": \"\",\r\n    \"literal\": \"\",\r\n    \"numeroLibreta\": 0,\r\n    \"serial\": \"9627800427427\",\r\n    \"numeroPlanilla\": 0,\r\n    \"indicadorTitular\": \"\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/passivetermfinan/IntB581",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"passivetermfinan",
+								"IntB581"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "checkinquiry",
+			"item": [
+				{
+					"name": "BKV4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"opcion\": \"U\", \r\n \"cantidadRegistros\": \"00\", \r\n \"codigoEntidad\": \"0102\", \r\n \"entidadCuenta\": \"0102\", \r\n \"centroCuenta\": \"0430\", \r\n \"numeroCuenta\": \"580000199403\", \r\n \"divisa\": \"VES\", \r\n \"numeroCheque\": \"84004919\", \r\n \"fechaInicial\": \"\", \r\n \"fechaFinal\": \"\", \r\n \"masDatos\": \"N\",\r\n \"user\": \"OPCE204\",\r\n \"terminal\": \"0353\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkinquiry/IntBKV4",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkinquiry",
+								"IntBKV4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BQ05",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCheque\": \"2501000072702\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkinquiry/IntBQ05",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkinquiry",
+								"IntBQ05"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BKV1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"U\",\r\n    \"cantidadRegistros\": \"00\",\r\n    \"codigoEntidad\": \"0102\",\r\n    \"entidadCuenta\": \"0102\",\r\n    \"centroCuenta\": \"0430\",\r\n    \"numeroCuenta\": \"580000199403\",\r\n    \"divisa\": \"VES\",\r\n    \"numeroCheque\": \"84004919\",\r\n    \"fechaInicial\": \"\",\r\n    \"fechaFinal\": \"\",\r\n    \"masDatos\": \"N\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkinquiry/IntBKV1",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkinquiry",
+								"IntBKV1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BKXA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"transaccion\": \"C\", \r\n \"entidad\": \"0102\", \r\n \"cuenta\": \"01020010500002200044\", \r\n \"divisa\": \"VES\", \r\n \"tipoDocumento\": \"J\", \r\n \"nroDocumento\": \"00000035914\", \r\n \"nroCheque\": 128614, \r\n \"nroRetiro\": 0, \r\n \"cantRegistros\": 1, \r\n \"indDeMasDatos\": \"S\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkinquiry/IntBKXA",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkinquiry",
+								"IntBKXA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exchangeinter",
+			"item": [
+				{
+					"name": "EXRG",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoRegla\": \"RGVN\",\r\n    \"oficinaOrigen\": \"9199\",\r\n    \"userName\": \"PGFL001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/exchangeinter/IntEXRG",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"exchangeinter",
+								"IntEXRG"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXIC - menudeo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indOperacion\": \"D\",\r\n    \"numeroJornada\": \"006-2022\",\r\n    \"indicadorComision\": \"120\",\r\n    \"oficinaOrigen\": \"9199\",\r\n    \"oficinaDestino\": \"9199\",\r\n    \"nacionalidad\": \"V\",\r\n    \"nroCedulaRif\": 8763264,\r\n    \"cuentaOrigenBs\": \"01020103960100045979\",\r\n    \"montoDivisa\": 13,\r\n    \"cuentaDestinoDiv\": \"01020501820007107427\",\r\n    \"fechaValor\": \"2022-02-09\",\r\n    \"tipoServicio\": \"08\",\r\n    \"idOperacion\": \"000000000000\",\r\n    \"diasEntrega\": 0,\r\n    \"indDisponible\": \"\",\r\n    \"codigoActividadEconomica\": \"11\",\r\n    \"destinoFondo\": \"05\",\r\n    \"mediosPago\": \"02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/exchangeinter/IntEXIC",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"exchangeinter",
+								"IntEXIC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXRI",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcionRegla\": \"RGLRP\",\r\n    \"oficinaOrigen\": \"0501\",\r\n    \"codigoDivisa\": \"USD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/exchangeinter/IntEXRI",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"exchangeinter",
+								"IntEXRI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indOperacion\": \"C\",\r\n    \"operacion\": \"5210\",\r\n    \"oficinaOrigen\": \"9199\",\r\n    \"oficinaDestino\": \"9199\",\r\n    \"cuentaOrigenBs\": \"01020103960100045979\",\r\n    \"cuentaDestinoDivisa\": \"01020221350000856898\",\r\n    \"nacionalidad\": \"V\",\r\n    \"cedulaRif\": \"3982585\",\r\n    \"nombreCliente\": \"LAZA JUANA BAUTISTA\",\r\n    \"codigoDivisa\": \"USD\",\r\n    \"montoDivisa\": 120,\r\n    \"codigoActividadEconomica\": \"11\",\r\n    \"destinoFondo\": \"05\",\r\n    \"mediosPago\": \"02\",\r\n    \"montoBolivares\": 517.05,\r\n    \"idOperacion\": \"\",\r\n    \"tipoServicio\": \"10\",\r\n    \"multiplo\": \"\",\r\n    \"tasaCompra\": 0,\r\n    \"tasaVenta\": 4.3088,\r\n    \"user\": \"PGFL001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/exchangeinter/IntEXCV",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"exchangeinter",
+								"IntEXCV"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indicadorOperacion\": \"C\",\r\n    \"numeroPersona\": \"26398453\",\r\n    \"fechaDesde\": \"2022-10-19\",\r\n    \"fechaHasta\": \"2022-10-19\",\r\n    \"estatusOperacion\": \"T\",\r\n    \"oficinaDestino\": \"0000\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0501\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/exchangeinter/IntEXID",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"exchangeinter",
+								"IntEXID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "digitalaccountopening",
+			"item": [
+				{
+					"name": "B030",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"numSolicitud\": \"\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numDocumento\": \"00000025543\",\r\n    \"numCliente\": \"10165622\",\r\n    \"productoSolicitado\": \"02\",\r\n    \"subprodSolicitado\": \"2035\",\r\n    \"indPertenecerPqt\": \"\",\r\n    \"pqtProductoSoli\": \"\",\r\n    \"spqtPrductoSoli\": \"\",\r\n    \"estadoSolicitud\": \"\",\r\n    \"numContrato\": \"\",\r\n    \"divisa\": \"\",\r\n    \"user\": \"OPCE205\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/digitalaccountopening/IntB030",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"digitalaccountopening",
+								"IntB030"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B032",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroSolicitud\": \"002560479\",\r\n    \"producto\": \"02\",\r\n    \"subproducto\": \"2020\",\r\n    \"divisa1\": \"EUR\",\r\n    \"divisa2\": \"\",\r\n    \"entidadCentroConta\": \"01020130\",\r\n    \"fechaVencimiento\": \"\",\r\n    \"tipoVencimiento\": \"\",\r\n    \"numVencimiento\": \"\",\r\n    \"limiteCuenta\": \"\",\r\n    \"indPreasigndada\": \"\",\r\n    \"codigoCuenta\": \"\",\r\n    \"numeroConvenio\": \"\",\r\n    \"chequeInicio\": \"\",\r\n    \"chequeFin\": \"\",\r\n    \"nuevaLibreta\": \"\",\r\n    \"indicadorTarjeta\": \"\",\r\n    \"tarjeta\": \"\",\r\n    \"canalVenta\": \"\",\r\n    \"oficialVenta\": \"\",\r\n    \"oficialOpera\": \"\",\r\n    \"oficialComer\": \"\",\r\n    \"dna\": \"\",\r\n    \"codOnt\": \"\",\r\n    \"user\": \"OPCE205\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/digitalaccountopening/IntB032",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"digitalaccountopening",
+								"IntB032"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "maintenancerelatedcom",
+			"item": [
+				{
+					"name": "WP62",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"nroClientePersonaJuridica\": \"27417241\",\r\n    \"secuenciaRegistro\": \"000\",\r\n    \"tipoRegistro\": \"4\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numeroDocumento\": \"00000003505\",\r\n    \"nombreEmpresaRelacionadas\": \"POLAR\",\r\n    \"codActividadEconomica\": \"C1313000\",\r\n    \"tipoDocumento1\": \"\",\r\n    \"numeroDocumento1\": \"\",\r\n    \"nombreEmpresaRelacionadas1\": \"\",\r\n    \"codActividadEconomica1\": \"\",\r\n    \"tipoDocumento2\": \"\",\r\n    \"numeroDocumento2\": \"\",\r\n    \"nombreEmpresaRelacionadas2\": \"\",\r\n    \"codActividadEconomica2\": \"\",\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal\": \"ZU83\",\r\n    \"centroSucursal\": \"0353\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntWP62",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntWP62"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE98",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"nroClientePersonaJuridica\": \"27417241\",\r\n    \"secuenciaRegistro\": \"000\",\r\n    \"tipoRegistro\": \"4\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numeroDocumento\": \"00000003505\",\r\n    \"nombreEmpresaRelacionadas\": \"POLAR\",\r\n    \"codActividadEconomica\": \"C1313000\",\r\n    \"tipoDocumento1\": \"\",\r\n    \"numeroDocumento1\": \"\",\r\n    \"nombreEmpresaRelacionadas1\": \"\",\r\n    \"codActividadEconomica1\": \"\",\r\n    \"tipoDocumento2\": \"\",\r\n    \"numeroDocumento2\": \"\",\r\n    \"nombreEmpresaRelacionadas2\": \"\",\r\n    \"codActividadEconomica2\": \"\",\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal\": \"ZU83\",\r\n    \"centroSucursal\": \"0353\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPE98",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPE98"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE81",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDeCliente\": \"15964963\",\r\n    \"tipoDeDocumento\": \"V \",\r\n    \"numeroDeDocumento\": \"00013067057\",\r\n    \"secuenIdentfDocum\": \"0\",\r\n    \"user\": \"OPCE205\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPE81",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPE81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE94",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"nroClientePersonaJuridica\": \"27417241\",\r\n    \"secuenciaRegistro\": \"000\",\r\n    \"tipoRegistro\": \"4\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numeroDocumento\": \"00000003505\",\r\n    \"nombreEmpresaRelacionadas\": \"POLAR\",\r\n    \"codActividadEconomica\": \"C1313000\",\r\n    \"tipoDocumento1\": \"\",\r\n    \"numeroDocumento1\": \"\",\r\n    \"nombreEmpresaRelacionadas1\": \"\",\r\n    \"codActividadEconomica1\": \"\",\r\n    \"tipoDocumento2\": \"\",\r\n    \"numeroDocumento2\": \"\",\r\n    \"nombreEmpresaRelacionadas2\": \"\",\r\n    \"codActividadEconomica2\": \"\",\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal\": \"ZU83\",\r\n    \"centroSucursal\": \"0353\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPE94",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPE94"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEA1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"altaBajaModificaci\": \"M\",\r\n    \"numeroDePersona\": \"15964963\",\r\n    \"numClienteRelacion\": \"16352821\",\r\n    \"codigoDeRelacion\": \"AP \",\r\n    \"porcentajeParticipa\": 0,\r\n    \"porcentajeUtilidad\": 0,\r\n    \"indRelacionPrincip\": \" \",\r\n    \"parteDeLasObser1\": \"979797                        25/06/1976 PRUEBAS                                                                        \",\r\n    \"parteDeLasObser2\": \" \",\r\n    \"timestamp\": \"2022-07-20-11.35.03.899251\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPEA1",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPEA1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEA7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDeCliente\": \"15964963\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPEA7",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPEA7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEA8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"nroClientePersonaJuridica\": \"27417241\",\r\n    \"secuenciaRegistro\": \"000\",\r\n    \"tipoRegistro\": \"4\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numeroDocumento\": \"00000003505\",\r\n    \"nombreEmpresaRelacionadas\": \"POLAR\",\r\n    \"codActividadEconomica\": \"C1313000\",\r\n    \"tipoDocumento1\": \"\",\r\n    \"numeroDocumento1\": \"\",\r\n    \"nombreEmpresaRelacionadas1\": \"\",\r\n    \"codActividadEconomica1\": \"\",\r\n    \"tipoDocumento2\": \"\",\r\n    \"numeroDocumento2\": \"\",\r\n    \"nombreEmpresaRelacionadas2\": \"\",\r\n    \"codActividadEconomica2\": \"\",\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal\": \"ZU83\",\r\n    \"centroSucursal\": \"0353\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancerelatedcom/IntPEA8",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancerelatedcom",
+								"IntPEA8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mtdatcomplmleglpers",
+			"item": [
+				{
+					"name": "PE53",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indicador\": \"M\",\r\n    \"numeroCliente\": \"21420527\",\r\n    \"secuenReferPersona\": \"01\",\r\n    \"tipoDocumento\": \"V\",\r\n    \"numeroDocumento\": \"00000500123\",\r\n    \"tipoRelacion\": \"02\",\r\n    \"primerApellidoContra\": \"CARLOS\",\r\n    \"segundApellidoContra\": \"LOZANO\",\r\n    \"nombreContrato\": \"CARLOS\",\r\n    \"indicadorCliente\": \"N\",\r\n    \"prefijoTelefono\": \"0212\",\r\n    \"telefonoContrato\": \"7285018\",\r\n    \"prefijoTelCelu\": \"0412\",\r\n    \"tlfCelularReferenc\": \"5018456\",\r\n    \"tipoDocumento2\": \"\",\r\n    \"numeroDocumento2\": \"\",\r\n    \"tipoRelacion2\": \"\",\r\n    \"primerApellidoCont2\": \"\",\r\n    \"segundApellidoCont2\": \"\",\r\n    \"nombreContrato2\": \"\",\r\n    \"indicadorCliente2\": \"\",\r\n    \"prefijoTelefono2\": \"\",\r\n    \"telefonoContrato2\": \"\",\r\n    \"prefijoTelCelu2\": \"\",\r\n    \"tlfCelularRefere2\": \"\",\r\n    \"tipoDocumento3\": \"\",\r\n    \"numeroDocumento3\": \"\",\r\n    \"tipoRelacion3\": \"\",\r\n    \"primerApellidoCont3\": \"\",\r\n    \"segundApellidoCont3\": \"\",\r\n    \"nombreContrato3\": \"\",\r\n    \"indicadorCliente3\": \"\",\r\n    \"prefijoTelefono3\": \"\",\r\n    \"telefonoContrato3\": \"\",\r\n    \"prefijoTelCelu3\": \"\",\r\n    \"tlfCelularRefere3\": \"\",\r\n    \"timeStampModif\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE53",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE54",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indiAltaModifiBaj\": \"M\",\r\n    \"numeroCliente\": \"27417456\",\r\n    \"condicionDocume\": \"P\",\r\n    \"tipoDocumento\": \"M\",\r\n    \"numeroDocumento\": \"00019048614\",\r\n    \"secuenciaDocumento\": \"01\",\r\n    \"expedidoPor\": \"\",\r\n    \"fechaExpedicion\": \"2000-12-31\",\r\n    \"lugarExpedicion\": \"1800669\",\r\n    \"codigoPais\": \"432\",\r\n    \"fechaVencimiemnto\": \"2014-08-10\",\r\n    \"timestamp\": \"2022-07-28-16.35.46.720568\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE54",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE55",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"10138199\",\r\n    \"tipoDucumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenIdentifdoc\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreRazonSocial\": \"\",\r\n    \"fechaNacimiConstit\": \"\",\r\n    \"tipoEmpresa\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indRelacEntrePers\": \"\",\r\n    \"indTenerContrat\": \"\",\r\n    \"indPerteneGrupo\": \"\",\r\n    \"indicadorDeAviso\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"indUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"obserDomicilio1\": \"\",\r\n    \"obserDomicilio2\": \"\",\r\n    \"bloqNumCasillaApt\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"dodigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"arcaNormalizacion\": \"\",\r\n    \"cotizaEnBolsa\": \"\",\r\n    \"tipEntidComerNoC\": \"\",\r\n    \"cantidadPersonas\": 0,\r\n    \"tipRelacClienBanc\": \"\",\r\n    \"fechaDisolucion\": \"\",\r\n    \"fechaInicioSocieda\": \"\",\r\n    \"artCorresponEmpre\": 0,\r\n    \"plazoDuracuinSocie\": 0,\r\n    \"firmaSolicitud\": \"\",\r\n    \"fechaCambioDirecci\": \"\",\r\n    \"fechaVencimDirecto\": \"\",\r\n    \"fechaInscripcion\": \"\",\r\n    \"nombreNotario\": \"\",\r\n    \"numeroRegistroInsc\": \"\",\r\n    \"tomoInscripRegistr\": \"\",\r\n    \"folioInscripRegist\": \"\",\r\n    \"jurisdicInscrRegis\": 0,\r\n    \"propiedadNacioMult\": \"\",\r\n    \"ramoEmpresa\": \"\",\r\n    \"ultModifRegCamCo\": \"\",\r\n    \"facturacionAnual\": 0,\r\n    \"patrimonioNeto\": 0,\r\n    \"codigoMoneda\": \"\",\r\n    \"objetoSocial1\": \"\",\r\n    \"objetoSocial2\": \"\",\r\n    \"nombreRegistro\": \"\",\r\n    \"numeroRegistro\": \"\",\r\n    \"numeroTomo\": \"\",\r\n    \"numeroFolio\": \"\",\r\n    \"fechaRegistro\": \"\",\r\n    \"capitalActual\": 0,\r\n    \"nroGacOficEp\": \"\",\r\n    \"fechaGacOficEp\": \"\",\r\n    \"nombreEnteAutorEp\": \"\",\r\n    \"codOfcNacTesorEp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE55",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE58",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDePersona\": \"\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"numeroDeDocumento\": \"14300006\",\r\n    \"observTextoLibre\": \"\",\r\n    \"secuenciaDeReferen\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreraznSocial\": \"\",\r\n    \"fechaDeNacimiento\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"blnrocasillaaptdo\": \"\",\r\n    \"indicadorUso1\": \"\",\r\n    \"indicadorUso2\": \"\",\r\n    \"indicadorUso3\": \"\",\r\n    \"indicadorUso4\": \"\",\r\n    \"indicadorUso5\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"oebservaciones2\": \"\",\r\n    \"marcaNormaliz\": \"\",\r\n    \"localidadciudad\": \"\",\r\n    \"comunaDomPpal\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE58",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE61",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDePersona\": \"\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"numeroDeDocumento\": \"14300006\",\r\n    \"observTextoLibre\": \"\",\r\n    \"secuenciaDeReferen\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreraznSocial\": \"\",\r\n    \"fechaDeNacimiento\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"blnrocasillaaptdo\": \"\",\r\n    \"indicadorUso1\": \"\",\r\n    \"indicadorUso2\": \"\",\r\n    \"indicadorUso3\": \"\",\r\n    \"indicadorUso4\": \"\",\r\n    \"indicadorUso5\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"oebservaciones2\": \"\",\r\n    \"marcaNormaliz\": \"\",\r\n    \"localidadciudad\": \"\",\r\n    \"comunaDomPpal\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE61",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE61"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE67",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDePersona\": \"\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"numeroDeDocumento\": \"14300006\",\r\n    \"observTextoLibre\": \"\",\r\n    \"secuenciaDeReferen\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreraznSocial\": \"\",\r\n    \"fechaDeNacimiento\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"blnrocasillaaptdo\": \"\",\r\n    \"indicadorUso1\": \"\",\r\n    \"indicadorUso2\": \"\",\r\n    \"indicadorUso3\": \"\",\r\n    \"indicadorUso4\": \"\",\r\n    \"indicadorUso5\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"oebservaciones2\": \"\",\r\n    \"marcaNormaliz\": \"\",\r\n    \"localidadciudad\": \"\",\r\n    \"comunaDomPpal\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/mtdatcomplmleglpers/IntPE67",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"mtdatcomplmleglpers",
+								"IntPE67"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "legalclientdomicile",
+			"item": [
+				{
+					"name": "PE60",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"indicadorAccion\": \"A\", \r\n \"numeroPersona\": \"277262\", \r\n \"secuenciaDomicilio\": 0, \r\n \"tipoDomicilio\": \"LAB\", \r\n \"tipoVia\": \"AU\", \r\n \"nombreCalle\": \"PRUEBAS\", \r\n \"tipoConstruccion\": \"APQT\", \r\n \"tipoNucleoUrbano\": \"ALDE\", \r\n \"observaciones\": \"PRUEBAS\", \r\n \"observaciones2\": \"\", \r\n \"sucursalCasilla\": \"\", \r\n \"aptCorreoCasilla\": \"\", \r\n \"localidadCiudad\": \"2300001\", \r\n \"descripcionLocalidad\": \"0205020502\", \r\n \"comuna\": \"\", \r\n \"descripcionComuna\": \"\", \r\n \"codigoPostal\": \"00007101\", \r\n \"rutaCartero\": 0, \r\n \"codigoProvincia\": \"23\", \r\n \"codigoPais\": \"423\", \r\n \"tituDomicilio\": \"\", \r\n \"fechaVerificacion\": \"2022-05-31\", \r\n \"marcaNormalizacion\": \"N\", \r\n \"marcaDomErroneo\": \"N\", \r\n \"marcaCorrespDevuel\": \"N\", \r\n \"motivoDevolucion\": \"\", \r\n \"usuarioAlta\": \"\", \r\n \"fechaAltaRegistro\": \"\", \r\n \"usuarioUltimaModif\": \"\", \r\n \"numeroTerminalUltModi\": \"\", \r\n \"sucursalUltModReg\": \"\", \r\n \"fechaHoraUltMod\": \"\", \r\n \"nombrePrograma\": \"\", \r\n \"indicadorBajaMasiv\": \"\" \r\n} \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientdomicile/IntPE60",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientdomicile",
+								"IntPE60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE62",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"27417261\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumen\": \"\",\r\n    \"secuenciaDomicilio\": 0,\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombrePersona\": \"\",\r\n    \"fechaNacimiento\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicionPersona\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indiceRelacion\": \"\",\r\n    \"indiceCondicion\": \"\",\r\n    \"indiceGrupo\": \"\",\r\n    \"indiceAviso\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"indUso5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"nombreCalle\": \"\",\r\n    \"complementoVble1\": \"\",\r\n    \"complementoVble2\": \"\",\r\n    \"numeroBloque\": \"\",\r\n    \"nombreLocalidad\": \"\",\r\n    \"nombreComunidad\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientdomicile/IntPE62",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientdomicile",
+								"IntPE62"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "basiccustomerdata",
+			"item": [
+				{
+					"name": "PE63",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"tipoDocumento\": \"NAT\",\r\n    \"numeroDocumento\": \"3000395\",\r\n    \"secuenciaDocumento\": \"01\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombrePersona\": \"EMPRESA DE PRUEBA\",\r\n    \"fechaIngreso\": \"2022-10-19\",\r\n    \"agrdb1\": \"0501  J\",\r\n    \"fechaNacimiento\": \"1990-06-25\",\r\n    \"fechaInicioActivid\": \"2022-10-19\",\r\n    \"agregadoBasicos2\": \"      432  \",\r\n    \"agrupacionOficiales\": \"\",\r\n    \"agrdb3\": \"432432210  A0100000\",\r\n    \"tiempoDeResidencia\": \"00\",\r\n    \"formaJuridica\": \"00\",\r\n    \"naturalezaJuridica\": \"\",\r\n    \"unidadDeNegocio\": \"330\",\r\n    \"codigoSujeto\": \"\",\r\n    \"marcaBancaPrivada\": \"N\",\r\n    \"nivelDeAcceso\": \"1\",\r\n    \"estadoPersona\": \"010\",\r\n    \"condicionCliente\": \"NCL\",\r\n    \"indicaYCodemp\": \"N    NNNNNNNNN        NA\",\r\n    \"timesampBasicos\": \"\",\r\n    \"expedidoPor\": \"\",\r\n    \"fechaDeVencimiento\": \"9999-12-31\",\r\n    \"marcaPadron\": \"\",\r\n    \"condDocumento\": \"P\",\r\n    \"codigoPais\": \"432\",\r\n    \"fecExpedicionDoc\": \"2022-10-19\",\r\n    \"lugarExpedicionDoc\": \"\",\r\n    \"timestampDocumento\": \"\",\r\n    \"domre1\": \"PRIAVNOMBRE                                            CASACASR              0100810\",\r\n    \"domre2\": \"010101012200001030\",\r\n    \"rutaCartero\": \"000000000\",\r\n    \"domre3\": \"01432\",\r\n    \"fechaVerificacion\": \"2022-10-19\",\r\n    \"agregadoDomicilio4\": \"NNN\",\r\n    \"obser1\": \"DESCRIPCION\",\r\n    \"obser2\": \" PRUEBAS@YAHOO.COM \",\r\n    \"timestampDomicilio\": \"\",\r\n    \"secuenciaDomicilio\": \"001\",\r\n    \"agregadoTelefonico\": \"002NOR0212   00585012372 \",\r\n    \"timestampTelefono\": \"\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0501\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/basiccustomerdata/IntPE63",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"basiccustomerdata",
+								"IntPE63"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE63_NATURAL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"\",\r\n    \"tipoDocumento\": \"V\",\r\n    \"numeroDocumento\": \"00000067409\",\r\n    \"secuenciaDocumento\": \"01\",\r\n    \"nombreFantasia\":\"\",\r\n    \"primerApellido\": \"ANGULO\",\r\n    \"segundoApellido\": \"DIAZ\",\r\n    \"nombrePersona\":\"ELIECER\",\r\n    \"fechaIngreso\": \"2023-01-16\",\r\n    \"agrdb1\": \"0501SHF\",\r\n    \"fechaNacimiento\": \"2000-01-11\",\r\n    \"fechaInicioActivid\": \"2023-01-16\",\r\n    \"agregadoBasicos2\": \" 432 \",\r\n    \"agrupacionOficiales\": \"\",\r\n    \"agrdb3\": \"432432210  A0100000\",\r\n    \"tiempoDeResidencia\": \"000\",\r\n    \"formaJuridica\": \"01\",\r\n    \"naturalezaJuridica\": \"\",\r\n    \"unidadDeNegocio\": \"340\",\r\n    \"codigoSujeto\": \"\",\r\n    \"marcaBancaPrivada\": \"N\",\r\n    \"nivelDeAcceso\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicionCliente\": \"\",\r\n    \"indicaYCodemp\": \"N NNNNNNNNN NA\",\r\n    \"timesampBasicos\": \"\",\r\n    \"expedidoPor\": \"\",\r\n    \"fechaDeVencimiento\": \"9999-12-31\",\r\n    \"marcaPadron\": \"\",\r\n    \"condDocumento\": \"P\",\r\n    \"codigoPais\": \"432\",\r\n    \"fecExpedicionDoc\": \"\",\r\n    \"lugarExpedicionDoc\": \"\",\r\n    \"timestampDocumento\": \"\",\r\n    \"domre1\": \"PRIAVNOMBRE                                            CASACASR              0100810\",\r\n    \"domre2\": \" 2101\",\r\n    \"rutaCartero\": \"010101012200001030\",\r\n    \"domre3\": \"01432 \",\r\n    \"fechaVerificacion\": \"2023-01-16\",\r\n    \"agregadoDomicilio4\": \"NNN\",\r\n    \"obser1\": \"DESCRIPCION\",\r\n    \"obser2\": \" prueba@hotmail.com \",\r\n    \"timestampDomicilio\": \"\",\r\n    \"secuenciaDomicilio\": \"000\",\r\n    \"agregadoTelefonico\": \"003CEL058 005840112100 \",\r\n    \"timestampTelefono\": \"\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/basiccustomerdata/IntPE63",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"basiccustomerdata",
+								"IntPE63"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE68",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\": \"V\",\r\n    \"numeroDocumento\": \"00014300006\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/basiccustomerdata/IntPE68",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"basiccustomerdata",
+								"IntPE68"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE72",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"numeroDocumento\": \"0002031\", \r\n \"tipoDocumento\": \"G\", \r\n \"secuenciaDocumento\": \"01\", \r\n \"nombreFantasia\": \"ALCALDIA 23 \", \r\n \"primerApellido\": \"UA \", \r\n \"segundoApellido\": \" \", \r\n \"nombrePersona\": \"ALCALDIA MCPIOS ANTOS MICHELEN \", \r\n \"fechaIngreso\": \"2000-07-22\", \r\n \"sucursalAdministrador\": \"01327\", \r\n \"estadoCivil\": \" \", \r\n \"sexoPersona\": \" \", \r\n \"tipoPersona\": \"J\", \r\n \"fechaNacimiento\": \"2001-06-19\", \r\n \"fechaInicioActiv\": \"2000-08-07\", \r\n \"canalVenta\": \"V00\", \r\n \"canalCaptacion\": \"C00\", \r\n \"paisOrigen\": \"432\", \r\n \"codigoCampana\": \" \", \r\n \"agrupacionOficiales\": \"0068 \", \r\n \"nacionalidad\": \"NA \", \r\n \"paisResidencia\": \"432\", \r\n \"sector\": \"340\", \r\n \"tipoOcupacion\": \" \", \r\n \"codigoActividad\": \"Mda100\", \r\n \"tiempoResidencia\":\"0\", \r\n \"formaJuridica\": \"06\", \r\n \"naturalezaJuridica\": \" \", \r\n \"unidadNegocio\": \"3PT\", \r\n \"codigoSujeto\": \"001\", \r\n \"marcaBancaPrivada\": \"N\", \r\n \"nivelAcceso\": \"0\", \r\n \"estadoPersona\": \"010\", \r\n \"condicionPersona\": \"CLI\", \r\n \"indicadores\": \"N NSSNNNNNN\", \r\n \"codigoActividadRiu\": \" \", \r\n \"subSegmento\": \" \", \r\n \"idioma\": \"NA \", \r\n \"timestamp1\": \"2022-02-04-14.39.46.346057\", \r\n \"expedidoPor\": \" \", \r\n \"fechaVencimiento\": \"2010-08-07\", \r\n \"marcaVerificacion\": \" \", \r\n \"condicionDocumento\": \"P\", \r\n \"codigoPais\": \"432\", \r\n \"fechaExpedicion\": \"2000-08-07\", \r\n \"lugarExposicion\": \" \", \r\n \"timestamp2\": \"2011-02-02-16.05.26.868803\", \r\n \"campoAgregado1\": \"PRIRUREDMI HDA CASR 2000910\", \r\n \"campoAgregado2\": \"2104210405 00002314\", \r\n \"rutaCartero\": 0, \r\n \"campoAgregado3\": \"2043201\", \r\n \"fechaVerificacion\": \"2013-12-19\", \r\n \"campoAgregado4\": \"SNN \", \r\n \"campoVariable1\": \"EL TREBOL PENT HOUSE GUARATARO \", \r\n \"campoVariable2\": \" ALCADIA@PRUEBA.COM \", \r\n \"timestamp3\": \"2022-01-31-15.54.45.029242\", \r\n \"secuenciaDomicilio\": 1, \r\n \"agregadoTelefono\": \"001NOR0212 00580000000 \", \r\n \"timestamp4\": \"2011-06-16-15.21.12.255931\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/basiccustomerdata/IntPE72",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"basiccustomerdata",
+								"IntPE72"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cardcontractcurrency",
+			"item": [
+				{
+					"name": "MP4Z",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"centroDeAltaCuent\": \"0190\", \r\n    \"codigoDeProducto\": \"44\", \r\n    \"codigoSubproducto\": \"4000\",\r\n    \"codCondicionesAso\": \"400\", \r\n    \"codigoDeCampaña\": \"\", \r\n    \"codigoDeConvenio\": \"\", \r\n    \"codigoDePromocion\": \"\", \r\n    \"nroPersonaTitular\": \"26935535\",\r\n    \"nroPersonaAvalista\": \"\", \r\n    \"indCtaEmpresa\": 0, \r\n    \"indEstNombreEmp\": 0, \r\n    \"nomEmpEstampacion\": \"\",  \r\n    \"codRegimenFiscal\": 0, \r\n    \"formaDePago\": 0, \r\n    \"indSitDeContrato\": 0, \r\n    \"grupoDeLiquidacion\": 0, \r\n    \"grupoDeCuota\": 28, \r\n    \"oficialDeVenta\": \"\",\r\n    \"claveMonedaPrincip\": 0, \r\n    \"limCreditoPrincipa\": 0, \r\n    \"impFijoPagoApla1\": 0, \r\n    \"limCreCompraCuot1\": 0, \r\n    \"limGlobalccuotas\": 0, \r\n    \"claveMonedaSecunda\": 0, \r\n    \"limCreditoSecundar\": 0, \r\n    \"impFijoPagoApla2\": 0, \r\n    \"limCreCompraCuot2\": 0, \r\n    \"limGlobalccuotas2\": 0, \r\n    \"cuentaCargo1\": \"\",\r\n    \"claveMonedaCtacar1\": 0, \r\n    \"indDomcarCdto\": \"N\", \r\n    \"codigoFormatoEsta\": \"\", \r\n    \"ctaCargoTarjeta1\": \"01020228130000368182\",\r\n    \"claveMonedaTarcta1\": 928,\r\n    \"indActivoPasivo1\": \"P\", \r\n    \"ctaCargoTarjeta2\": \"\", \r\n    \"claveMonedaTarcta2\": 0, \r\n    \"indActivoPasivo2\": \"\", \r\n    \"numereoPersonaTjt\": \"26935535\",\r\n    \"calParticipacionTj\": \"TI\",\r\n    \"indDeTipoTarjeta\": 10,\r\n    \"codDeMarcarTarjet\": 4,\r\n    \"nomEstampacionTarj\": \"CARRILLO ABRAHAM\",\r\n    \"idenEmpleadoTarjet\": \"\", \r\n    \"panAsociadoTarjeta\": \"\", \r\n    \"codigoDeBarrasTjt\": 0, \r\n    \"refDeFotoTarjeta\": \"\", \r\n    \"datosDeEstampTjt\": \"\", \r\n    \"envioDeEstampTjt\": \"N\", \r\n    \"envioDePinTarjet\": \"N\", \r\n    \"codCondEstampacTj\": \"401\",\r\n    \"codigoPromocionTjt\": \"\", \r\n    \"claveMoneda1Tarje\": 928,\r\n    \"limDiarioCajero1T\": 0, \r\n    \"maxNumOpeDia1T\": 0, \r\n    \"claveMoneda2Tarje\": 0, \r\n    \"limDiarioCajero2T\": 0, \r\n    \"maxNumOpeDia2T\": 0, \r\n    \"cuentaDeLaTarjeta\": \"\",\r\n    \"desClaveMoneda\": \"\", \r\n    \"fechaDeAltaContra\": \"\", \r\n    \"panDeLaTarjeta\": \"5899415277284322\",\r\n    \"fechaDeAltaTarjet\": \"\",\r\n    \"fechaCaducidadTjt\": \"\",\r\n    \"desReducMarcaTjt\": \"\",\r\n    \"desReducTipoTjt\": \"\",\r\n    \"indSituacionDeTjt\": 0, \r\n    \"tipoDeBonificacion\": \"\",\r\n    \"user\": \"OPCE812\",\r\n    \"terminal\": \"0190\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/cardcontractcurrency/IntMP4Z",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardcontractcurrency",
+								"IntMP4Z"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPK3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"panDeLaTarjeta\": \"5899415565180810\", \r\n \"indDeOrdenDeCta\": \"C\", \r\n \"cuentaDeCargoNuev\": \"01020228130000368182\", \r\n \"cuentaDeCargoAntg\": \"\", \r\n \"claveDeLaMoneda\": 928, \r\n \"indTipoDeCtacargo\": \"\", \r\n \"indDeCccAjena\": \"00\", \r\n \"productoDeCcc\": \"\", \r\n \"subproductoDeCcc\": \"P\", \r\n \"indActivoPasivo\": \"\", \r\n \"fechaDeAlta\": \"\", \r\n \"fechaDeBaja\": \"2022-06-02\", \r\n \"controlDeConcurren\": \"114550404738\" \r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/cardcontractcurrency/IntMPK3",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardcontractcurrency",
+								"IntMPK3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "checkcarddetails",
+			"item": [
+				{
+					"name": "MP8X",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoEntidad\": \"0102\",\r\n    \"numeroSecuencial\": 0,\r\n    \"centroAltaCtaTar\": \"0190\",\r\n    \"cuentaDeTarjeta\": \"440000167443\",\r\n    \"numeroDeTarjeta\": \"\",\r\n    \"codigoDeComercio\": \"\",\r\n    \"fecIniModificacion\": \"\",\r\n    \"fecFinModificacion\": \"\",\r\n    \"fechaModificacion\": \"\",\r\n    \"horaModificacion\": \"\",\r\n    \"tipoAcceso\": 0,\r\n    \"nombreProceso\": \"\",\r\n    \"descripcionProceso\": \"\",\r\n    \"tablaModificada\": \"\",\r\n    \"nombreCampo\": \"\",\r\n    \"valorActual\": \"\",\r\n    \"valorAnterior\": \"\",\r\n    \"usuario\": \"\",\r\n    \"terminal\": \"\",\r\n    \"indicadorAlta\": \"\",\r\n    \"masDatos\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkcarddetails/IntMP8X",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcarddetails",
+								"IntMP8X"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPCD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"22153314\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/checkcarddetails/IntMPCD",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcarddetails",
+								"IntMPCD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MP5C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoDeEntidad\": \"\",\r\n    \"centroAltaCtaTar\": \"\",\r\n    \"cuentaTarjeta\": \"\",\r\n    \"numeroTarjeta\": \"5899415277455740\",\r\n    \"fechaAltaCtaTar\": \"\",\r\n    \"codigoProducto\": \"\",\r\n    \"codigoSubproducto\": \"\",\r\n    \"codigoCondicionEco\": \"\",\r\n    \"codigoCampania\": \"\",\r\n    \"codigoConvenio\": \"\",\r\n    \"formaPagoSoloCre\": 0,\r\n    \"fechaUltimoCargo\": \"\",\r\n    \"fechaBaja\": \"\",\r\n    \"motivoBaja\": \"\",\r\n    \"formaPagoTemporal\": 0,\r\n    \"fechaIniForpago\": \"\",\r\n    \"fechaFinForPago\": \"\",\r\n    \"indEstadoCtaTar\": 0,\r\n    \"fecUltiCambesta\": \"\",\r\n    \"indBloqueoActivi\": \"\",\r\n    \"indBloqueoConsul\": \"\",\r\n    \"indCuentaEmpresa\": 0,\r\n    \"indNombreDeEmpre\": 0,\r\n    \"nombreEmpresa\": \"\",\r\n    \"indSituaContrato\": 0,\r\n    \"fecResoluCuenta\": \"\",\r\n    \"indCuentaTraspas\": \"\",\r\n    \"grupoLiquidacion\": 0,\r\n    \"grupoProcesoCuota\": 0,\r\n    \"restriccionMesEmis\": \"\",\r\n    \"tipoBonificacion\": \"\",\r\n    \"calidadDeParticipa\": \"\",\r\n    \"codigoDePromocion\": \"\",\r\n    \"indPeriodifiCuota\": \"\",\r\n    \"numeroMesesDistCobcuo\": 0,\r\n    \"codiRegimenFiscal\": 0,\r\n    \"contadorDeFacturac\": 0,\r\n    \"contConcuContra\": \"\",\r\n    \"contrConcuMoneda1\": \"\",\r\n    \"contrConcuMoneda2\": \"\",\r\n    \"bloqueoActiviCta1\": 0,\r\n    \"comentarioBloqueo1\": \"\",\r\n    \"fechaUltimoBloqueo1\": \"\",\r\n    \"indicadorDeBloqueo1\": \"\",\r\n    \"bloqueoActiviCta2\": 0,\r\n    \"comentarioBloqueo2\": \"\",\r\n    \"fechaUltimoBloqueo2\": \"\",\r\n    \"indicadorDeBloqueo2\": \"\",\r\n    \"bloqueoActiviCta3\": 0,\r\n    \"comentarioBloqueo3\": \"\",\r\n    \"fechaUltimoBloqueo3\": \"\",\r\n    \"indicadorDeBloqueo3\": \"\",\r\n    \"bloqueoActiviCta4\": 0,\r\n    \"comentarioBloqueo4\": \"\",\r\n    \"fechaUltimoBloqueo4\": \"\",\r\n    \"indicadorBloqueo4\": \"\",\r\n    \"bloqueoActiviCta5\": 0,\r\n    \"comentarioBloqueo5\": \"\",\r\n    \"fechaUltimoBloqueo5\": \"\",\r\n    \"indicadorBloqueo5\": \"\",\r\n    \"claveMoneda1\": 0,\r\n    \"impfijPagoAplaza1\": 0,\r\n    \"impfijPagoTempo1\": 0,\r\n    \"claveMoneda2\": 0,\r\n    \"impfijpagoAplaza2\": 0,\r\n    \"impfijPagoTempo2\": 0,\r\n    \"indCargoCargoCrdt\": \"\",\r\n    \"codigoFormato\": \"\",\r\n    \"oficinaGestora\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkcarddetails/IntMP5C",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcarddetails",
+								"IntMP5C"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPK2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"panTarjeta\": \"5899415684529285\",\r\n \"indOrdenCta\": \"\",\r\n \"cuentaCargoNuev\": \"01020854850000196736\",\r\n \"cuentaCargoAntg\": \"01020228130000368182\",\r\n \"claveMoneda\": \"928\",\r\n \"indTipoCtaCargo\": \"\",\r\n \"indCCCAjena\": \"\",\r\n \"productoCCC\": \"00\",\r\n \"subproductoCCC\": \"\",\r\n \"indActivoPasivo\": \"P\",\r\n \"fechaAlta\": \"\",\r\n \"fechaBaja\": \"\",\r\n \"controlConcurren\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/checkcarddetails/IntMPK2",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcarddetails",
+								"IntMPK2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPV0",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"tipoDocumento\": \"V\",\r\n\"numeroDocumento\": \"6004214\",\r\n\"numeroPersona\": \"\",\r\n\"codigoEntidad\": \"\",\r\n\"centroDeAlta\": \"\",\r\n\"cuenta\": \"\",\r\n\"pan\": \"\",\r\n\"calidadParticipa\": \"\",\r\n\"marcaTarjeta\": \"\",\r\n\"operatividad\": \"1\",\r\n\"productoContrat\": \"\",\r\n\"subproductoCont\": \"\",\r\n\"reposicionamiento\": \"\",\r\n\"masDatos\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/checkcarddetails/IntMPV0",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcarddetails",
+								"IntMPV0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "interbankp2p",
+			"item": [
+				{
+					"name": "VXP2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"accion\":\"C\", \r\n \"numeroTelefono\":\"04142993774\", \r\n \"nacionalidad\":\"V\", \r\n \"numeroCedula\":\"11201326\", \r\n \"estadoPerfil\":\"A\", \r\n \"instrumentoCuenta\":\"01020497670100065077\", \r\n \"cantidadProductos\":\"01\", \r\n \"ipClavenet\":\"180.183.67.148\", \r\n \"estadoNumero1\":\"A\", \r\n \"codProductoCanal\":\"02\", \r\n \"idProductoCanal\":\"04142993774\", \r\n \"cantidadDiaria1\":\"30\", \r\n \"montoMaxPorDia\":\"6000000\", \r\n \"montoMaxPorTransa\":\"6000000\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/interbankp2p/IntVXP2",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"interbankp2p",
+								"IntVXP2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customerkeyphone",
+			"item": [
+				{
+					"name": "VXAF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accion\": \"C\",\r\n    \"tipoDocumento\": \"V\",\r\n    \"numeroDocumento\": \"6004214\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/customerkeyphone/IntVXAF",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"customerkeyphone",
+								"IntVXAF"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "settlementsmaintenance",
+			"item": [
+				{
+					"name": "PE52",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indicAltamodifbaj\": \"A\",\r\n    \"numeroDeCliente\": \"2741724\",\r\n    \"secuenciaDeDomicil\": 1,\r\n    \"tipoDeUso\": \"001\",\r\n    \"numeroDeContrato\": \"830000395427\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2110\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPE52",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPE52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE80",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"numeroDeContrato\": \"810000396264\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2300\",\r\n    \"calPar\": \"TI\",\r\n    \"ordenDePartic\": 0.01,\r\n    \"segLlamada\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPE80",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPE80"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE88",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"numeroDeContrato\": \"810000396264\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2300\",\r\n    \"calPar\": \"TI\",\r\n    \"ordenDePartic\": 0.01,\r\n    \"segLlamada\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPE88",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPE88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE97",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"numeroDeContrato\": \"810000396264\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2300\",\r\n    \"calPar\": \"TI\",\r\n    \"ordenDePartic\": 0.01,\r\n    \"segLlamada\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPE97",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPE97"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE90",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"numeroDeContrato\": \"810000396264\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2300\",\r\n    \"calPar\": \"TI\",\r\n    \"ordenDePartic\": 0.01,\r\n    \"segLlamada\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPE90",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPE90"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEV3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"codigoDeEntidad\": \"0102\",\r\n    \"codigoDeOficina\": \"0353\",\r\n    \"numeroDeContrato\": \"810000396264\",\r\n    \"codigoDeProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2300\",\r\n    \"calPar\": \"TI\",\r\n    \"ordenDePartic\": 0.01,\r\n    \"segLlamada\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/settlementsmaintenance/IntPEV3",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"settlementsmaintenance",
+								"IntPEV3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "normativecompaccounts",
+			"item": [
+				{
+					"name": "B036",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuenta\": \"01020501810007902169\",\r\n    \"divisa\": \"USD\",\r\n    \"rangoEstimado\": \"02\",\r\n    \"motivoServicio\": \"06\",\r\n    \"paisOrigen\": \"432\",\r\n    \"paisDestino\": \"432\",\r\n    \"observaciones1\": \"PRUEBA 1\",\r\n    \"observaciones2\": \"PRUEBA 2\",\r\n    \"accion\": \"C\",\r\n    \"proTransacMens\": \"02\",\r\n    \"origenFondos\": \"Nomina\",\r\n    \"destinoFondos\": \"Gastos personales\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/normativecompaccounts/IntB036",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"normativecompaccounts",
+								"IntB036"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customerrelationship",
+			"item": [
+				{
+					"name": "PE84",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"entidadContrato\": \"0102\",\r\n    \"oficinaContrato\": \"0353\",\r\n    \"numeroContrato\": \"830000395427\",\r\n    \"entidadCodelo\": \"\",\r\n    \"oficinaCodelo\": \"\",\r\n    \"datosCccModelo\": \"\",\r\n    \"codigoProducto\": \"02\",\r\n    \"codigoSubproducto\": \"2110\",\r\n    \"indDisponibilidaD\": \"\",\r\n    \"indManconumada\": \"N\",\r\n    \"motivoBaja\": \"\",\r\n    \"opcionDeseada\": \"M\",\r\n    \"contiuarInsert\": \"\",\r\n    \"datosCliente1\": \"216352821AUN\",\r\n    \"ordenCliente1\": 0,\r\n    \"responsabilidad1\": 0,\r\n    \"datosCliente2\": \"\",\r\n    \"ordenCliente2\": 0,\r\n    \"responsabilidad2\": 0,\r\n    \"datosCliente3\": \"\",\r\n    \"ordenCliente3\": 0,\r\n    \"responsabilidad3\": 0,\r\n    \"datosCliente4\": \"\",\r\n    \"ordenCliente4\": 0,\r\n    \"responsabilidad4\": 0,\r\n    \"datosCliente5\": \"\",\r\n    \"ordenliente5\": 0,\r\n    \"responsabilidad5\": 0,\r\n    \"datosCliente6\": \"\",\r\n    \"ordenCliente6\": 0,\r\n    \"responsabilidad6\": 0,\r\n    \"datosCliente7\": \"\",\r\n    \"ordenCliente7\": 0,\r\n    \"responsabilidad7\": 0,\r\n    \"datosCliente8\": \"\",\r\n    \"ordenCliente8\": 0,\r\n    \"responsabilidad8\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/customerrelationship/IntPE84",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"customerrelationship",
+								"IntPE84"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "preassignedcard",
+			"item": [
+				{
+					"name": "VPTF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indicadorMasDatos\": \"N\",\r\n    \"codigoConvenio\": \"01007\",\r\n    \"referencia\": \"05000052951             \",\r\n    \"montoDelPago\": 6.00,\r\n    \"montoEfectivo\": 6.00,\r\n    \"numeroPlanilla\": \"89030856    I\",\r\n    \"indicadorLine\": \"0\",\r\n    \"referenciaAdc1\": \"01011 0220180801 &\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/preassignedcard/IntVPTF",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"preassignedcard",
+								"IntVPTF"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "collectiontermfinan",
+			"item": [
+				{
+					"name": "SRPI",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transaccionBdv\": \"SRPI\",\r\n    \"transaccionSpise\": \"SRLG\",\r\n    \"codigoRespuesta\": \"00\",\r\n    \"compromisoPago\": \"00000000000000000000\",\r\n    \"rifSeniat\": \"J413161591\",\r\n    \"serialContable\": \"02747\",\r\n    \"ticketGeneradoWeb\": \"91183837\",\r\n    \"montoEfectivo\":  0.90,\r\n    \"montoChequeBdv\": 0.00,\r\n    \"montoChequeOtro\": 0.00,\r\n    \"montoCargoCuenta\": 0.00,\r\n    \"montoCredicash\": 0.00,\r\n    \"montoEfectivoClave\": 0.00,\r\n    \"datosCheque1\": \"\",\r\n    \"montoCheque1\": 0.00,\r\n    \"datosCheque2\": \"\",\r\n    \"montoCheque2\": 0.00,\r\n    \"datosCheque3\": \"\",\r\n    \"montoCheque3\": 0.00,\r\n    \"datosCheque4\": \"\",\r\n    \"montoCheque4\": 0.00,\r\n    \"datosCheque5\": \"\",\r\n    \"montoCheque5\": 0.00,\r\n    \"datosCheque6\": \"\",\r\n    \"montoCheque6\": 0.00,\r\n    \"datosCheque7\": \"\",\r\n    \"montoCheque7\": 0.00,\r\n    \"datosCheque8\": \"\",\r\n    \"montoCheque8\": 0.00,\r\n    \"cuentaCargo\": \"\",\r\n    \"numeroTdc1Mpv4Cre\": \"\",\r\n    \"fechaVencTdc1\": 0,\r\n    \"cvv1Mpv4Credicash\": 0,\r\n    \"numeroCuotas1\": 0,\r\n    \"numeroTdc2Mpv2Cre\": \"\",\r\n    \"fechaVencTdc2\": 0,\r\n    \"cvvMpv2EfectivoCl\": 0,\r\n    \"numeroCuotas2\": 0,\r\n    \"codFormaSeniat\": 99021,\r\n    \"nroPlanillaSeniat\": 2291183837,\r\n    \"periodoPagoSeniat\": 20220930,\r\n    \"periodoVencSeniat\": 0,\r\n    \"codAduanaSeniat\": 0,\r\n    \"codSegAduaSeniat\": 0,\r\n    \"codSegBancSeniat\": 0,\r\n    \"codExpedienSeniat\": \"\",\r\n    \"bonoDpnSeniat\": 0.00,\r\n    \"bonoCertSeniat\": 0.00,\r\n    \"bonoExportaSeniat\": 0.00,\r\n    \"mensajeRespuesta\": \"\",\r\n    \"desde001Hasta120\": \"\",\r\n    \"desde121Hasta240\": \"\",\r\n    \"desde241Hasta360\": \"\",\r\n    \"desde361Hasta480\": \"\",\r\n    \"desde481Hasta600\": \"\",\r\n    \"user\": \"OPCE299\",\r\n    \"terminal\": \"0501\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/collectiontermfinan/IntSRPI",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"collectiontermfinan",
+								"IntSRPI"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "checkdataaccount",
+			"item": [
+				{
+					"name": "B731",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoCtaCliente\": \"01020501820001997811\",\r\n    \"divisa\": \"VES\",\r\n    \"importe\": \"\",\r\n    \"nio\": \"BGBAFU2022-08-1046731994\",\r\n    \"numeroDeMovimiento\": \"\",\r\n    \"indOrigenOperacion\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkdataaccount/IntB731",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkdataaccount",
+								"IntB731"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B532",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaCheque\": \"01020448810008556718\",\r\n    \"divisaCheque\": \"VES\",\r\n    \"serialCheque\": 3000918,\r\n    \"importeCheque\": 25,\r\n    \"cuentaDeposito\": \"01020151960100041048\",\r\n    \"divisaDeposito\": \"VES\",\r\n    \"planillaDeposito\": 24,\r\n    \"serialChequeGerencia\": 0,\r\n    \"importeChequeGerencia\": 0,\r\n    \"indicadorDeTarjeta\": \"N\",\r\n    \"dna\": 50543742\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkdataaccount/IntB532",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkdataaccount",
+								"IntB532"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "B793",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroTarjeta\": \"5899415277284322\",\r\n    \"producto\": \"41\",\r\n    \"subproducto\": \"0001\",\r\n    \"estado\": \"E\",\r\n    \"user\": \"OPCE812\",\r\n    \"terminal\": \"0190\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkdataaccount/IntB793",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkdataaccount",
+								"IntB793"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "architecturetermfinan",
+			"item": [
+				{
+					"name": "QGBF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{IPKONG}}/architecturetermfinan/IntQGBF",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"architecturetermfinan",
+								"IntQGBF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QG81",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"usuario\":\"OPCE213 \",\r\n\"entidadcentro\":\"01020353\",\r\n\"subtotal\":\"     \",\r\n\"globalCajComp\":\" \",\r\n\"sesionHoyAyer\":\"5\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/architecturetermfinan/IntQG81",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"architecturetermfinan",
+								"IntQG81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QG83",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"entidadCentro\": \"01020353\",\r\n    \"codigoDivisa\": \"VES\",\r\n    \"sesion\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/architecturetermfinan/IntQG83",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"architecturetermfinan",
+								"IntQG83"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QG00",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"numeroAutorizacion\":114,\r\n\"codigoDeError\": \"BGE6811\",\r\n\"importeDeOperacion\": \"\",\r\n\"divisaAutorizacion\": \"VES\",\r\n\"usuario\": \"OPCE207\",\r\n\"passwor\": \"MONEDA\",\r\n\"libre\": \"71\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/architecturetermfinan/IntQG00",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"architecturetermfinan",
+								"IntQG00"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "checkcardbalance",
+			"item": [
+				{
+					"name": "MPK7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"panDeLaTarjeta\": \"5899415565180810 \", \r\n \"indDeOrdenDeCta\": \"P\", \r\n \"cuentaDeCargoNuev\": \"01020228130000368182\", \r\n \"cuentaDeCargoAntg\": \"01020228130000368182\", \r\n \"claveDeLaMoneda\": 928, \r\n \"indTipoDeCtacargo\": \" \", \r\n \"indDeCccAjena\": \" \", \r\n \"productoDeCcc\": \"00\", \r\n \"subproductoDeCcc\": \"\", \r\n \"indActivoPasivo\": \"P\", \r\n \"fechaDeAlta\": \" \", \r\n \"fechaDeBaja\": \" \", \r\n \"controlDeConcurren\": \"2022-06-02-11.39.15.782457\" \r\n} \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkcardbalance/IntMPK7",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcardbalance",
+								"IntMPK7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MP5D",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"codigoDeEntidad\": \"0102\", \r\n \"centroDeAltaCuent\": \"0190\", \r\n \"cuentaDeLaTarjeta\": \"440000167521\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkcardbalance/IntMP5D",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcardbalance",
+								"IntMP5D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPL1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"panDeLaTarjeta\":\"6017058128840960\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/checkcardbalance/IntMPL1",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"checkcardbalance",
+								"IntMPL1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cardmanagment",
+			"item": [
+				{
+					"name": "MP5A",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoEntidad\": \"0102\",\r\n    \"centroAltaCtaTarj\": \"0221\",\r\n    \"cuentaTarjeta\": \"440000184140\",\r\n    \"numeroPersona\": \"15964963\",\r\n    \"calidadParticipa\": \"TI\",\r\n    \"indTipoTarjeta\": \"10\",\r\n    \"codigoMarcaTarjeta\": \"04\",\r\n    \"nombreEstampacion\": \"ANGELPIRELA\",\r\n    \"idDeEmpleado\": \"\",\r\n    \"panAsociado\": \"5899415319738681\",\r\n    \"codigoBarras\": \"00000000000000\",\r\n    \"referenciaFoto\": \"\",\r\n    \"datosDeEstampac1\": \"\",\r\n    \"datosDeEstampac2\": \"\",\r\n    \"indEnvioPlasticoE\": \"N\",\r\n    \"centroEnvio1\": \"\",\r\n    \"indEnvioCartaPin\": \"N\",\r\n    \"centroEnvio2\": \"\",\r\n    \"codCondEstampacion\": \"401\",\r\n    \"codigoPromocion\": \"\",\r\n    \"claveMoneda1\": \"928\",\r\n    \"claveMoneda2\": \"000\",\r\n    \"limiteDiarioCaj1\": \"00000000000000000\",\r\n    \"limiteDiarioCaj2\": \"00000000000000000\",\r\n    \"maxNumOperCajero1\": \"000000\",\r\n    \"maxNumOperCajero2\": \"000000\",\r\n    \"cuentaDomTarjeta1\": \"\",\r\n    \"monedaCtadom1\": \"000\",\r\n    \"indActivoPasivo1\": \"\",\r\n    \"cuentaDomTarjeta2\": \"\",\r\n    \"monedaCtadom2\": \"000\",\r\n    \"indActivoPasivo2\": \"\",\r\n    \"fechaAltaCtatar\": \"\",\r\n    \"panTarjeta\": \"5899415684529285\",\r\n    \"fechaCaducidTarjet\": \"000000\",\r\n    \"descrMarcaReducida\": \"\",\r\n    \"descrRedTipoTarje\": \"\",\r\n    \"indSituacinTarjeta\": \"\",\r\n    \"fechaCobroCuota\": \"000000\",\r\n    \"descrClaveMoneda1\": \"\",\r\n    \"descrClaveMoneda2\": \"\",\r\n    \"tipoBonificacion\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/cardmanagement/IntMP5A",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardmanagement",
+								"IntMP5A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPB8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"panDeLaTarjeta\": \"5899416540152825\",\r\n    \"user\" : \"OPCE812\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/cardmanagement/IntMPB8",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardmanagement",
+								"IntMPB8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPAN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoPinPad\": \"NP62021888\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/cardmanagement/IntMPAN",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardmanagement",
+								"IntMPAN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPAL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"funcionRutina\": \"G\",\r\n    \"numeroDePan\": \"5899415568322641\",\r\n    \"tipoFranquicia\": \"9001\",\r\n    \"pinblock\": \"08433E9723DD27E3\",\r\n    \"codigoRetorno\": \"00\",\r\n    \"serialPinpad\": \"NP62021888\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/cardmanagement/IntMPAL",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardmanagement",
+								"IntMPAL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MPV8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"panTarjeta\": \"5899415568322641\",\r\n    \"accion\": \"C\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/cardmanagement/IntMPV8",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"cardmanagement",
+								"IntMPV8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "consuserviaccou",
+			"item": [
+				{
+					"name": "B421",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoCuentaCliente\": \"01020501810000519410\",\r\n    \"divisa\": \"VES\",\r\n    \"opcion\": \"xxx\",\r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/consuserviaccou/IntB421",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"consuserviaccou",
+								"IntB421"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userconsult",
+			"item": [
+				{
+					"name": "PF58",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"26935535\",\r\n    \"tipoDeDocumento\": \"\",\r\n    \"numeroDeDocumento\": \"00000000000\",\r\n    \"secuenciaIdentificacion\": \"\",\r\n    \"calidadParticipe\": \"\",\r\n    \"entidadContrato\": \"\",\r\n    \"oficinaContrato\": \"\",\r\n    \"numeroContrato\": \"\",\r\n    \"codigoDeProducto\": \"\",\r\n    \"codigoDeSubprod\": \"\",\r\n    \"calidadParticipac\": \"\",\r\n    \"indicadorSeg\": \"\",\r\n    \"nombreDeFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreCliente\": \"\",\r\n    \"fechaNacimiento\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoDelCliente\": \"\",\r\n    \"condicionCliente\": \"\",\r\n    \"nivelDeAcceso\": \"\",\r\n    \"indicadorRelacion\": \"\",\r\n    \"indicadorContratos\": \"\",\r\n    \"indicadorDeGrupo\": \"\",\r\n    \"indicadorDeAvisos\": \"\",\r\n    \"indicador1\": \"\",\r\n    \"indicador2\": \"\",\r\n    \"indicador3\": \"\",\r\n    \"indicador4\": \"\",\r\n    \"indicador5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueNumero\": \"\",\r\n    \"localidadCiudad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": \"\",\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaNormalizacion\": \"\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/userconsult/IntPF58",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"userconsult",
+								"IntPF58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PF57",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"26398453\",\r\n    \"tipoDeDocumento\": \"\",\r\n    \"numeroDeDocumento\": \"00000000000\",\r\n    \"secuenciaIdentificacion\": \"\",\r\n    \"calidadParticipe\": \"\",\r\n    \"entidadContrato\": \"\",\r\n    \"oficinaContrato\": \"\",\r\n    \"numeroContrato\": \"\",\r\n    \"codigoDeProducto\": \"\",\r\n    \"codigoDeSubprod\": \"\",\r\n    \"calidadParticipac\": \"\",\r\n    \"indicadorSeg\": \"\",\r\n    \"nombreDeFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreCliente\": \"\",\r\n    \"fechaNacimiento\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoDelCliente\": \"\",\r\n    \"condicionCliente\": \"\",\r\n    \"nivelDeAcceso\": \"\",\r\n    \"indicadorRelacion\": \"\",\r\n    \"indicadorContratos\": \"\",\r\n    \"indicadorDeGrupo\": \"\",\r\n    \"indicadorDeAvisos\": \"\",\r\n    \"indicador1\": \"\",\r\n    \"indicador2\": \"\",\r\n    \"indicador3\": \"\",\r\n    \"indicador4\": \"\",\r\n    \"indicador5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueNumero\": \"\",\r\n    \"localidadCiudad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": \"\",\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaNormalizacion\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/userconsult/IntPF57",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"userconsult",
+								"IntPF57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEF2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"OPCE205\",\r\n    \"terminal\": \"0353\",\r\n    \"entidad\": \"0102\",\r\n    \"nroDePersona\": \"16352821\",\r\n    \"nmDelUsuario\": \"\",\r\n    \"fechaUltimaModif\": \"\",\r\n    \"descripcionCiudad\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/userconsult/IntPEF2",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"userconsult",
+								"IntPEF2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "complementdataconsult",
+			"item": [
+				{
+					"name": "PE65",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"19149264\",\r\n    \"tipoDocumento\": \"J\",\r\n    \"numeroDocument\": \"\",\r\n    \"secuenciaIdentifica\": \"\",\r\n    \"secuenciaEmpresaAn\": 0,\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreRazonSocial\": \"\",\r\n    \"fechaNacimineto\": \"\",\r\n    \"tipoPersonafj\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indRelacion\": \"\",\r\n    \"indCondicion\": \"\",\r\n    \"indGrupo\": \"\",\r\n    \"indAviso\": \"\",\r\n    \"indicadorDeUso1\": \"\",\r\n    \"indicadorDeUso2\": \"\",\r\n    \"indicadorDeUso3\": \"\",\r\n    \"indicadorDeUso4\": \"\",\r\n    \"indicadorDeUso5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"nombreDeCalle\": \"\",\r\n    \"complementoVariabl1\": \"\",\r\n    \"complementoVariabl2\": \"\",\r\n    \"nroDeBloque\": \"\",\r\n    \"nombreLocalidaddp\": \"\",\r\n    \"comunaDomicilioPp\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaDeNormalizaci\": \"\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE65",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE48",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"campoAltaBajaModi\": \"M\",\r\n    \"numeroDeCliente\": \"16352821\",\r\n    \"secuenciaDomicilio\": 0,\r\n    \"secuenciaTelefono\": 0,\r\n    \"marcaDeEmpleado\": \"\",\r\n    \"nombreDeSuEmpresa\": \"POLAR\",\r\n    \"tipoDeActividad\": \"DEPE\",\r\n    \"ramoDeLaEmpresa\": \"\",\r\n    \"cargoEnLaEmpresa\": \"87\",\r\n    \"fechaIngresoEmpres\": \"1976-06-25\",\r\n    \"marcaRelacDependen\": \"001\",\r\n    \"tipoRelacionLabora\": \"N\",\r\n    \"tipoEmpresaEmplead\": \"\",\r\n    \"personasACargo\": 0,\r\n    \"numeroDeHijos\": 0,\r\n    \"apellNombreMadre\": \"\",\r\n    \"apellNombrePadre\": \"\",\r\n    \"regimenMatrimonial\": \"\",\r\n    \"numDocConyuge\": \"\",\r\n    \"tipoDocConyuge\": \"\",\r\n    \"fechaFallecimiento\": \"99991231\",\r\n    \"tipoRelacBancocli\": \"\",\r\n    \"nivelDeEstudios\": \"\",\r\n    \"estrato\": \"\",\r\n    \"lugarDeNacimiento\": \"0100810\",\r\n    \"profesion\": \"00\",\r\n    \"ultimoTituloAdquir\": \"\",\r\n    \"codActivSecundaria\": \"M7000000\",\r\n    \"antigDomicilioante\": 0,\r\n    \"entidadDePrevision\": \"\",\r\n    \"usuarioAlta\": \"\",\r\n    \"fechaAlta\": \"\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal\": \"\",\r\n    \"sucursal\": \"\",\r\n    \"timestamp\": \"2022-05-19-17.56.20.033981\",\r\n    \"nombreProgra\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE48",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE59",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"indAltaBajaModifi\": \"M\", \r\n \"numeroDeCliente\": \"16821\", \r\n \"tipoDeIngreso\": \"001\", \r\n \"fechActualIngreso\": \"2008-03-19\", \r\n \"codigoDeLaMoneda\": \"VES\", \r\n \"importeIngreso\": \"10000\", \r\n \"importaHasta\": 0, \r\n \"campoDeFecha\": \"2022-05-19-17.56.20.171434\", \r\n \"tipoDeIngreso2\": \"\", \r\n \"fechActualIngre2\": \"\", \r\n \"codigoDeMoneda2\": \"\", \r\n \"importeIngreso2\": 0, \r\n \"importaHasta2\": 0, \r\n \"campoDeFecha2\": \"\", \r\n \"tipoDeIngreso3\": \"003\", \r\n \"fechActualIngre3\": \"2022-05-03\", \r\n \"codigoDeMoneda3\": \"VES\", \r\n \"importeIngreso3\": \"23689899\", \r\n \"importaHasta3\": 0, \r\n \"campoDeFecha3\": \"2022-05-19-17.56.20.172481\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE59",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE50",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDeCliente\": \"16352821\",\r\n    \"tipoDeDocumento\": \"\",\r\n    \"numeroDeDocumento\": \"\",\r\n    \"secuenciaIdentfDocumento\": \"\",\r\n    \"nombreDeFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreRazonSocial\": \"\",\r\n    \"fechaNacimiConstit\": \"\",\r\n    \"tipoDePersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelDeAcceso\": \"\",\r\n    \"indRelacEntrePers\": \"\",\r\n    \"indDeTenerContrat\": \"\",\r\n    \"indDeTenerGrupo\": \"\",\r\n    \"indicadorDeAviso\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"indUso5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"obserDom1\": \"\",\r\n    \"obserDom2\": \"\",\r\n    \"bloqueoNumeroCasilla\": \"\",\r\n    \"localidadCiudad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"secuenciaDeDomicil\": 0,\r\n    \"secuenciaDeTelefon\": 0,\r\n    \"marcaDeEmpleado\": \"\",\r\n    \"nombreDeSuEmpresa\": \"\",\r\n    \"tipoDeActividad\": \"\",\r\n    \"ramoDeLaEmpresa\": \"\",\r\n    \"cargoDeLaEmpresa\": \"\",\r\n    \"fechaIngresoEmpres\": \"\",\r\n    \"marcaRelacDependen\": \"\",\r\n    \"tipoRelacioLaboral\": \"\",\r\n    \"tipoEmpresaEmplead\": \"\",\r\n    \"personasACargo\": 0,\r\n    \"numeroDeHijos\": 0,\r\n    \"apellidoNombreMadre\": \"\",\r\n    \"apellidoNombrePadre\": \"\",\r\n    \"regimenMatrimonial\": \"\",\r\n    \"numeroDocumConyige\": \"\",\r\n    \"tipoDocumConyuge\": \"\",\r\n    \"fechaFallecimiento\": \"\",\r\n    \"tipoRelacionBancoCliente\": \"\",\r\n    \"nivelDeEstudio\": \"\",\r\n    \"estrato\": \"\",\r\n    \"lugarDeNacimiento\": \"\",\r\n    \"profesion\": \"\",\r\n    \"ultimoTituloAdquir\": \"\",\r\n    \"codigoActividSecun\": \"\",\r\n    \"antigDomicilAnteri\": 0,\r\n    \"entidadDePrevision\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE50",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE51",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"numeroDePersona\": \"16994530\",\r\n    \"secuenciaDeEmpresa\": 0,\r\n    \"codigoMoneda\": \"VES\",\r\n    \"nombreEmpresa\": \"COMERCIAL CA \",\r\n    \"telefonoEmpresa\": \"\",\r\n    \"ramoEmpresa\": \"\",\r\n    \"cargoEnLaEmpresa\": \"\",\r\n    \"fechaDeIngreso\": \"\",\r\n    \"fechaDeEgreso\": \"3E\",\r\n    \"ingresosMensuales\": 0.00,\r\n    \"timestamp\": \"000000000000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE51",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE85",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"16352821\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocument\": \"\",\r\n    \"secuenciaIdentifica\": \"\",\r\n    \"secuenciaEmpresaAn\": 0,\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreRazonSocial\": \"\",\r\n    \"fechaNacimineto\": \"\",\r\n    \"tipoPersonafj\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indRelacion\": \"\",\r\n    \"indCondicion\": \"\",\r\n    \"indGrupo\": \"\",\r\n    \"indAviso\": \"\",\r\n    \"indicadorDeUso1\": \"\",\r\n    \"indicadorDeUso2\": \"\",\r\n    \"indicadorDeUso3\": \"\",\r\n    \"indicadorDeUso4\": \"\",\r\n    \"indicadorDeUso5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"nombreDeCalle\": \"\",\r\n    \"complementoVariabl1\": \"\",\r\n    \"complementoVariabl2\": \"\",\r\n    \"nroDeBloque\": \"\",\r\n    \"nombreLocalidaddp\": \"\",\r\n    \"comunaDomicilioPp\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaDeNormalizaci\": \"\",\r\n    \"timeStamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/complementdataconsult/IntPE85",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"complementdataconsult",
+								"IntPE85"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "maintenancebankrefer",
+			"item": [
+				{
+					"name": "PEM2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"tipoColaboracion\": \"\",\r\n    \"indicadorRellamada\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombreRazonSocial\": \"\",\r\n    \"fechaNacimConstitu\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"indicadorContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"timestampRegistro\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"nombreCalle\": \"\",\r\n    \"bloqueNumeroCasill\": \"\",\r\n    \"localidadCiudad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaClienteVip\": \"\",\r\n    \"indicadorUso2\": \"\",\r\n    \"indicadorUso3\": \"\",\r\n    \"indicadorUso4\": \"\",\r\n    \"indicadorUso5\": \"\",\r\n    \"complementoVar1\": \"\",\r\n    \"complementoVar2\": \"\",\r\n    \"marcaNormalizacion\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancebankrefer/IntPEM2",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancebankrefer",
+								"IntPEM2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEM1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"numeroCliente\": \"10138199\",\r\n    \"tipoColaboracion\": \"007\",\r\n    \"fechaBaja\": \"\",\r\n    \"timestampRegistro\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancebankrefer/IntPEM1",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancebankrefer",
+								"IntPEM1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE75",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"opcion\": \"A\",\r\n \"numeroDeCliente\": \"27417241\",\r\n \"nroSecuenciaRefer\": 0,\r\n \"codBancoRefer1\": \"0001\",\r\n \"descProductoRefe1\": \"\",\r\n \"nroProductoRefe1\": \"\",\r\n \"cifraPromedio1\": \"\",\r\n \"codBancoRefer2\": \"\",\r\n \"descProductoRefe2\": \"\",\r\n \"nroProductoRefe2\": \"\",\r\n \"cifraPromedio2\": \"\",\r\n \"codBancoRefer3\": \"\",\r\n \"descProductoRefe3\": \"\",\r\n \"nroProductoRefe3\": \"\",\r\n \"cifraPromedio3\": \"\",\r\n \"usuarioAlta\": \"\",\r\n \"fechaAlta\": \"\",\r\n \"usuarioModificacion\": \"\",\r\n \"terminal\": \"\",\r\n \"centroSucursal\": \"\",\r\n \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancebankrefer/IntPE75",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancebankrefer",
+								"IntPE75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE83",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaTabla\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaNacimiento\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelacione\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupo\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indDeUso1\": \"\",\r\n    \"indDeUso2\": \"\",\r\n    \"indDeUso3\": \"\",\r\n    \"indDeUso4\": \"\",\r\n    \"indDeUso5\": \"\",\r\n    \"tipoDeVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observacionesDom1\": \"\",\r\n    \"observacionesDom2\": \"\",\r\n    \"bloqueNumApdoCor\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia\": \"\",\r\n    \"codigoPais\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/maintenancebankrefer/IntPE83",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"maintenancebankrefer",
+								"IntPE83"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customerphone",
+			"item": [
+				{
+					"name": "PE74",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"numeroCliente\": \"02879047\", \r\n    \"user\": \"OPCE204\", \r\n    \"terminal\": \"0353\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/customerphone/IntPE74",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"customerphone",
+								"IntPE74"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE46",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"indicador\": \"A\",\r\n    \"numeroPersona\": \"02001733\",\r\n    \"secuenciaTelefono\": 2,\r\n    \"secuenciaDomicilio\": 2,\r\n    \"tipoTelefono\": \"002\",\r\n    \"claseTelefono\": \"NOR\",\r\n    \"prefijoTelefono\": \"0212\",\r\n    \"caracteristicaTelefono\": \"0058\",\r\n    \"numeroTelefono\": \"1234569\",\r\n    \"numeroInterno\": \"\",\r\n    \"observaciones\": \"PRUEBA\",\r\n    \"usuarioDeAlta\": \"\",\r\n    \"fechaDeAlta\": \"\",\r\n    \"usuarioModifica\": \"\",\r\n    \"terminalModifica\": \"\",\r\n    \"sucursalModifica\": \"\",\r\n    \"timestamp\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/customerphone/IntPE46",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"customerphone",
+								"IntPE46"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "peprelationship",
+			"item": [
+				{
+					"name": "WP65",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/peprelationship/IntWP65",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP43",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/peprelationship/IntWP43",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP50",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/peprelationship/IntWP50",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP64",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/peprelationship/IntWP64",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP42",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"campoAltaBajaModi\": \"A\", \r\n    \"numeroDeCliente\": \"27417690\",\r\n    \"indicadorCltePep\": \"S\", \r\n    \"cliNombreEmpresa\": \"PRUEBA\", \r\n    \"clteCodigoPais\": \"432\", \r\n    \"clteCodigoCargo\": \"7E\", \r\n    \"nombreCltePep\": \"PEDRO PEREZ\", \r\n    \"indParentescoPep\": \"N\", \r\n    \"parTipoDocumento\": \"\", \r\n    \"parNroDocumento\": \"\", \r\n    \"parNombreEmpresa\": \"\", \r\n    \"parCodigoDePais\": \"\",\r\n    \"parCodigoDeCargo\": \"\",\r\n    \"parentNombrePep\": \"\", \r\n    \"indicadorAsoPep\": \"N\",\r\n    \"asocTipoDocumento\": \"\",\r\n    \"asocNroDocumento\": \"\",\r\n    \"asocNombreEmpresa\": \"\", \r\n    \"asocCodigoPais\": \"\", \r\n    \"asocCodigoCargo\": \"\",\r\n    \"asociadoNombrePep\": \"\",\r\n    \"usuarioAlta\": \" \", \r\n    \"fechaAlta\": \"2022-10-22\", \r\n    \"usuarioModificacion\": \" \", \r\n    \"terminal\": \"0190\", \r\n    \"sucursal\": \"0190\",\r\n    \"timestamp\": \"\",\r\n    \"nombreProgra\": \"\", \r\n    \"user\": \"OPCE812\" \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/peprelationship/IntWP42",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP49",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcionAltaModifBa\": \"A\", \r\n    \"nroDePersona\": \"27417696\",  \r\n    \"indRelDependencia\": \"S\", \r\n    \"nombreEmprRelDep\": \"POLARCITA\", \r\n    \"tipoDocRelDepende\": \"J\", \r\n    \"nroDocRelDependen\": \"00000003505\",\r\n    \"tipoIngresoRelDep\": \"001\", \r\n    \"fechaIngRelDepend\": \"2020-06-25\", \r\n    \"cargoEmpRelDepend\": \"33\", \r\n    \"ramoEmpresaRelDep\": \"AGRC\",\r\n    \"indicadorNegPropio\": \"S\",\r\n    \"nombreEmprNegProp\": \"DUMCAN\", \r\n    \"tipoDocNegPropio\": \"J\", \r\n    \"nroDocNegPropio\": \"00000013655\", \r\n    \"tipoIngrNegPropio\": \"007\", \r\n    \"fechaConstNegProp\": \"2022-09-21\", \r\n    \"datosRegNegPropio\": \"PRUEBAS\", \r\n    \"ramoEmprNegPropio\": \"AGRC\", \r\n    \"direcP1NegPropio\": \"AUPRUEBAS                       BARRPRUEBAS                 APQTCONSTRUCXXXX    \",\r\n    \"direcP2NegPropio\": \"PRUEBAS                  43201008100101010122                    1030  \",\r\n    \"codAreaNegPropio\": \"0212\", \r\n    \"codPaisNegPropio\": \"0432\", \r\n    \"nroTelefNegPropio\": \"8979464\",\r\n    \"indicadorOtrosIngr\": \"S\",\r\n    \"areaGenIngrOtrIn\": \"0004\", \r\n    \"tipoIngrOtrosIngr\": \"003\",\r\n    \"usuarioDeAlta\": \"OPCE204\", \r\n    \"fechaDeAlta\": \"2022-02-15\", \r\n    \"usuarioModificacion\": \"\", \r\n    \"terminalModificacio\": \"\", \r\n    \"sucursalModificacio\": \"\", \r\n    \"stampDelRegistro\": \"\", \r\n    \"nombrePrograma\": \"\", \r\n    \"user\": \"OPCE204\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/peprelationship/IntWP49",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP52",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCliente\": \"15964963\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/peprelationship/IntWP52",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"peprelationship",
+								"IntWP52"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "registrationp2c",
+			"item": [
+				{
+					"name": "VXPC",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accion\": \"C\",\r\n    \"tipoDeDocumento\": \"J\",\r\n    \"rifComercio\": \"00000040485898\",\r\n    \"cantiDeProducto\": \"01\",\r\n    \"cantiDeAutorizado\": \"01\",\r\n    \"estadoPerfil\": \"A\",\r\n    \"nombreDelComercio\": \"AVITURS C.A\",\r\n    \"mailCorreo\": \"somedoe@banvenez.com 0353\",\r\n    \"ipComercio\": \"180.183.67.50 \",\r\n    \"cod1IdProducto\": \"01\",\r\n    \"nac1YCi1Asociado\": \"V 00011220319\",\r\n    \"estado1TeleInstru\": \"A 01020441180000249683\",\r\n    \"montoMinMaxYCta\": \"0000000000003000000000000000030000030\",\r\n    \"cod2IdProducto\": \"\",\r\n    \"nac2YCi2Asociado\": \"\",\r\n    \"estado2TeleInstru\": \"\",\r\n    \"montoMinMaxYCta2\": \"0000000000000000000000000000000000000\",\r\n    \"cod3IdProducto\": \"\",\r\n    \"nac3YCi3Asociado\": \"\",\r\n    \"estado1TeleInstru2\": \"\",\r\n    \"montoMinMaxYCta3\": \"0000000000000000000000000000000000000\",\r\n    \"cod4IdProducto\": \"\",\r\n    \"nac4YCi1Asociado\": \"\",\r\n    \"estado1TeleInstru3\": \"\",\r\n    \"montoMinMaxYCta4\": \"0000000000000000000000000000000000000\",\r\n    \"cod5IdProducto\": \"\",\r\n    \"nac5YCi1Asociado\": \"\",\r\n    \"estado5TeleInstru\": \"\",\r\n    \"montoMinMaxYCta5\": \"0000000000000000000000000000000000000\",\r\n    \"cod6IdProducto\": \"\",\r\n    \"nac6YCi6Asociado\": \"\",\r\n    \"estado6TeleInstru\": \"\",\r\n    \"montoMinMaxYCta6\": \"0000000000000000000000000000000000000\",\r\n    \"cod7IdProducto\": \"\",\r\n    \"nac7YCi7Asociado\": \"\",\r\n    \"estado7TeleInstru\": \"\",\r\n    \"montoMinMaxYCta7\": \"0000000000000000000000000000000000000\",\r\n    \"codigoRetorno\": \"\",\r\n    \"descripcionDelRC\": \"\",\r\n    \"datosAdicional1\": \"\",\r\n    \"datosAdicional2\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/registrationp2c/IntVXPC",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"registrationp2c",
+								"IntVXPC"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "suppliercustomermant",
+			"item": [
+				{
+					"name": "WP51",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"A\",\r\n    \"numeroDeCliente\": \"21420527\",\r\n    \"secuenciaProvCte\": 0,\r\n    \"tipoDeRegistro\": \"1\",\r\n    \"nombreRazonSocial\": \"Doge\",\r\n    \"codUbicacion\": \"10\",\r\n    \"codigoPais\": \"432\",\r\n    \"nombreRazonSocial1\": \"Doge\",\r\n    \"codUbicacion1\": \"10\",\r\n    \"codigoPais1\": \"432\",\r\n    \"nombreRazonSocial2\": \"Ford\",\r\n    \"codUbicacion2\": \"11\",\r\n    \"codigoPais2\": \"432\",\r\n    \"usuarioAlta\": \"0OPCE207\",\r\n    \"fechaAlta\": \"2022-09-17\",\r\n    \"usuarioModificacion\": \"0OPCE207\",\r\n    \"terminal2\": \"ZU83\",\r\n    \"sucursal\": \"0353\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IPKONG}}/suppliercustomermant/IntWP51",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"suppliercustomermant",
+								"IntWP51"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "incomemaintenancelegal",
+			"item": [
+				{
+					"name": "WF71",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntWF71",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntWF71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE64",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntPE64",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntPE64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEAC",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntPEAC",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntPEAC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEAM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntPEAM",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntPEAM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PE56",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntPE56",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntPE56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PEV2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroPersona\": \"10138199\",\r\n    \"tipoDocumento\": \"\",\r\n    \"numeroDocumento\": \"\",\r\n    \"secuenciaDocumento\": \"\",\r\n    \"secuenciaContacto\": 0,\r\n    \"dptoContacto\": \"\",\r\n    \"nombreFantasia\": \"\",\r\n    \"primerApellido\": \"\",\r\n    \"segundoApellido\": \"\",\r\n    \"nombre\": \"\",\r\n    \"fechaConstitucion\": \"\",\r\n    \"tipoPersona\": \"\",\r\n    \"estadoPersona\": \"\",\r\n    \"condicion\": \"\",\r\n    \"nivelAcceso\": \"\",\r\n    \"indicadorRelaciones\": \"\",\r\n    \"tenerContratos\": \"\",\r\n    \"pertenenciaGrupos\": \"\",\r\n    \"indicadorAvisos\": \"\",\r\n    \"indUso1\": \"\",\r\n    \"indUso2\": \"\",\r\n    \"indUso3\": \"\",\r\n    \"indUso4\": \"\",\r\n    \"idnUso5\": \"\",\r\n    \"tipoVia\": \"\",\r\n    \"calle\": \"\",\r\n    \"observaciones1\": \"\",\r\n    \"observaciones2\": \"\",\r\n    \"bloqueApdoCorreos\": \"\",\r\n    \"localidad\": \"\",\r\n    \"comuna\": \"\",\r\n    \"codigoPostal\": \"\",\r\n    \"rutaCartero\": 0,\r\n    \"codigoProvincia1\": \"\",\r\n    \"codigoProvincia2\": \"\",\r\n    \"marcaNormalizacion\": \"\",\r\n    \"timestamp\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/incomemaintenancelegal/IntPEV2",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"incomemaintenancelegal",
+								"IntPEV2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "legalclientmanagement",
+			"item": [
+				{
+					"name": "WP55",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcAltaModifBaja\": \"A\",\r\n    \"nroClientePersJur\": \"10000113\",\r\n    \"secuenciaReg\": \"8\",\r\n    \"tipoRegistro\": \"6\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"nroDeDocumento\": \"2109136\",\r\n    \"primerApellido\": \"LEON\",\r\n    \"segundoApellido\": \"LUIS\",\r\n    \"nombre\": \"Luis\",\r\n    \"porcAccionario\": \"0.0\",\r\n    \"condicionEnEmpresa\": \"RL\",\r\n    \"codigoCargo\": \"01\",\r\n    \"indicadorPep\": \"N\",\r\n    \"relacionPep\": \"N\",\r\n    \"statusActivaInacti\": \"\",\r\n    \"usuarioAlta\": \"BDVN004\",\r\n    \"fechaDeAlta\": \"2022-02-18\",\r\n    \"usuarioModif\": \"\",\r\n    \"terminal\": \"\",\r\n    \"centroSucursal\": \"\",\r\n    \"timestamp\": \"2022-02-18-08.17.23.191239\",\r\n    \"indcadorEmpresaMixta\": \"N\",\r\n    \"codigoCategoriaEspecial\": \"0000\",\r\n    \"descripEstatus\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientmanagement/IntWP55",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientmanagement",
+								"IntWP55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP56",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcAltaModifBaja\": \"A\",\r\n    \"nroClientePersJur\": \"10000113\",\r\n    \"secuenciaReg\": \"8\",\r\n    \"tipoRegistro\": \"6\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"nroDeDocumento\": \"2109136\",\r\n    \"primerApellido\": \"LEON\",\r\n    \"segundoApellido\": \"LUIS\",\r\n    \"nombre\": \"Luis\",\r\n    \"porcAccionario\": \"0.0\",\r\n    \"condicionEnEmpresa\": \"RL\",\r\n    \"codigoCargo\": \"01\",\r\n    \"indicadorPep\": \"N\",\r\n    \"relacionPep\": \"N\",\r\n    \"statusActivaInacti\": \"\",\r\n    \"usuarioAlta\": \"BDVN004\",\r\n    \"fechaDeAlta\": \"2022-02-18\",\r\n    \"usuarioModif\": \"\",\r\n    \"terminal\": \"\",\r\n    \"centroSucursal\": \"\",\r\n    \"timestamp\": \"2022-02-18-08.17.23.191239\",\r\n    \"indcadorEmpresaMixta\": \"N\",\r\n    \"codigoCategoriaEspecial\": \"0000\",\r\n    \"descripEstatus\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientmanagement/IntWP56",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientmanagement",
+								"IntWP56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP59",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcAltaModifBaja\": \"A\",\r\n    \"nroClientePersJur\": \"10000113\",\r\n    \"secuenciaReg\": \"8\",\r\n    \"tipoRegistro\": \"6\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"nroDeDocumento\": \"2109136\",\r\n    \"primerApellido\": \"LEON\",\r\n    \"segundoApellido\": \"LUIS\",\r\n    \"nombre\": \"Luis\",\r\n    \"porcAccionario\": \"0.0\",\r\n    \"condicionEnEmpresa\": \"RL\",\r\n    \"codigoCargo\": \"01\",\r\n    \"indicadorPep\": \"N\",\r\n    \"relacionPep\": \"N\",\r\n    \"statusActivaInacti\": \"\",\r\n    \"usuarioAlta\": \"BDVN004\",\r\n    \"fechaDeAlta\": \"2022-02-18\",\r\n    \"usuarioModif\": \"\",\r\n    \"terminal\": \"\",\r\n    \"centroSucursal\": \"\",\r\n    \"timestamp\": \"2022-02-18-08.17.23.191239\",\r\n    \"indcadorEmpresaMixta\": \"N\",\r\n    \"codigoCategoriaEspecial\": \"0000\",\r\n    \"descripEstatus\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientmanagement/IntWP59",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientmanagement",
+								"IntWP59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP60",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcAltaModifBaja\": \"A\",\r\n    \"nroClientePersJur\": \"10000113\",\r\n    \"secuenciaReg\": \"8\",\r\n    \"tipoRegistro\": \"6\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"nroDeDocumento\": \"2109136\",\r\n    \"primerApellido\": \"LEON\",\r\n    \"segundoApellido\": \"LUIS\",\r\n    \"nombre\": \"Luis\",\r\n    \"porcAccionario\": \"0.0\",\r\n    \"condicionEnEmpresa\": \"RL\",\r\n    \"codigoCargo\": \"01\",\r\n    \"indicadorPep\": \"N\",\r\n    \"relacionPep\": \"N\",\r\n    \"statusActivaInacti\": \"\",\r\n    \"usuarioAlta\": \"BDVN004\",\r\n    \"fechaDeAlta\": \"2022-02-18\",\r\n    \"usuarioModif\": \"\",\r\n    \"terminal\": \"\",\r\n    \"centroSucursal\": \"\",\r\n    \"timestamp\": \"2022-02-18-08.17.23.191239\",\r\n    \"indcadorEmpresaMixta\": \"N\",\r\n    \"codigoCategoriaEspecial\": \"0000\",\r\n    \"descripEstatus\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientmanagement/IntWP60",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientmanagement",
+								"IntWP60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP61",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcAltaModifBaja\": \"A\",\r\n    \"nroClientePersJur\": \"10000113\",\r\n    \"secuenciaReg\": \"8\",\r\n    \"tipoRegistro\": \"6\",\r\n    \"tipoDeDocumento\": \"V\",\r\n    \"nroDeDocumento\": \"2109136\",\r\n    \"primerApellido\": \"LEON\",\r\n    \"segundoApellido\": \"LUIS\",\r\n    \"nombre\": \"Luis\",\r\n    \"porcAccionario\": \"0.0\",\r\n    \"condicionEnEmpresa\": \"RL\",\r\n    \"codigoCargo\": \"01\",\r\n    \"indicadorPep\": \"N\",\r\n    \"relacionPep\": \"N\",\r\n    \"statusActivaInacti\": \"\",\r\n    \"usuarioAlta\": \"BDVN004\",\r\n    \"fechaDeAlta\": \"2022-02-18\",\r\n    \"usuarioModif\": \"\",\r\n    \"terminal\": \"\",\r\n    \"centroSucursal\": \"\",\r\n    \"timestamp\": \"2022-02-18-08.17.23.191239\",\r\n    \"indcadorEmpresaMixta\": \"N\",\r\n    \"codigoCategoriaEspecial\": \"0000\",\r\n    \"descripEstatus\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/legalclientmanagement/IntWP61",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"legalclientmanagement",
+								"IntWP61"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subsidiaryoffices",
+			"item": [
+				{
+					"name": "WP53",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"M\",\r\n    \"numeroPersona\": \"27417241\",\r\n    \"numeroSecuencia\": 0,\r\n    \"tipoRegistro\": \"2\",\r\n    \"numeroSubsidiarias\": \"50\",\r\n    \"paisConMayorPrese\": \"432\",\r\n    \"numeroEmpleados\": \"1000\",\r\n    \"egresosMensuales\": 78520000000,\r\n    \"anioUltimaDeclaracionIsrl\": \"2005\",\r\n    \"montoUltimaDeclaracionIsrl\": 7410000000,\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal2\": \"ZU83\",\r\n    \"sucursal\": \"0353\",\r\n    \"timeStamp\": \"\",\r\n    \"nombrePrograma\": \"WP53\",\r\n    \"user\": \"OPCE207\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/subsidiaryoffices/IntWP53",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"subsidiaryoffices",
+								"IntWP53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WP54",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opcion\": \"M\",\r\n    \"numeroPersona\": \"27417241\",\r\n    \"numeroSecuencia\": 0,\r\n    \"tipoRegistro\": \"2\",\r\n    \"numeroSubsidiarias\": \"50\",\r\n    \"paisConMayorPrese\": \"432\",\r\n    \"numeroEmpleados\": \"1000\",\r\n    \"egresosMensuales\": 78520000000,\r\n    \"anioUltimaDeclaracionIsrl\": \"2005\",\r\n    \"montoUltimaDeclaracionIsrl\": 7410000000,\r\n    \"usuarioAlta\": \"OPCE207\",\r\n    \"fechaAlta\": \"2022-05-20\",\r\n    \"usuarioModificacion\": \"\",\r\n    \"terminal2\": \"ZU83\",\r\n    \"sucursal\": \"0353\",\r\n    \"timeStamp\": \"\",\r\n    \"nombrePrograma\": \"WP53\",\r\n    \"user\": \"OPCE207\",\r\n    \"terminal\": \"0353\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/subsidiaryoffices/IntWP54",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"subsidiaryoffices",
+								"IntWP54"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "getPersona",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/app/getPersona",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"app",
+								"getPersona"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reverseconsignment",
+			"item": [
+				{
+					"name": "EX12 (B521)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{IPKONG}}/reverseconsignment/IntEX12",
+							"protocol": "http",
+							"host": [
+								"{{IPKONG}}"
+							],
+							"path": [
+								"reverseconsignment",
+								"IntEX12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EX11",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "IPKONG",
+			"value": "3.139.85.31:8000"
+		}
+	]
+}

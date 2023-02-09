@@ -1,0 +1,7 @@
+type: object
+properties:
+  numeroPersona:
+    description: numero Persona
+    type: string
+    minLength: 1
+    example: "22153314"

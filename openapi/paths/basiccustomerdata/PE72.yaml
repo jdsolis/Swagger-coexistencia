@@ -1,0 +1,112 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - basiccustomerdata
+  summary: PE72
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: PE72
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/basiccustomerdata/pe72.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              numeroDocumento: 0002031 
+              tipoDocumento: G 
+              secuenciaDocumento: 01 
+              nombreFantasia: ALCALDIA 23  
+              primerApellido: UA  
+              segundoApellido: ""   
+              nombrePersona: ALCALDIA MCPIOS ANTOS MICHELEN  
+              fechaIngreso: 2000-07-22 
+              sucursalAdministrador: 01327 
+              estadoCivil:   ""
+              sexoPersona:   ""
+              tipoPersona: J 
+              fechaNacimiento: 2001-06-19 
+              fechaInicioActiv: 2000-08-07 
+              canalVenta: V00 
+              canalCaptacion: C00 
+              paisOrigen: 432 
+              codigoCampana:  "" 
+              agrupacionOficiales: 0068  
+              nacionalidad: NA  
+              paisResidencia: 432 
+              sector: 340 
+              tipoOcupacion:   ""
+              codigoActividad: Mda100 
+              tiempoResidencia: 0 
+              formaJuridica: 06 
+              naturalezaJuridica: ""   
+              unidadNegocio: 3PT 
+              codigoSujeto: 001 
+              marcaBancaPrivada: N 
+              nivelAcceso: 0 
+              estadoPersona: 010 
+              condicionPersona: CLI 
+              indicadores: N NSSNNNNNN 
+              codigoActividadRiu:  "" 
+              subSegmento:   ""
+              idioma: NA  
+              timestamp1: 2022-02-04-14.39.46.346057 
+              expedidoPor:   ""
+              fechaVencimiento: 2010-08-07 
+              marcaVerificacion: ""   
+              condicionDocumento: P 
+              codigoPais: 432 
+              fechaExpedicion: 2000-08-07 
+              lugarExposicion:   ""
+              timestamp2: 2011-02-02-16.05.26.868803 
+              campoAgregado1: PRIRUREDMI HDA CASR 2000910 
+              campoAgregado2: 2104210405 00002314 
+              rutaCartero: 0 
+              campoAgregado3: 2043201 
+              fechaVerificacion: 2013-12-19 
+              campoAgregado4: SNN  
+              campoVariable1: EL TREBOL PENT HOUSE GUARATARO  
+              campoVariable2:  ALCADIA@PRUEBA.COM  
+              timestamp3: 2022-01-31-15.54.45.029242 
+              secuenciaDomicilio: 1 
+              agregadoTelefono: 001NOR0212 00580000000  
+              timestamp4: 2011-06-16-15.21.12.255931 
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

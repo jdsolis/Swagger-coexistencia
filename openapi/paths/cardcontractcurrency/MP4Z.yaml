@@ -1,0 +1,125 @@
+parameters:
+  - name: pretty_print
+    in: query
+    description: Pretty print response
+    schema:
+      type: boolean
+post:
+  tags:
+    - cardcontractcurrency
+  summary: MP4Z
+  description: DESCRIPCION DEL ENDPOINT
+  operationId: MP4Z
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':  
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: PETICION ENVIADA CON EXITO
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/cardcontractcurrency/mp4z.yaml
+        examples:
+          mapName:
+            summary: Componente
+            description: Ejemplo del body Request
+            value:
+              codigoDeEntidad: 0102
+              centroDeAltaCuent: 0190 
+              codigoDeProducto: 44 
+              codigoSubproducto: 4000
+              codCondicionesAso: 400 
+              codigoDeCampaña:  
+              codigoDeConvenio:  
+              codigoDePromocion:  
+              nroPersonaTitular: 26935535
+              nroPersonaAvalista:  
+              indCtaEmpresa: 0 
+              indEstNombreEmp: 0 
+              nomEmpEstampacion:   
+              codRegimenFiscal: 0 
+              formaDePago: 0 
+              indSitDeContrato: 0 
+              grupoDeLiquidacion: 0 
+              grupoDeCuota: 28 
+              oficialDeVenta: 
+              claveMonedaPrincip: 0 
+              limCreditoPrincipa: 0 
+              impFijoPagoApla1: 0 
+              limCreCompraCuot1: 0 
+              limGlobalccuotas: 0 
+              claveMonedaSecunda: 0 
+              limCreditoSecundar: 0 
+              impFijoPagoApla2: 0 
+              limCreCompraCuot2: 0 
+              limGlobalccuotas2: 0 
+              cuentaCargo1: 
+              claveMonedaCtacar1: 0 
+              indDomcarCdto: N 
+              codigoFormatoEsta:  
+              ctaCargoTarjeta1: 01020228130000368182
+              claveMonedaTarcta1: 928
+              indActivoPasivo1: P 
+              ctaCargoTarjeta2:  
+              claveMonedaTarcta2: 0 
+              indActivoPasivo2:  
+              numereoPersonaTjt: 26935535
+              calParticipacionTj: TI
+              indDeTipoTarjeta: 10
+              codDeMarcarTarjet: 4
+              nomEstampacionTarj: CARRILLO ABRAHAM
+              idenEmpleadoTarjet:  
+              panAsociadoTarjeta:  
+              codigoDeBarrasTjt: 0 
+              refDeFotoTarjeta:  
+              datosDeEstampTjt:  
+              envioDeEstampTjt: N 
+              envioDePinTarjet: N 
+              codCondEstampacTj: 401
+              codigoPromocionTjt:  
+              claveMoneda1Tarje: 928
+              limDiarioCajero1T: 0 
+              maxNumOpeDia1T: 0 
+              claveMoneda2Tarje: 0 
+              limDiarioCajero2T: 0 
+              maxNumOpeDia2T: 0 
+              cuentaDeLaTarjeta: 
+              desClaveMoneda:  
+              fechaDeAltaContra:  
+              panDeLaTarjeta: 5899415277284322
+              fechaDeAltaTarjet: 
+              fechaCaducidadTjt: 
+              desReducMarcaTjt: 
+              desReducTipoTjt: 
+              indSituacionDeTjt: 0 
+              tipoDeBonificacion: 
+              user: OPCE812
+              terminal: 0190
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true

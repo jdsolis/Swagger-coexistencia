@@ -10,5 +10,8 @@
     "start": "redocly preview-docs",
     "build": "redocly bundle -o dist",
     "test": "redocly lint"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2"
   }
 }

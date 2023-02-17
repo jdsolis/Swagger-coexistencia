@@ -8264,13 +8264,17 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importe:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importePlanilla:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importeCheqBV:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importeCheqOB:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroPlanilla:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -8356,7 +8360,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importeCheque1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         dnaCheque1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -8632,13 +8637,17 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importe:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importePlanilla:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importeCheqBV:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         importeCheqOB:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroPlanilla:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -8724,7 +8733,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importeCheque1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         dnaCheque1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -8935,7 +8945,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importeCheque:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         divisa:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -8984,7 +8995,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importe:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         codigoOperacion:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -9130,7 +9142,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importe:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         codigoOperacion:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -9640,7 +9653,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoBolivares:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         idOperacion:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -9655,7 +9669,8 @@ components:
           type: 'integer'
           format: int32
         tasaVenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         user:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -14796,7 +14811,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         ordenDePartic:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         segLlamada:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15380,11 +15396,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         promedioMesMovliza:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         proTransRecbirMes:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         proTransEnviarMes:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         monedaVirtualRecE:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15694,19 +15713,26 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoDelPago:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesOb:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcOtrosBancos:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroPlanilla:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15732,7 +15758,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -15748,7 +15775,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -15764,7 +15792,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv3:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -15780,12 +15809,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15793,7 +15824,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15801,7 +15833,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15809,7 +15842,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15817,7 +15851,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         filler:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15945,19 +15980,26 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoDelPago:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesOb:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcOtrosBancos:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroPlanilla:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -15983,7 +16025,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -15999,7 +16042,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -16015,7 +16059,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv3:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -16031,12 +16076,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16044,7 +16091,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16052,7 +16100,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16060,7 +16109,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16068,7 +16118,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         filler:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16196,19 +16247,26 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoDelPago:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequesOb:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoTdcOtrosBancos:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroPlanilla:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16234,7 +16292,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -16250,7 +16309,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -16266,7 +16326,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoChequesBdv3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         numeroChequeBdv3:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -16282,12 +16343,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCuentaCargo2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16295,7 +16358,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcBdv2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16303,7 +16367,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcBdv2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16311,7 +16376,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         tdcOb2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16319,7 +16385,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoTdcOb2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         filler:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16465,57 +16532,71 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeOtro:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCredicash:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivoClave:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque3:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque4:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque4:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque5:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque5:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque6:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque6:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque7:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque7:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque8:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque8:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16581,11 +16662,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         bonoDpnSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoCertSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoExportaSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         mensajeRespuesta:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16752,57 +16836,71 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeOtro:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCredicash:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivoClave:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque3:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque4:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque4:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque5:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque5:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque6:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque6:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque7:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque7:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque8:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque8:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -16868,11 +16966,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         bonoDpnSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoCertSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoExportaSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         mensajeRespuesta:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -17039,57 +17140,71 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoEfectivo:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeBdv:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoChequeOtro:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCargoCuenta:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoCredicash:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         montoEfectivoClave:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque1:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque1:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque2:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque2:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque3:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque3:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque4:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque4:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque5:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque5:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque6:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque6:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque7:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque7:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         datosCheque8:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         montoCheque8:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         cuentaCargo:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -17155,11 +17270,14 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         bonoDpnSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoCertSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         bonoExportaSeniat:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         mensajeRespuesta:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -19550,7 +19668,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         ingresosMensuales:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         timestamp:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
@@ -22764,7 +22883,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         importeIngreso:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         limiteSuperior:
           description: '**Aqui va la descripcion del campo**'
           type: 'integer'
@@ -23016,7 +23136,8 @@ components:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'
         porcAccionario:
-          type: number
+          description: '**Aqui va la descripcion del campo**'
+          type: 'number'
         condicionEnEmpresa:
           description: '**Aqui va la descripcion del campo**'
           type: 'string'

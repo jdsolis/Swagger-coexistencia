@@ -15,9 +15,9 @@ paths:
   /createAccountBdv:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: Create Account
-      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: númerro de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta, que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
+      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: Número de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
       operationId: CreateAccount
       parameters:
       - name: X-Auth-Token
@@ -44,24 +44,30 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateAccountRequest'
               - example:
-                  accountNumber: '01020353800100028237'
-                  product: '406'
-                  productGroup: '04'
-                  branch: '1'
+                  accountNumber: '01020501834880299'
+                  product: '2001'
+                  productGroup: '02'
+                  branch: '501'
                   currency: VES
+                  statusCuenta: '002'
+                  statusBloqueo: APR 
                   owners:
-                  - identification: '00068744311'
-                    idType: J
+                    idType: M
+                    identification: '00006937321'
+                    masterGrupo: '01'
                     relationship: OWNER
             example:
-              accountNumber: '01020353800100028237'
-              product: '406'
-              productGroup: '04'
-              branch: '1'
+              accountNumber: '01020501834880299'
+              product: '2001'
+              productGroup: '02'
+              branch: '501'
               currency: VES
+              statusCuenta: '002'
+              statusBloqueo: APR
               owners:
-              - identification: '00068744311'
-                idType: J
+                idType: M
+                identification: '00006937321'
+                masterGrupo: '01'
                 relationship: OWNER
         required: true
       responses:
@@ -99,40 +105,6 @@ paths:
                 response:
                   responseCode: Ut dolore
                   userMessage: in ipsum
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response'
-                - example:
-                    information:
-                      currentPage: -62342942
-                      hasMoreData: false
-                    response:
-                      responseCode: Ut dolore
-                      userMessage: in ipsum
-              example:
-                information:
-                  currentPage: -62342942
-                  hasMoreData: false
-                response:
-                  responseCode: Ut dolore
-                  userMessage: in ipsum
         '400':
           description: Bad Request
           headers:
@@ -163,46 +135,12 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
   /addBeneficiaryOwner:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: addBeneficiaryOwner
-      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: númerro de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta, que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
+      description: 'API diseñado para agregar un beneficiario dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: númerro de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
       operationId: addBeneficiaryOwner
       parameters:
       - name: X-Auth-Token
@@ -231,11 +169,9 @@ paths:
               - example:
                   businessCbsId: '10025'
                   cbsId: '10036'
-                  percentage: 25
             example:
               businessCbsId: '10025'
-              cbsId: '10036'
-              percentage: 25
+              cbsId: '10036' 
         required: true
       responses:
         '200':
@@ -272,40 +208,6 @@ paths:
                 response:
                   responseCode: Ut dolore
                   userMessage: in ipsum
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response'
-                - example:
-                    information:
-                      currentPage: -62342942
-                      hasMoreData: false
-                    response:
-                      responseCode: Ut dolore
-                      userMessage: in ipsum
-              example:
-                information:
-                  currentPage: -62342942
-                  hasMoreData: false
-                response:
-                  responseCode: Ut dolore
-                  userMessage: in ipsum
         '400':
           description: Bad Request
           headers:
@@ -336,46 +238,12 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
   /addOwnerAccount:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: addOwnerAccount
-      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: númerro de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta, que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
+      description: 'API diseñado para agregar un propietario de cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: Número de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
       operationId: addOwnerAccount
       parameters:
       - name: X-Auth-Token
@@ -443,40 +311,6 @@ paths:
                 response:
                   responseCode: Ut dolore
                   userMessage: in ipsum
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response'
-                - example:
-                    information:
-                      currentPage: -62342942
-                      hasMoreData: false
-                    response:
-                      responseCode: Ut dolore
-                      userMessage: in ipsum
-              example:
-                information:
-                  currentPage: -62342942
-                  hasMoreData: false
-                response:
-                  responseCode: Ut dolore
-                  userMessage: in ipsum
         '400':
           description: Bad Request
           headers:
@@ -507,46 +341,12 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
   /addSignerAccount:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: addSignerAccount
-      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: númerro de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta, que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
+      description: 'API diseñado para crear un firmante para la cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: Número de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades, dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
       operationId: addSignerAccount
       parameters:
       - name: X-Auth-Token
@@ -614,40 +414,6 @@ paths:
                 response:
                   responseCode: Ut dolore
                   userMessage: in ipsum
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response'
-                - example:
-                    information:
-                      currentPage: -62342942
-                      hasMoreData: false
-                    response:
-                      responseCode: Ut dolore
-                      userMessage: in ipsum
-              example:
-                information:
-                  currentPage: -62342942
-                  hasMoreData: false
-                response:
-                  responseCode: Ut dolore
-                  userMessage: in ipsum
         '400':
           description: Bad Request
           headers:
@@ -678,45 +444,11 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://192.168.10.119:8585/inttegriorest/service
-        variables: {}
   /createBusinessBdv:
     post:
       tags:
-      - Misc
-      summary: New Business
+      - BDV NOVAK
+      summary: Create Business
       description: Luego de crear una o varias personas naturales, se puede enviar una petición para crear empresas o entidades como personas jurídicas.
       operationId: NewBusiness
       parameters:
@@ -746,9 +478,7 @@ paths:
               - example:
                   businessName: VELEZ
                   fechaConst: 2000-01-01
-                  actEconomica: A0100000
                   codPaisConstitucion: VE
-                  sector: '110'
                   id:
                     identification: '3251833'
                     type: G
@@ -773,26 +503,10 @@ paths:
                     number: '7822456'
                     type: TEL
                     primaryTypePhone: '1'
-                  commercialName: Velez S.A
-                  mailingAddress:
-                    city: Urbana San Juan de Payara
-                    estadoP: VE01
-                    streetAddress: 3350 SW 148th Ave Suite 110
-                    zipcode: '2105'
-                    addressLine2: Rd Apt 2
-                  secondaryPhone:
-                    number: '7876643'
-                    type: CEL
-                  secondaryEmail: second@mail.com
-                  beneficiaryOwners:
-                  - cbsId: '8493'
-                    percentage: 25
             example:
               businessName: VELEZ
               fechaConst: 2000-01-01
-              actEconomica: A0100000
               codPaisConstitucion: VE
-              sector: '110'
               id:
                 identification: '3251833'
                 type: G
@@ -817,20 +531,6 @@ paths:
                 number: '7822456'
                 type: TEL
                 primaryTypePhone: '1'
-              commercialName: Velez S.A
-              mailingAddress:
-                city: Urbana San Juan de Payara
-                estadoP: VE01
-                streetAddress: 3350 SW 148th Ave Suite 110
-                zipcode: '2105'
-                addressLine2: Rd Apt 2
-              secondaryPhone:
-                number: '7876643'
-                type: CEL
-              secondaryEmail: second@mail.com
-              beneficiaryOwners:
-              - cbsId: '8493'
-                percentage: 25
         required: true
       responses:
         '200':
@@ -863,36 +563,6 @@ paths:
                 response:
                   responseCode: laboris deserunt ex
                   userMessage: dolor
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response4'
-                - example:
-                    cbsId: id aliqua occaecat
-                    response:
-                      responseCode: laboris deserunt ex
-                      userMessage: dolor
-              example:
-                cbsId: id aliqua occaecat
-                response:
-                  responseCode: laboris deserunt ex
-                  userMessage: dolor
         '400':
           description: Bad Request
           headers:
@@ -923,46 +593,12 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
   /createIndividualBdV:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: Create Individual
-      description: Este API permite crear una persona natural dentro de Inttegrio.
+      description: Esta API permite crear una persona natural dentro de Inttegrio.
       operationId: CreateIndividual
       parameters:
       - name: X-Auth-Token
@@ -1012,9 +648,6 @@ paths:
                     type: TEL
                     primaryTypePhone: '1'
                   gender: MALE
-                  citizenship: VE
-                  ratingStatus: LOW
-                  cipCompletion: 10-19-2020
                   primaryEmail: mailto:mgrajales@smart-financial-systems.com
             example:
               cbsId: '40003287'
@@ -1048,11 +681,8 @@ paths:
                 type: TEL
                 primaryTypePhone: '1'
               gender: MALE
-              citizenship: VE
-              ratingStatus: LOW
-              cipCompletion: 10-19-2020
               primaryEmail: mailto:mgrajales@smart-financial-systems.com
-        required: true
+        required: true 
       responses:
         '200':
           description: OK
@@ -1074,36 +704,6 @@ paths:
               schema:
                 allOf:
                 - $ref: '#/components/schemas/200response4'
-                - example:
-                    cbsId: id aliqua occaecat
-                    response:
-                      responseCode: laboris deserunt ex
-                      userMessage: dolor
-              example:
-                cbsId: id aliqua occaecat
-                response:
-                  responseCode: laboris deserunt ex
-                  userMessage: dolor
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response4'
                 - example:
                     cbsId: id aliqua occaecat
                     response:
@@ -1144,44 +744,10 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
   /clearCache:
     post:
       tags:
-      - Misc
+      - BDV NOVAK
       summary: Clear Cache
       description: Este API permite crear una persona natural dentro de Inttegrio.
       operationId: ClearCache
@@ -1225,36 +791,6 @@ paths:
                 response:
                   responseCode: laboris deserunt ex
                   userMessage: dolor
-        '201':
-          description: Created
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/201response4'
-                - example:
-                    cbsId: id aliqua occaecat
-                    response:
-                      responseCode: laboris deserunt ex
-                      userMessage: dolor
-              example:
-                cbsId: id aliqua occaecat
-                response:
-                  responseCode: laboris deserunt ex
-                  userMessage: dolor
         '400':
           description: Bad Request
           headers:
@@ -1285,40 +821,6 @@ paths:
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
                 messageCategory: dolor velit nisi
-        '401':
-          description: Unauthorized
-          headers:
-            Inttegrio-instance:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-            MessageId:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: esse ad tempor
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/401response1'
-                - example:
-                    responseCode: aliqua dolor
-                    userMessage: exercitation qui
-                    action: aliquip nisi id laborum
-                    messageCategory: dolor velit nisi
-              example:
-                responseCode: aliqua dolor
-                userMessage: exercitation qui
-                action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
-      deprecated: false
-      servers:
-      - url: http://localhost:8585/inttegriorest/service
-        variables: {}
 components:
   schemas:
     CreateAccountRequest:
@@ -1334,28 +836,36 @@ components:
       properties:
         accountNumber:
           type: string
+          description: Número de la persona
         product:
           type: string
+          description: Número de producto
         productGroup:
           type: string
+          description: Grupo del producto
         branch:
           type: string
+          description: Sucursal del usuario
         currency:
           type: string
+          description: Moneda
         owners:
           type: array
           items:
             $ref: '#/components/schemas/Owner'
-          description: ''
+          description: Array de objetos tipo Owner
       example:
-        accountNumber: '01020353800100028237'
-        product: '406'
-        productGroup: '04'
-        branch: '1'
+        accountNumber: '01020501834880299'
+        product: '2001'
+        productGroup: '02'
+        branch: '501'
         currency: VES
+        statusCuenta: '002'
+        statusBloqueo: APR
         owners:
-        - identification: '00068744311'
-          idType: J
+          idType: M
+          identification: '00006937321'
+          masterGrupo: '01'
           relationship: OWNER
     Owner:
       title: Owner
@@ -1367,10 +877,13 @@ components:
       properties:
         identification:
           type: string
+          description: Identificación
         idType:
           type: string
+          description: Tipo de identificación
         relationship:
           type: string
+          description: La relación
       example:
         identification: '00068744311'
         idType: J
@@ -1489,20 +1002,17 @@ components:
       required:
       - businessCbsId
       - cbsId
-      - percentage
       type: object
       properties:
         businessCbsId:
           type: string
+          description: Cpersona de la persona jurídica
         cbsId:
           type: string
-        percentage:
-          type: integer
-          format: int32
+          description: Cpersona del beneficiario
       example:
         businessCbsId: '10025'
         cbsId: '10036'
-        percentage: 25
     addOwnerAccountRequest:
       title: addOwnerAccountRequest
       required:
@@ -1512,8 +1022,10 @@ components:
       properties:
         accountNumber:
           type: string
+          description: Cuenta de la persona
         cbsId:
           type: string
+          description: Cpersona del cotitular
       example:
         accountNumber: '01020353800100028299'
         cbsId: '10154'
@@ -1526,8 +1038,10 @@ components:
       properties:
         accountNumber:
           type: string
+          description: Número de cuenta
         cbsId:
           type: string
+          description: Cpersona del firmante
       example:
         accountNumber: '411010000019'
         cbsId: '10154'
@@ -1536,57 +1050,46 @@ components:
       required:
       - businessName
       - fechaConst
-      - actEconomica
+      #- actEconomica
       - codPaisConstitucion
-      - sector
+      #- sector
       - id
       - mainAddress
       - primaryEmail
       - primaryPhone
-      - commercialName
-      - mailingAddress
-      - secondaryPhone
-      - secondaryEmail
-      - beneficiaryOwners
       type: object
       properties:
         businessName:
           type: string
+          description: Nombre de la empresa
         fechaConst:
           type: string
-        actEconomica:
-          type: string
+          description: Fecha de constitución
+        #actEconomica:
+          #type: string
+          #description: Actividad económica de la empresa
         codPaisConstitucion:
           type: string
-        sector:
-          type: string
+          description: Código de país constitución
+        #sector:
+          #type: string
+          #description: Sector económico
         id:
           $ref: '#/components/schemas/Id'
         mainAddress:
           $ref: '#/components/schemas/MainAddress'
         primaryEmail:
           type: string
+          description: Correo principal
         primaryPhone:
           $ref: '#/components/schemas/PrimaryPhone'
-        commercialName:
-          type: string
-        mailingAddress:
-          $ref: '#/components/schemas/MailingAddress'
-        secondaryPhone:
-          $ref: '#/components/schemas/SecondaryPhone'
-        secondaryEmail:
-          type: string
-        beneficiaryOwners:
-          type: array
-          items:
-            $ref: '#/components/schemas/BeneficiaryOwner'
-          description: ''
+          description: Teléfono Principal
       example:
         businessName: VELEZ
         fechaConst: 2000-01-01
-        actEconomica: A0100000
+        #actEconomica: A0100000
         codPaisConstitucion: VE
-        sector: '110'
+        #sector: '110'
         id:
           identification: '3251833'
           type: G
@@ -1611,20 +1114,6 @@ components:
           number: '7822456'
           type: TEL
           primaryTypePhone: '1'
-        commercialName: Velez S.A
-        mailingAddress:
-          city: Urbana San Juan de Payara
-          estadoP: VE01
-          streetAddress: 3350 SW 148th Ave Suite 110
-          zipcode: '2105'
-          addressLine2: Rd Apt 2
-        secondaryPhone:
-          number: '7876643'
-          type: CEL
-        secondaryEmail: second@mail.com
-        beneficiaryOwners:
-        - cbsId: '8493'
-          percentage: 25
     Id:
       title: Id
       required:
@@ -1634,8 +1123,10 @@ components:
       properties:
         identification:
           type: string
+          description: Se ingresa el número de identificación
         type:
           type: string
+          description: Se ingresa el tipo de identificación
       example:
         identification: '3251833'
         type: G
@@ -1661,34 +1152,49 @@ components:
       properties:
         tipoDireccion:
           type: string
+          description: Se ingresa el tipo de dirección (String - 3)
         pais:
           type: string
+          description: Se ingresa el código del país de residencia ( String - 3)
         estadoP:
           type: string
+          description: Se ingresa el código del estado (String - 10)
         codCiudad:
           type: string
+          description: Se ingresa el código de la ciudad (String - 7)
         codMunicipio:
           type: string
+          description: Se ingresa el código del municipio (String - 50)
         codParroquia:
           type: string
+          description: Se ingresa el código de la parroquia (String - 20)
         codZonaPostal:
           type: string
+          description: Se ingresa el código de la zona postal (String - 15)
         idZona:
           type: string
+          description: Se ingresa el id de la zona postal (String -15)
         tipoVia:
           type: string
+          description: Se ingresa el código de tipo de la Vía (String - 43)
         nombreVia:
           type: string
+          description: Se ingresa el nombre de la vía (String - 100)
         nucleo:
           type: string
+          description: Se ingresa el nombre abreviado del núcleo (String - 4)
         descripcionNucleo:
           type: string
+          description: Se ingresa la descripción del núcleo
         tipoConstruccion:
           type: string
+          description: Se ingresa el tipo de inmueble (String - 20)
         descripcionC:
           type: string
+          description: Se ingresa el numero de la trasversal (String - 40 )
         complemento:
           type: string
+          description: Se ingresa el complemento de la trasversal (String - 10)
       example:
         tipoDireccion: CAS
         pais: VE
@@ -1715,40 +1221,17 @@ components:
       properties:
         number:
           type: string
+          description: Se ingresa el numero de teléfono o celular (String - 12)
         type:
           type: string
+          description: Se ingresa el tipo de teléfono (String - 3)
         primaryTypePhone:
           type: string
+          description: Se ingresa 1 si es el teléfono principal de la persona (String - 1)
       example:
         number: '7822456'
         type: TEL
         primaryTypePhone: '1'
-    MailingAddress:
-      title: MailingAddress
-      required:
-      - city
-      - estadoP
-      - streetAddress
-      - zipcode
-      - addressLine2
-      type: object
-      properties:
-        city:
-          type: string
-        estadoP:
-          type: string
-        streetAddress:
-          type: string
-        zipcode:
-          type: string
-        addressLine2:
-          type: string
-      example:
-        city: Urbana San Juan de Payara
-        estadoP: VE01
-        streetAddress: 3350 SW 148th Ave Suite 110
-        zipcode: '2105'
-        addressLine2: Rd Apt 2
     SecondaryPhone:
       title: SecondaryPhone
       required:
@@ -1758,8 +1241,10 @@ components:
       properties:
         number:
           type: string
+          description: Se ingresa el número de teléfono
         type:
           type: string
+          description: Se ingresa el tipo de teléfono
       example:
         number: '7876643'
         type: CEL
@@ -1818,11 +1303,6 @@ components:
       - mainAddress
       - primaryEmail
       - primaryPhone
-      - commercialName
-      - mailingAddress
-      - secondaryPhone
-      - secondaryEmail
-      - beneficiaryOwners
       type: object
       properties:
         businessName:
@@ -1835,19 +1315,6 @@ components:
           type: string
         primaryPhone:
           $ref: '#/components/schemas/PrimaryPhone'
-        commercialName:
-          type: string
-        mailingAddress:
-          $ref: '#/components/schemas/MailingAddress'
-        secondaryPhone:
-          $ref: '#/components/schemas/SecondaryPhone'
-        secondaryEmail:
-          type: string
-        beneficiaryOwners:
-          type: array
-          items:
-            $ref: '#/components/schemas/BeneficiaryOwner'
-          description: ''
       example:
         businessName: VELEZ
         id:
@@ -1877,27 +1344,12 @@ components:
           number: '7822456'
           type: TEL
           primaryTypePhone: '1'
-        commercialName: GUCCI SA
-        mailingAddress:
-          city: Urbana San Juan de Payara
-          estadoP: VE01
-          streetAddress: 3350 SW 148th Ave Suite 110
-          zipcode: '2105'
-          addressLine2: Rd Apt 2
-        secondaryPhone:
-          number: '7876643'
-          type: CEL
-        secondaryEmail: second@mail.com
-        beneficiaryOwners:
-        - cbsId: '8493'
-          percentage: 25
     Id1:
       title: Id1
       required:
       - identification
       - type
       - fechaConst
-      - actEconomica
       - codPaisConstitucion
       type: object
       properties:
@@ -1907,15 +1359,15 @@ components:
           type: string
         fechaConst:
           type: string
-        actEconomica:
-          type: string
+        #actEconomica:
+          #type: string
         codPaisConstitucion:
           type: string
       example:
         identification: '00007733137'
         type: J
         fechaConst: 2000-01-01
-        actEconomica: A0100000
+        #actEconomica: A0100000
         codPaisConstitucion: VE
     CreateIndividualRequest:
       title: CreateIndividualRequest
@@ -1927,30 +1379,34 @@ components:
       - lastName
       - nacionalidad
       - actEconomica
-      - id
+      - ids
       - mainAddress
       - primaryPhone
       - gender
-      - citizenship
-      - ratingStatus
-      - cipCompletion
       - primaryEmail
       type: object
       properties:
-        cbsId:
+        cbsId:  
           type: string
+          description: Cpersona de la persona
         dateOfBirth:
           type: string
+          description: Se ingresa la fecha de nacimiento de de la persona natural en tipo (Date)
         firstName:
           type: string
+          description: Se ingresa el primer nombre de la personas tipo (String-40)
         middleName:
           type: string
+          description: Se ingresa el segundo nombre de la personas tipo (String- 30)
         lastName:
           type: string
+          description: Se ingresa el primer apellido de la persona tipo (String - 25)
         nacionalidad:
           type: string
+          description: Se ingresa el país de nacimiento (String- 3)
         actEconomica:
           type: string
+          description: Se ingresa el código de actividad económica (String - 10)
         id:
           $ref: '#/components/schemas/Id'
         mainAddress:
@@ -1959,14 +1415,10 @@ components:
           $ref: '#/components/schemas/PrimaryPhone'
         gender:
           type: string
-        citizenship:
-          type: string
-        ratingStatus:
-          type: string
-        cipCompletion:
-          type: string
+          description: Género 
         primaryEmail:
           type: string
+          description: Correo principal
       example:
         cbsId: '40003287'
         dateOfBirth: 05-18-1996
@@ -1999,10 +1451,7 @@ components:
           type: TEL
           primaryTypePhone: '1'
         gender: MALE
-        citizenship: VE
-        ratingStatus: LOW
-        cipCompletion: 10-19-2020
         primaryEmail: mailto:mgrajales@smart-financial-systems.com
 tags:
-- name: Misc
+- name: BDV NOVAK
   description: ''

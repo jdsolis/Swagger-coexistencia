@@ -647,7 +647,7 @@ paths:
                     number: '7822456'
                     type: TEL
                     primaryTypePhone: '1'
-                  gender: MALE
+                  gender: male
                   primaryEmail: mailto:mgrajales@smart-financial-systems.com
             example:
               cbsId: '40003287'
@@ -680,7 +680,7 @@ paths:
                 number: '7822456'
                 type: TEL
                 primaryTypePhone: '1'
-              gender: MALE
+              gender: male
               primaryEmail: mailto:mgrajales@smart-financial-systems.com
         required: true 
       responses:
@@ -1415,7 +1415,7 @@ components:
           $ref: '#/components/schemas/PrimaryPhone'
         gender:
           type: string
-          description: Género 
+          description: El género de la persona en minúscula. Solo se aceptan los valores "male" y "female".  
         primaryEmail:
           type: string
           description: Correo principal
@@ -1450,7 +1450,7 @@ components:
           number: '7822456'
           type: TEL
           primaryTypePhone: '1'
-        gender: MALE
+        gender: male
         primaryEmail: mailto:mgrajales@smart-financial-systems.com
 tags:
 - name: BDV NOVAK

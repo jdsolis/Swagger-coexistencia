@@ -49,8 +49,8 @@ paths:
                   productGroup: '02'
                   branch: '501'
                   currency: VES
-                  statusCuenta: '002'
-                  statusBloqueo: APR 
+                  statusCuenta: A
+                  statusBloqueo: P 
                   owners:
                     idType: M
                     identification: '00006937321'
@@ -62,8 +62,8 @@ paths:
               productGroup: '02'
               branch: '501'
               currency: VES
-              statusCuenta: '002'
-              statusBloqueo: APR
+              statusCuenta: A
+              statusBloqueo: P
               owners:
                 idType: M
                 identification: '00006937321'
@@ -831,6 +831,8 @@ components:
       - productGroup
       - branch
       - currency
+      - statusCuenta
+      - statusBloqueo
       - owners
       type: object
       properties:
@@ -849,6 +851,12 @@ components:
         currency:
           type: string
           description: Moneda
+        statusCuenta:
+          type: string
+          description: Estado de la cuenta, los valores aceptados son A, C, R, P.
+        statusBloqueo:
+          type: string
+          description: Estado del bloqueo.
         owners:
           type: array
           items:
@@ -860,8 +868,8 @@ components:
         productGroup: '02'
         branch: '501'
         currency: VES
-        statusCuenta: '002'
-        statusBloqueo: APR
+        statusCuenta: A
+        statusBloqueo: P
         owners:
           idType: M
           identification: '00006937321'
@@ -870,23 +878,28 @@ components:
     Owner:
       title: Owner
       required:
-      - identification
       - idType
+      - identification
+      - masterGrupo
       - relationship
       type: object
       properties:
-        identification:
-          type: string
-          description: Identificación
         idType:
           type: string
           description: Tipo de identificación
+        identification:
+          type: string
+          description: Identificación
+        masterGrupo: 
+          type: string
+          description: Grupo maestro 
         relationship:
           type: string
           description: La relación
       example:
-        identification: '00068744311'
-        idType: J
+        idType: M
+        identification: '00006937321'
+        masterGrupo: '01'
         relationship: OWNER
     200response:
       title: 200response

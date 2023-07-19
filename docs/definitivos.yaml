@@ -44,6 +44,8 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateAccountRequest'
               - example:
+                  masterGrupo: '01'
+                  cbsId: '40005496'
                   accountNumber: '01020501834880299'
                   product: '2001'
                   productGroup: '02'
@@ -57,6 +59,8 @@ paths:
                     masterGrupo: '01'
                     relationship: OWNER
             example:
+              masterGrupo: '01'
+              cbsId: '40005496'
               accountNumber: '01020501834880299'
               product: '2001'
               productGroup: '02'
@@ -476,6 +480,8 @@ paths:
               allOf:
               - $ref: '#/components/schemas/NewBusinessRequest'
               - example:
+                  masterGrupo: '01'
+                  cbsId: '40005496'
                   businessName: VELEZ
                   fechaConst: 2000-01-01
                   codPaisConstitucion: VE
@@ -498,12 +504,14 @@ paths:
                     tipoConstruccion: '1'
                     descripcionC: '2214'
                     complemento: MZZ
-                  primaryEmail: mail@mailserver.com
                   primaryPhone:
                     number: '7822456'
                     type: TEL
                     primaryTypePhone: '1'
+                  primaryEmail: mail@mailserver.com
             example:
+              masterGrupo: '01'
+              cbsId: '40005496'
               businessName: VELEZ
               fechaConst: 2000-01-01
               codPaisConstitucion: VE
@@ -526,11 +534,11 @@ paths:
                 tipoConstruccion: '1'
                 descripcionC: '2214'
                 complemento: MZZ
-              primaryEmail: mail@mailserver.com
               primaryPhone:
                 number: '7822456'
                 type: TEL
                 primaryTypePhone: '1'
+              primaryEmail: mail@mailserver.com
         required: true
       responses:
         '200':
@@ -617,6 +625,7 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateIndividualRequest'
               - example:
+                  masterGrupo: '01'
                   cbsId: '40003287'
                   dateOfBirth: 05-18-1996
                   firstName: Antonio
@@ -648,8 +657,9 @@ paths:
                     type: TEL
                     primaryTypePhone: '1'
                   gender: male
-                  primaryEmail: mailto:mgrajales@smart-financial-systems.com
+                  primaryEmail: jsolis@gmail.com
             example:
+              masterGrupo: '01'
               cbsId: '40003287'
               dateOfBirth: 05-18-1996
               firstName: Antonio
@@ -681,7 +691,7 @@ paths:
                 type: TEL
                 primaryTypePhone: '1'
               gender: male
-              primaryEmail: mailto:mgrajales@smart-financial-systems.com
+              primaryEmail: jsolis@gmail.com.co
         required: true 
       responses:
         '200':
@@ -1061,6 +1071,8 @@ components:
     NewBusinessRequest:
       title: NewBusinessRequest
       required:
+      - masterGrupo
+      - cbsId
       - businessName
       - fechaConst
       #- actEconomica
@@ -1072,6 +1084,12 @@ components:
       - primaryPhone
       type: object
       properties:
+        masterGrupo:
+          type: string
+          description: Grupo maestro
+        cbsId:
+          type: string 
+          description: El identificador de la persona
         businessName:
           type: string
           description: Nombre de la empresa
@@ -1098,6 +1116,8 @@ components:
           $ref: '#/components/schemas/PrimaryPhone'
           description: Teléfono Principal
       example:
+        masterGrupo: '01'
+        cbsId: '40005496'
         businessName: VELEZ
         fechaConst: 2000-01-01
         #actEconomica: A0100000
@@ -1385,6 +1405,7 @@ components:
     CreateIndividualRequest:
       title: CreateIndividualRequest
       required:
+      - masterGrupo
       - cbsId
       - dateOfBirth
       - firstName
@@ -1399,18 +1420,21 @@ components:
       - primaryEmail
       type: object
       properties:
+        masterGrupo: 
+          type: string 
+          description: Grupo maestro
         cbsId:  
           type: string
           description: Cpersona de la persona
         dateOfBirth:
           type: string
-          description: Se ingresa la fecha de nacimiento de de la persona natural en tipo (Date)
+          description: Se ingresa la fecha de nacimiento de la persona natural en tipo (Date)
         firstName:
           type: string
-          description: Se ingresa el primer nombre de la personas tipo (String-40)
+          description: Se ingresa el primer nombre de la persona tipo (String-40)
         middleName:
           type: string
-          description: Se ingresa el segundo nombre de la personas tipo (String- 30)
+          description: Se ingresa el segundo nombre de la persona tipo (String- 30)
         lastName:
           type: string
           description: Se ingresa el primer apellido de la persona tipo (String - 25)
@@ -1433,6 +1457,7 @@ components:
           type: string
           description: Correo principal
       example:
+        masterGrupo: '01'
         cbsId: '40003287'
         dateOfBirth: 05-18-1996
         firstName: Antonio
@@ -1464,7 +1489,7 @@ components:
           type: TEL
           primaryTypePhone: '1'
         gender: male
-        primaryEmail: mailto:mgrajales@smart-financial-systems.com
+        primaryEmail: jsolis@gmail.com
 tags:
 - name: BDV NOVAK
   description: ''

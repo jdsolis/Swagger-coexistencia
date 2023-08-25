@@ -481,13 +481,13 @@ paths:
               - $ref: '#/components/schemas/NewBusinessRequest'
               - example:
                   masterGrupo: '01'
-                  cbsId: '40005496'
-                  businessName: VELEZ
-                  fechaConst: 2000-01-01
-                  codPaisConstitucion: VE
+                  cbsId: '45010660'
+                  businessName: INTER
+                  fechaConst: '2000-01-01'
+                  codPaisConstitucion: '423'
                   id:
-                    identification: '3251833'
-                    type: G
+                    identification: '33469662'
+                    type: J
                   mainAddress:
                     tipoDireccion: CAS
                     pais: VE
@@ -511,16 +511,16 @@ paths:
                   primaryEmail: mail@mailserver.com
             example:
               masterGrupo: '01'
-              cbsId: '40005496'
-              businessName: VELEZ
-              fechaConst: 2000-01-01
-              codPaisConstitucion: VE
+              cbsId: '45010660'
+              businessName: INTER
+              fechaConst: '2000-01-01'
+              codPaisConstitucion: '423'
               id:
-                identification: '3251833'
-                type: G
+                identification: '33469662'
+                type: J
               mainAddress:
                 tipoDireccion: CAS
-                pais: VE
+                pais: '423'
                 estadoP: '01'
                 codCiudad: '0100237'
                 codMunicipio: '0101'
@@ -625,8 +625,8 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateIndividualRequest'
               - example:
-                  masterGrupo: '01'
-                  cbsId: '40003287'
+                  masterGrupo: '02'
+                  cbsId: '40003288'
                   dateOfBirth: 05-18-1996
                   firstName: Antonio
                   middleName: Arelis
@@ -657,41 +657,41 @@ paths:
                     type: TEL
                     primaryTypePhone: '1'
                   gender: male
-                  primaryEmail: jsolis@gmail.com
+                  primaryEmail: mail@mailserver.com
             example:
               masterGrupo: '01'
-              cbsId: '40003287'
-              dateOfBirth: 05-18-1996
-              firstName: Antonio
-              middleName: Arelis
-              lastName: Rodriguez
-              nacionalidad: VE
+              cbsId: '4018894'
+              dateOfBirth: '1998-08-31'
+              firstName: Jaime
+              middleName: Adolfo
+              lastName: Aragon
+              nacionalidad: '432'
               actEconomica: A0110000
               id:
-                identification: '929929321'
+                identification: '84848484'
                 type: V
               mainAddress:
                 tipoDireccion: CAS
-                pais: VE
-                estadoP: '01'
-                codCiudad: '0100237'
-                codMunicipio: '0101'
-                codParroquia: '01'
-                codZonaPostal: '1000'
-                idZona: '3633'
+                pais: '432'
+                estadoP: '02'
+                codCiudad: '0200008'
+                codMunicipio: '0302'
+                codParroquia: '02'
+                codZonaPostal: '8013'
+                idZona: '3632'
                 tipoVia: AU
                 nombreVia: ALEDAÑO VIA
                 nucleo: ALDE
                 descripcionNucleo: zona Urbana
-                tipoConstruccion: '5'
+                tipoConstruccion: 'CASA'
                 descripcionC: '2214'
                 complemento: MZZ
               primaryPhone:
-                number: '7822456'
-                type: TEL
-                primaryTypePhone: '1'
-              gender: male
-              primaryEmail: jsolis@gmail.com.co
+                number: '02127822456'
+                type: NOR
+                primaryTypePhone: '003'
+              gender: H
+              primaryEmail: mail@mailserver.com
         required: true 
       responses:
         '200':
@@ -720,10 +720,10 @@ paths:
                       responseCode: laboris deserunt ex
                       userMessage: dolor
               example:
-                cbsId: id aliqua occaecat
+                cbsId: '4018894'
                 response:
-                  responseCode: laboris deserunt ex
-                  userMessage: dolor
+                  responseCode: '0'
+                  userMessage: TRANSACCIÓN REALIZADA CORRECTAMENTE
         '400':
           description: Bad Request
           headers:
@@ -1188,7 +1188,7 @@ components:
           description: Se ingresa el tipo de dirección (String - 3)
         pais:
           type: string
-          description: Se ingresa el código del país de residencia ( String - 3)
+          description: Se ingresa el código del país de residencia "432 (Venezuela)" (String - 3)
         estadoP:
           type: string
           description: Se ingresa el código del estado (String - 10)
@@ -1254,13 +1254,13 @@ components:
       properties:
         number:
           type: string
-          description: Se ingresa el numero de teléfono o celular (String - 12)
+          description: Se ingresa el numero de teléfono o celular junto con el código de área. (String - 12)
         type:
           type: string
-          description: Se ingresa el tipo de teléfono (String - 3)
+          description: Se ingresa la clase de teléfono. (String - 3)
         primaryTypePhone:
           type: string
-          description: Se ingresa 1 si es el teléfono principal de la persona (String - 1)
+          description: Se ingresa el tipo de teléfono. "001(Personal)", "002(Laboral)", "003(Otros)". (String - 1)
       example:
         number: '7822456'
         type: TEL
@@ -1308,10 +1308,10 @@ components:
         response:
           $ref: '#/components/schemas/Response'
       example:
-        cbsId: id aliqua occaecat
+        cbsId: '4018894'
         response:
-          responseCode: laboris deserunt ex
-          userMessage: dolor
+          responseCode: '0'
+          userMessage: TRANSACCIÓN REALIZADA CORRECTAMENTE
     201response4:
       title: 201response4
       required:
@@ -1440,7 +1440,7 @@ components:
           description: Se ingresa el primer apellido de la persona tipo (String - 25)
         nacionalidad:
           type: string
-          description: Se ingresa el país de nacimiento (String- 3)
+          description: Se ingresa el código del país de nacimiento "432 (Venezuela)" (String- 3). 
         actEconomica:
           type: string
           description: Se ingresa el código de actividad económica (String - 10)
@@ -1452,7 +1452,7 @@ components:
           $ref: '#/components/schemas/PrimaryPhone'
         gender:
           type: string
-          description: El género de la persona en minúscula. Solo se aceptan los valores "male" y "female".  
+          description: Se ingresa el género de la persona. Solo se aceptan los valores "H" (Masculino) y "M" (Femenino).  
         primaryEmail:
           type: string
           description: Correo principal

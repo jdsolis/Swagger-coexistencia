@@ -44,33 +44,29 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateAccountRequest'
               - example:
-                  masterGrupo: '01'
-                  cbsId: '40005496'
-                  accountNumber: '01020501834880299'
-                  product: '02'
-                  productGroup: '2001'
-                  branch: '501'
+                  accountNumber: '02187022583101575570'
+                  product: '01'
+                  productGroup: '1007'
+                  branch: '0'
                   currency: VES
                   statusCuenta: A
-                  statusBloqueo: P 
+                  statusBloqueo: P
                   owners:
-                    idType: M
-                    identification: '00006937321'
+                    idType: J
+                    identification: '00046286788'
                     masterGrupo: '01'
                     relationship: OWNER
             example:
-              masterGrupo: '01'
-              cbsId: '40005496'
-              accountNumber: '01020501834880299'
-              product: '02'
-              productGroup: '2001'
-              branch: '501'
+              accountNumber: '02187022583101575570'
+              product: '01'
+              productGroup: '1007'
+              branch: '0'
               currency: VES
               statusCuenta: A
               statusBloqueo: P
               owners:
-                idType: M
-                identification: '00006937321'
+                idType: J
+                identification: '00046286788'
                 masterGrupo: '01'
                 relationship: OWNER
         required: true
@@ -848,30 +844,30 @@ components:
       properties:
         accountNumber:
           type: string
-          description: Número de la persona
+          description: Se ingresa el <b>número de la persona</b>.
         product:
           type: string
-          description: Número de producto
+          description: Se ingresa el <b>número del grupo del producto</b>.
         productGroup:
           type: string
-          description: Grupo del producto
+          description: Se ingresa el <b>número del producto</b>.
         branch:
           type: string
-          description: Sucursal del usuario
+          description: Se ingresa la <b>sucursal del usuario</b>.
         currency:
           type: string
-          description: Moneda
+          description: Se ingresa la <b>moneda</b>.
         statusCuenta:
           type: string
-          description: Estado de la cuenta, los valores aceptados son A, C, R, P.
+          description: 'Se ingresa el <b>estado de la cuenta</b>. Los valores aceptados son: A, C, R, P.'
         statusBloqueo:
           type: string
-          description: Estado del bloqueo.
+          description: Se ingresa el <b>estado del bloqueo</b>.
         owners:
           type: array
           items:
             $ref: '#/components/schemas/Owner'
-          description: Array de objetos tipo Owner
+          description: Es un Array de objetos tipo <b>Owner</b>.
       example:
         accountNumber: '01020501834880299'
         product: '2001'
@@ -896,16 +892,16 @@ components:
       properties:
         idType:
           type: string
-          description: Tipo de identificación
+          description: Se ingresa el <b>tipo de identificación</b>.
         identification:
           type: string
-          description: Identificación
+          description: Se ingresa el <b>número de identificación</b>.
         masterGrupo: 
           type: string
-          description: Grupo maestro 
+          description: Se ingresa el <b>Grupo maestro</b>.
         relationship:
           type: string
-          description: La relación
+          description: Se ingresa la <b>relación</b>.
       example:
         idType: M
         identification: '00006937321'
@@ -1224,7 +1220,7 @@ components:
           description: Se ingresa el tipo de inmueble (String - 20)
         descripcionC:
           type: string
-          description: Se ingresa el numero de la trasversal (String - 40 )
+          description: Se ingresa el número de la trasversal (String - 40 )
         complemento:
           type: string
           description: Se ingresa el complemento de la trasversal (String - 10)
@@ -1254,7 +1250,7 @@ components:
       properties:
         number:
           type: string
-          description: Se ingresa el numero de teléfono o celular junto con el código de área. (String - 12)
+          description: Se ingresa el número de teléfono o celular junto con el código de área. (String - 12)
         type:
           type: string
           description: Se ingresa la clase de teléfono. (String - 3)

@@ -47,8 +47,8 @@ paths:
                   masterGrupo: '01'
                   cbsId: '40005496'
                   accountNumber: '01020501834880299'
-                  product: '2001'
-                  productGroup: '02'
+                  product: '02'
+                  productGroup: '2001'
                   branch: '501'
                   currency: VES
                   statusCuenta: A
@@ -62,8 +62,8 @@ paths:
               masterGrupo: '01'
               cbsId: '40005496'
               accountNumber: '01020501834880299'
-              product: '2001'
-              productGroup: '02'
+              product: '02'
+              productGroup: '2001'
               branch: '501'
               currency: VES
               statusCuenta: A

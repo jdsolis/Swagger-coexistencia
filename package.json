@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "redocly preview-docs -p 8585",
+    "start": "redocly preview-docs -h 0.0.0.0 -p 8585",
     "build": "redocly bundle -o dist",
     "test": "redocly lint"
   },

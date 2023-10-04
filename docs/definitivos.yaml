@@ -656,16 +656,16 @@ paths:
                   primaryEmail: mail@mailserver.com
             example:
               masterGrupo: '01'
-              cbsId: '4018894'
-              dateOfBirth: '1998-08-31'
-              firstName: Jaime
-              middleName: Adolfo
-              lastName: Aragon
-              nacionalidad: '432'
+              cbsId: '64797899'
+              dateOfBirth: '1996-08-31'
+              firstName: JUAN
+              middleName: FEDERICO
+              lastName: ROZO
+              nacionalidad: '102'
               actEconomica: A0110000
               id:
-                identification: '84848484'
-                type: V
+                identification: '69491999'
+                type: E
               mainAddress:
                 tipoDireccion: CAS
                 pais: '432'
@@ -1427,13 +1427,13 @@ components:
           description: Se ingresa la fecha de nacimiento de la persona natural en tipo (Date)
         firstName:
           type: string
-          description: Se ingresa el primer nombre de la persona tipo (String-40)
+          description: Se debe ingresar 40 caracteres; los primeros 20 carácteres son para el primer nombre y los restantes para el segundo nombre.
         middleName:
           type: string
-          description: Se ingresa el segundo nombre de la persona tipo (String- 30)
+          description: Se debe ingresar el primer apellido del cliente. Este campo debe ser requerido al momento del envío del servicio.
         lastName:
           type: string
-          description: Se ingresa el primer apellido de la persona tipo (String - 25)
+          description: Se debe ingresar el segundo apellido del cliente. Este campo NO debe ser requerido al momento del envío del servicio. 
         nacionalidad:
           type: string
           description: Se ingresa el código del país de nacimiento "432 (Venezuela)" (String- 3). 

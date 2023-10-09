@@ -621,60 +621,60 @@ paths:
               allOf:
               - $ref: '#/components/schemas/CreateIndividualRequest'
               - example:
-                  masterGrupo: '02'
-                  cbsId: '40003288'
-                  dateOfBirth: 05-18-1996
-                  firstName: Antonio
-                  middleName: Arelis
-                  lastName: Rodriguez
-                  nacionalidad: VE
+                  masterGrupo: '01'
+                  cbsId: '4011373'
+                  dateOfBirth: '1996-08-31'
+                  firstName: 'RamonS              Samuelthon          '
+                  middleName: kyarry
+                  lastName: Smith
+                  nacionalidad: '506'
                   actEconomica: A0110000
                   id:
-                    identification: '929929321'
+                    identification: '41130369'
                     type: V
                   mainAddress:
-                    tipoDireccion: CAS
-                    pais: VE
-                    estadoP: '01'
-                    codCiudad: '0100237'
-                    codMunicipio: '0101'
-                    codParroquia: '01'
-                    codZonaPostal: '1000'
-                    idZona: '3633'
+                    tipoDireccion: PRI
+                    pais: '432'
+                    estadoP: '02'
+                    codCiudad: '0200008'
+                    codMunicipio: '0302'
+                    codParroquia: '02'
+                    codZonaPostal: '00008013'
+                    idZona: ''
                     tipoVia: AU
                     nombreVia: ALEDAÑO VIA
                     nucleo: ALDE
                     descripcionNucleo: zona Urbana
-                    tipoConstruccion: '5'
+                    tipoConstruccion: 'CASA'
                     descripcionC: '2214'
                     complemento: MZZ
                   primaryPhone:
-                    number: '7822456'
-                    type: TEL
-                    primaryTypePhone: '1'
-                  gender: male
+                    number: '02127822456'
+                    type: NOR
+                    primaryTypePhone: '003'
+                  gender: H
                   primaryEmail: mail@mailserver.com
             example:
               masterGrupo: '01'
-              cbsId: '64797899'
+              cbsId: '4011373'
               dateOfBirth: '1996-08-31'
-              firstName: JUAN
-              middleName: FEDERICO
-              lastName: ROZO
-              nacionalidad: '102'
+              firstName: 'RamonS              Samuelthon          '
+              middleName: kyarry
+              lastName: Smith
+              nacionalidad: '506'
               actEconomica: A0110000
               id:
-                identification: '69491999'
-                type: E
+                identification: '41130369'
+                type: V
               mainAddress:
-                tipoDireccion: CAS
+                tipoDireccion: PRI
                 pais: '432'
                 estadoP: '02'
                 codCiudad: '0200008'
                 codMunicipio: '0302'
                 codParroquia: '02'
-                codZonaPostal: '8013'
-                idZona: '3632'
+                codZonaPostal: '00008013'
+                idZona: ''
                 tipoVia: AU
                 nombreVia: ALEDAÑO VIA
                 nucleo: ALDE

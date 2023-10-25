@@ -477,63 +477,63 @@ paths:
               - $ref: '#/components/schemas/NewBusinessRequest'
               - example:
                   masterGrupo: '01'
-                  cbsId: '45010660'
-                  businessName: INTER
+                  cbsId: '40136369'
+                  businessName: Louis Vuiton
                   fechaConst: '2000-01-01'
-                  codPaisConstitucion: '423'
+                  codPaisConstitucion: '432'
                   id:
-                    identification: '33469662'
+                    identification: '99658423'
                     type: J
                   mainAddress:
-                    tipoDireccion: CAS
-                    pais: VE
+                    tipoDireccion: PRI
+                    pais: '432'
                     estadoP: '01'
                     codCiudad: '0100237'
                     codMunicipio: '0101'
                     codParroquia: '01'
-                    codZonaPostal: '1000'
-                    idZona: '3633'
+                    codZonaPostal: '11118013'
+                    idZona: ''
                     tipoVia: AU
-                    nombreVia: ALEDAÑO VIA
+                    nombreVia: LOBO GUERRERO
                     nucleo: ALDE
                     descripcionNucleo: zona Urbana
-                    tipoConstruccion: '1'
+                    tipoConstruccion: CC
                     descripcionC: '2214'
                     complemento: MZZ
                   primaryPhone:
-                    number: '7822456'
-                    type: TEL
-                    primaryTypePhone: '1'
+                    number: '02127822456'
+                    type: NOR
+                    primaryTypePhone: '003'
                   primaryEmail: mail@mailserver.com
             example:
               masterGrupo: '01'
-              cbsId: '45010660'
-              businessName: INTER
+              cbsId: '40136369'
+              businessName: Louis Vuiton
               fechaConst: '2000-01-01'
-              codPaisConstitucion: '423'
+              codPaisConstitucion: '432'
               id:
-                identification: '33469662'
+                identification: '99658423'
                 type: J
               mainAddress:
-                tipoDireccion: CAS
-                pais: '423'
+                tipoDireccion: PRI
+                pais: '432'
                 estadoP: '01'
                 codCiudad: '0100237'
                 codMunicipio: '0101'
                 codParroquia: '01'
-                codZonaPostal: '1000'
-                idZona: '3633'
+                codZonaPostal: '11118013'
+                idZona: ''
                 tipoVia: AU
-                nombreVia: ALEDAÑO VIA
+                nombreVia: LOBO GUERRERO
                 nucleo: ALDE
                 descripcionNucleo: zona Urbana
-                tipoConstruccion: '1'
+                tipoConstruccion: CC
                 descripcionC: '2214'
                 complemento: MZZ
               primaryPhone:
-                number: '7822456'
-                type: TEL
-                primaryTypePhone: '1'
+                number: '02127822456'
+                type: NOR
+                primaryTypePhone: '003'
               primaryEmail: mail@mailserver.com
         required: true
       responses:
@@ -1129,7 +1129,7 @@ components:
           codCiudad: '0100237'
           codMunicipio: '0101'
           codParroquia: '01'
-          codZonaPostal: '1000'
+          codZonaPostal: '11118013'
           idZona: '3633'
           tipoVia: AU
           nombreVia: ALEDAÑO VIA
@@ -1199,7 +1199,7 @@ components:
           description: Se ingresa el código de la parroquia (String - 20)
         codZonaPostal:
           type: string
-          description: Se ingresa el código de la zona postal (String - 15)
+          description: Se ingresa el código de la zona postal (String - 8)
         idZona:
           type: string
           description: Se ingresa el id de la zona postal (String -15)
@@ -1231,7 +1231,7 @@ components:
         codCiudad: '0100237'
         codMunicipio: '0101'
         codParroquia: '01'
-        codZonaPostal: '1000'
+        codZonaPostal: '11118013'
         idZona: '3633'
         tipoVia: AU
         nombreVia: ALEDAÑO VIA
@@ -1359,7 +1359,7 @@ components:
           codCiudad: '0100237'
           codMunicipio: '0101'
           codParroquia: '01'
-          codZonaPostal: '1000'
+          codZonaPostal: '11118013'
           idZona: '3633'
           tipoVia: AU
           nombreVia: ALEDAÑO VIA
@@ -1471,7 +1471,7 @@ components:
           codCiudad: '0100237'
           codMunicipio: '0101'
           codParroquia: '01'
-          codZonaPostal: '1000'
+          codZonaPostal: '11118013'
           idZona: '3633'
           tipoVia: AU
           nombreVia: ALEDAÑO VIA

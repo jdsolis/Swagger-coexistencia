@@ -134,7 +134,130 @@ paths:
                 responseCode: aliqua dolor
                 userMessage: exercitation qui
                 action: aliquip nisi id laborum
-                messageCategory: dolor velit nisi
+                messageCategory: dolor velit nisiz
+  /updateAccountBdv:
+    post:
+      tags:
+      - BDV NOVAK
+      summary: Update Account
+      description: 'API diseñado para crear una cuenta dentro de Inttegrio con los siguientes datos enviados desde un sistema externo: Número de cuenta o contrato, sucursal, moneda y la lista de propietarios o participantes en el contrato de la cuenta que figuren tanto como propietarios o como firmantes. En este caso se asume que ambos perfiles pueden movilizar los fondos de la cuenta. En el caso de cuentas para empresas o entidades dicha empresa o entidad debe colocarse como propietario de la cuenta y las personas naturales que movilizan la cuenta se definen como los propietarios de la misma o como sus firmantes.'
+      operationId: UpdateAccount
+      parameters:
+      - name: X-Auth-Token
+        in: header
+        description: (Required)
+        required: true
+        style: simple
+        schema:
+          type: string
+          example: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJlMWQ0MzMwNzI4OGM0MWZhODhlY2I2YmE1MjBmOTRjYSIsImlhdCI6MTYwMTAxMDAwMCwibmJmIjoxNTc3ODU0ODAwLCJzdWIiOiI5OTAwNzY0MDAvU01BUlQgQURNSU4gVVNFUiIsImlzcyI6IkZCRU5JVEVaIiwibWFpbCI6ImZiZW5pdGV6QGludHRlZ3Jpby5jb20iLCJ1c2VyQ3VzdG9tZXIiOiJBRE1JTiIsIm1vZHVsZXMiOiJnZW5lcmFsIiwiZXhwIjozMjUwMzYxMTYwMCwiZGlhcyI6MzU3NjY5fQ.r0Z1sYcSKzDV8pkgDaVMbCYyhtin8KLm-7bG3Erjgye3yOBidq6mgpXmTE8sGWoHAKxcs9FpXZkj8U_xocsPpQ
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        schema:
+          type: string
+          example: application/json
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              allOf:
+              - $ref: '#/components/schemas/UpdateAccountRequest'
+              - example:
+                  accountNumber: '02187022583101575570'
+                  product: '01'
+                  productGroup: '1007'
+                  branch: '0'
+                  currency: VES
+                  statusCuenta: C
+                  statusBloqueo: ""
+                  owners:
+                    idType: J
+                    identification: '00046286788'
+                    masterGrupo: '01'
+                    relationship: OWNER
+            example:
+              accountNumber: '02187022583101575570'
+              product: '01'
+              productGroup: '1007'
+              branch: '0190'
+              currency: VES
+              statusCuenta: C
+              statusBloqueo: ""
+              owners:
+                idType: v
+                identification: '00046286788'
+                masterGrupo: '01'
+                relationship: OWNER
+        required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            Inttegrio-instance:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: esse ad tempor
+            MessageId:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: esse ad tempor
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/200response'
+                - example:
+                    information:
+                      currentPage: -62342942
+                      hasMoreData: false
+                    response:
+                      responseCode: Ut dolore
+                      userMessage: in ipsum
+              example:
+                information:
+                  currentPage: -62342942
+                  hasMoreData: false
+                response:
+                  responseCode: Ut dolore
+                  userMessage: in ipsum
+        '400':
+          description: Bad Request
+          headers:
+            Inttegrio-instance:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: esse ad tempor
+            MessageId:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: esse ad tempor
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/400response1'
+                - example:
+                    responseCode: aliqua dolor
+                    userMessage: exercitation qui
+                    action: aliquip nisi id laborum
+                    messageCategory: dolor velit nisi
+              example:
+                responseCode: aliqua dolor
+                userMessage: exercitation qui
+                action: aliquip nisi id laborum
+                messageCategory: dolor velit nisiz
   /addBeneficiaryOwner:
     post:
       tags:

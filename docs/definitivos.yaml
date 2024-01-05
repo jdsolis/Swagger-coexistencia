@@ -967,7 +967,7 @@ components:
       properties:
         accountNumber:
           type: string
-          description: Se ingresa el <b>número de la persona</b>.
+          description: Se ingresa el <b>número de la cuenta</b>.
         product:
           type: string
           description: Se ingresa el <b>número del grupo del producto</b>.
@@ -1139,6 +1139,193 @@ components:
         userMessage: exercitation qui
         action: aliquip nisi id laborum
         messageCategory: dolor velit nisi
+    UpdateAccountRequest:
+      title: UpdateeAccountRequest
+      required:
+      - accountNumber
+      - product
+      - productGroup
+      - branch
+      - currency
+      - statusCuenta
+      - statusBloqueo
+      - owners
+      type: object
+      properties:
+        accountNumber:
+          type: string
+          description: Se ingresa el <b>número de la cuenta</b>.
+        product:
+          type: string
+          description: Se ingresa el <b>número del grupo del producto</b>.
+        productGroup:
+          type: string
+          description: Se ingresa el <b>número del producto</b>.
+        branch:
+          type: string
+          description: Se ingresa la <b>sucursal del usuario</b>.
+        currency:
+          type: string
+          description: Se ingresa la <b>moneda</b>.
+        statusCuenta:
+          type: string
+          description: 'Se ingresa el <b>estado de la cuenta</b>. Los valores aceptados son: A, C, R, P.'
+        statusBloqueo:
+          type: string
+          description: Se ingresa el <b>estado del bloqueo</b>.
+        owners:
+          type: array
+          items:
+            $ref: '#/components/schemas/Owner'
+          description: Es un Array de objetos tipo <b>Owner</b>.
+      example:
+        accountNumber: '01020501834880299'
+        product: '2001'
+        productGroup: '02'
+        branch: '501'
+        currency: VES
+        statusCuenta: A
+        statusBloqueo: P
+        owners:
+          idType: M
+          identification: '00006937321'
+          masterGrupo: '01'
+          relationship: OWNER
+    Owner_:
+      title: Owner
+      required:
+      - idType
+      - identification
+      - masterGrupo
+      - relationship
+      type: object
+      properties:
+        idType:
+          type: string
+          description: Se ingresa el <b>tipo de identificación</b>.
+        identification:
+          type: string
+          description: Se ingresa el <b>número de identificación</b>.
+        masterGrupo: 
+          type: string
+          description: Se ingresa el <b>Grupo maestro</b>.
+        relationship:
+          type: string
+          description: Se ingresa la <b>relación</b>.
+      example:
+        idType: M
+        identification: '00006937321'
+        masterGrupo: '01'
+        relationship: OWNER
+    200response_:
+      title: 200response
+      required:
+      - information
+      - response
+      type: object
+      properties:
+        information:
+          $ref: '#/components/schemas/Information'
+        response:
+          $ref: '#/components/schemas/Response'
+      example:
+        information:
+          currentPage: -62342942
+          hasMoreData: false
+        response:
+          responseCode: Ut dolore
+          userMessage: in ipsum
+    Information_:
+      title: Information
+      required:
+      - currentPage
+      - hasMoreData
+      type: object
+      properties:
+        currentPage:
+          type: integer
+          format: int32
+        hasMoreData:
+          type: boolean
+      example:
+        currentPage: -62342942
+        hasMoreData: false
+    Response_:
+      title: Response
+      required:
+      - responseCode
+      - userMessage
+      type: object
+      properties:
+        responseCode:
+          type: string
+        userMessage:
+          type: string
+      example:
+        responseCode: Ut dolore
+        userMessage: in ipsum
+    201response_:
+      title: 201response
+      required:
+      - information
+      - response
+      type: object
+      properties:
+        information:
+          $ref: '#/components/schemas/Information'
+        response:
+          $ref: '#/components/schemas/Response'
+      example:
+        information:
+          currentPage: -62342942
+          hasMoreData: false
+        response:
+          responseCode: Ut dolore
+          userMessage: in ipsum
+    400response1_:
+      title: 400response1
+      required:
+      - responseCode
+      - userMessage
+      - action
+      - messageCategory
+      type: object
+      properties:
+        responseCode:
+          type: string
+        userMessage:
+          type: string
+        action:
+          type: string
+        messageCategory:
+          type: string
+      example:
+        responseCode: aliqua dolor
+        userMessage: exercitation qui
+        action: aliquip nisi id laborum
+        messageCategory: dolor velit nisi
+    401response1_:
+      title: 401response1
+      required:
+      - responseCode
+      - userMessage
+      - action
+      - messageCategory
+      type: object
+      properties:
+        responseCode:
+          type: string
+        userMessage:
+          type: string
+        action:
+          type: string
+        messageCategory:
+          type: string
+      example:
+        responseCode: aliqua dolor
+        userMessage: exercitation qui
+        action: aliquip nisi id laborum
+        messageCategory: dolor velit nisi   
     addBeneficiaryOwnerRequest:
       title: addBeneficiaryOwnerRequest
       required:

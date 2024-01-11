@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: BDV-NOVAK Copy
+  title: BDV-NOVAK
   description: Inttegrio API Rest Services
   contact: {}
   version: '1.0'
